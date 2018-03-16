@@ -1,0 +1,1202 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00AFD6E72EFBF688D89C3BA669B57583 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4773ABFFDC48B815C1B50944C5A9028 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		1A3C6401B7F3739FA2BFB43F37B97A87 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C577397193CBDB60C0504F4218A0A1F3 /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1D0B1F460EB35D703D78F0B0FCFE2D66 /* ProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A00B87FFCCD55185339DDDCCD560D6C5 /* ProgressHUD-dummy.m */; };
+		1E2609FED88492F5DCCF2A71A6AE172A /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2B6E82BFB09BB9E7B60A8A437FB22 /* UITextField+fixCaretPosition.swift */; };
+		1E97FDA6F54D8E50BA88604B0A5BB015 /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A87466A6E79DBFE6876B71452C95B9 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D56FB7F0124B5C56882A07F4BFF56C /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2324D1266D3CC6975A4B8C57EB245 /* SkyFloatingLabelTextField.swift */; };
+		376ACC1AE8D16E6448530C2FE37BB15F /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2D6360071E75B9DEF6BB99C0F0E366 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45AE8892EF83116D3278D7DD78978CA5 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86209FD5728350F1E9A5996317FBA56F /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6E0D447EEFBE8EC4A2B1C197785B1D1D /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 700204BA491A3FCCFDAA6ED898FA32BD /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72F533916DB0914719A2E86476B5DBC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		84790C4C5AA7A8C096F60A26D2075F10 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 177E483C9E1B4A64CE538F8ED0838F86 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96305F3B1C6B737ADBF4D926D470F6DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9A708EE7BE063F36B3E496A2F00EB8DE /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B32446CF0E2EAA72DB68EA6814DB1553 /* ProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9AC28649630318716AAA178EB6B56D47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9D3C77F48C7844CA119318BBBC97F06B /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B9E6B125F7D6D62CCA83CC29E452F3 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCD6FA161D2E654172DB13B01CE05D18 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB9166AC75EB9A44144B5DB2F600B442 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3E87329B6420D2043EF86D3FDB15738 /* ProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 19410440DE3DCF123AA27CE7931002BD /* ProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4FD01594CC9AC098044E4AC19F73440 /* Pods-Squire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C408686A2D94259C27460D07430B46 /* Pods-Squire-dummy.m */; };
+		C7F2FB57A9F687DDEE78D95829B9401C /* Pods-Squire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B5A203D2C253CB4FBF2B66BA26C6A4 /* Pods-Squire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8F7C06C96B6E20E577465E715169DA2 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5A9007A55E8FA935503F6F515F3E3962 /* ProgressHUD.bundle */; };
+		D4F691DB6DD8B4128A3FA86742763EC5 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0631EEEA340006F313DC004F52B45C46 /* TPKeyboardAvoiding-dummy.m */; };
+		E039A919BDDF69E813EBB97A3BBF6C45 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFF10358EA5B794FF114B6660AF5221 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA2EADE868180334DBE0751FE179E37F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FA67B7DE0ADF5A1AC1392F384AC8147C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAF0F41EF7853F5427808B416F2D33B /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FA6D1E4AA032882675E5D55C34035583 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A03DF0AF984004DF03C514808BDDCCD /* SkyFloatingLabelTextField-dummy.m */; };
+		FED3DF4DC2AB3254ECD83CC793555EF1 /* ProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04EC1C75B39604CCFAB5DD15CD9230F6 /* ProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		081C516B3BC69328644ECF6BACB16347 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7755AE9D9C551F98C1E7967AAF4A43;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+		3E28DBE4BBB7EF53EC5E33C51D326FDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03CD497616AFE9EE5D490D77612F186;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+		D0A5C43E58DC86BF359E20CCA9CD4CCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F851255CFAD3A485635B2C067CE1EB56;
+			remoteInfo = ProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01FAE397B513C6783E36973C8A8B0E6E /* libGTM_RoundedRectPath.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_RoundedRectPath.a; path = Libraries/libGTM_RoundedRectPath.a; sourceTree = "<group>"; };
+		04EC1C75B39604CCFAB5DD15CD9230F6 /* ProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		05898CEB6521CD2F4BD904F308DDF261 /* libGTM_AddressBook.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_AddressBook.a; path = Libraries/libGTM_AddressBook.a; sourceTree = "<group>"; };
+		0631EEEA340006F313DC004F52B45C46 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		11EEF4CB843E9FE770DDF6D57441A73E /* MaterialTypography.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MaterialTypography.bundle; path = Resources/MaterialTypography.bundle; sourceTree = "<group>"; };
+		122EE925750CD9AB8D8069C6E82D9F9C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177E483C9E1B4A64CE538F8ED0838F86 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		1795B39356C76E5B7B985225C1C28B98 /* libGTMStackTrace.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMStackTrace.a; path = Libraries/libGTMStackTrace.a; sourceTree = "<group>"; };
+		17CB207BC747337001695EA3D69FE4A3 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		186BA49AAAC74E8E9CC48E833E1DD636 /* AppInvite-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AppInvite-Module.h"; path = "Headers/ModuleHeaders/AppInvite-Module.h"; sourceTree = "<group>"; };
+		1891B1B9A1A5E17A7A8649990BFA48BF /* ProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ProgressHUD.modulemap; sourceTree = "<group>"; };
+		19410440DE3DCF123AA27CE7931002BD /* ProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = ProgressHUD/ProgressHUD/ProgressHUD.h; sourceTree = "<group>"; };
+		1DAEF9E131448A3BE5EA6D9C6F3F69B5 /* libGTM_Regex.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_Regex.a; path = Libraries/libGTM_Regex.a; sourceTree = "<group>"; };
+		22B5A203D2C253CB4FBF2B66BA26C6A4 /* Pods-Squire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Squire-umbrella.h"; sourceTree = "<group>"; };
+		24A902E9A77D35B971AC8F9AF9E4F592 /* CloudMessaging-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CloudMessaging-Module.h"; path = "Headers/ModuleHeaders/CloudMessaging-Module.h"; sourceTree = "<group>"; };
+		27125A29FD6CE1371A233C5886843BFA /* ProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		277A756199BA1062DB9FE6DE4B395B86 /* GoogleKitHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitHUD.bundle; path = Resources/GoogleKitHUD.bundle; sourceTree = "<group>"; };
+		27CD5424D742F0F9CF51B11419DF5241 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Headers/Public/GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		2936DD7AD69122F4C84547D0D487BB9A /* libGGLAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLAnalytics.a; path = Libraries/libGGLAnalytics.a; sourceTree = "<group>"; };
+		299966A0D3C6F2D35828D957E6AE10D6 /* libGGLCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
+		2A400FE3AAD6A12E36B5B5DF02F1F40D /* GCSVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSVideoView.h; path = Headers/Public/GCSVideoView.h; sourceTree = "<group>"; };
+		31ADB95D24D72455DC287AEAC4ABA5EB /* GMRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = Headers/GGLCore/Public/GMRConfiguration.h; sourceTree = "<group>"; };
+		33DC3A61945E8CE74DAC1318CBEE33F6 /* Analytics-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Analytics-Module.h"; path = "Headers/ModuleHeaders/Analytics-Module.h"; sourceTree = "<group>"; };
+		37B776FCDDD0B3544D00B1A4B216132B /* SignIn-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SignIn-Module.h"; path = "Headers/ModuleHeaders/SignIn-Module.h"; sourceTree = "<group>"; };
+		3CC2EDEEB4CC816F0AD01A41AE9E7851 /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/GGLCore/Public/Core.h; sourceTree = "<group>"; };
+		3CC99F484B8EB98487AA62FCE9883F1A /* libGTM_NSStringXML.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSStringXML.a; path = Libraries/libGTM_NSStringXML.a; sourceTree = "<group>"; };
+		3EFE8FF48298B039367EF6356F436E5B /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = Headers/Public/GAITracker.h; sourceTree = "<group>"; };
+		4CD02C20174068538F0A4A1139B46EBF /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Headers/Public/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		502CEA0B6AC774BAFC39AB10ED954CF0 /* Core-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Core-Module.h"; path = "Headers/ModuleHeaders/Core-Module.h"; sourceTree = "<group>"; };
+		53AD6E77A3461E0E686F29A2A1D3726B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D0390D4F4937C91D5C328C24A016BF /* GGLContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = Headers/GGLCore/Public/GGLContext.h; sourceTree = "<group>"; };
+		55F7B90810CCA0D03351BA96C93B8C17 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		5A03DF0AF984004DF03C514808BDDCCD /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		5A9007A55E8FA935503F6F515F3E3962 /* ProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = ProgressHUD/ProgressHUD/ProgressHUD.bundle; sourceTree = "<group>"; };
+		5D2D260D27A6A3CF11B64827C6519FB6 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Headers/Public/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		5D2D6360071E75B9DEF6BB99C0F0E366 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		5E2501E997E27F28BB7F7D6293D273BC /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Headers/Public/GAI.h; sourceTree = "<group>"; };
+		63324E6D51813879D099060674F0D81E /* libCardboardSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK.a; path = Libraries/libCardboardSDK.a; sourceTree = "<group>"; };
+		639C818EBAA16545CC28DD0AD55C6827 /* libGTM_NSStringHTML.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSStringHTML.a; path = Libraries/libGTM_NSStringHTML.a; sourceTree = "<group>"; };
+		66084452E5EB29B55757BB7684631F38 /* ProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProgressHUD.framework; path = ProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6630FD04669FACC0E958FB7D5114B398 /* libGTM_iPhone.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_iPhone.a; path = Libraries/libGTM_iPhone.a; sourceTree = "<group>"; };
+		665B8A246D41D0F6AA27F8407F4D1923 /* libGTM_SystemVersion.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_SystemVersion.a; path = Libraries/libGTM_SystemVersion.a; sourceTree = "<group>"; };
+		6967411E0F9195A48A5D521533C1C5A3 /* Pods-Squire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Squire.debug.xcconfig"; sourceTree = "<group>"; };
+		700204BA491A3FCCFDAA6ED898FA32BD /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		710F827DB75B326A34BAC408E1116F15 /* libGTM_GTMURLBuilder.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_GTMURLBuilder.a; path = Libraries/libGTM_GTMURLBuilder.a; sourceTree = "<group>"; };
+		72A4D780ABFC88F9858D12EC34ED263F /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Headers/Public/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		7FD3FAE872A8A6BAF9EDDEC13639BD67 /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		82DBEACDA6E1B97898C4488F8099D39D /* libGTMSessionFetcher_full.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMSessionFetcher_full.a; path = Libraries/libGTMSessionFetcher_full.a; sourceTree = "<group>"; };
+		84B9E6B125F7D6D62CCA83CC29E452F3 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		84C408686A2D94259C27460D07430B46 /* Pods-Squire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Squire-dummy.m"; sourceTree = "<group>"; };
+		86209FD5728350F1E9A5996317FBA56F /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		88F793C4B2E40F34C93102B241F52E8D /* libGTM_NSDictionary+URLArguments.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_NSDictionary+URLArguments.a"; path = "Libraries/libGTM_NSDictionary+URLArguments.a"; sourceTree = "<group>"; };
+		89A7F00CDA525566525D7E0C3C15D578 /* GCSPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSPanoramaView.h; path = Headers/Public/GCSPanoramaView.h; sourceTree = "<group>"; };
+		8BC7BC247821A655A8A211D62CD76065 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C24BFB60BA3DD2884ACD832F3B90470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E856EA22F8C18F52C4D058E50D7CE4A /* Pods-Squire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Squire.release.xcconfig"; sourceTree = "<group>"; };
+		91F06B60DF38C1C3D1DBF0172DB6A7C8 /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Headers/Public/GAILogger.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95BA9F691A7C3A482E27DA253177A452 /* CardboardSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CardboardSDK.bundle; path = Resources/CardboardSDK.bundle; sourceTree = "<group>"; };
+		95F7B796C38363ABB0E359219AF00E77 /* Pods-Squire-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Squire-acknowledgements.markdown"; sourceTree = "<group>"; };
+		960043AFEAB46A4497B7B956F68985C9 /* AdMob-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AdMob-Module.h"; path = "Headers/ModuleHeaders/AdMob-Module.h"; sourceTree = "<group>"; };
+		9842F0893C478E36D7DB058B1CAB9B95 /* Analytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Analytics.h; path = Headers/GGLAnalytics/Public/Analytics.h; sourceTree = "<group>"; };
+		996D9CDBD035F15E6EB0FA8D4B4A6043 /* libGTM_UIFont+LineHeight.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_UIFont+LineHeight.a"; path = "Libraries/libGTM_UIFont+LineHeight.a"; sourceTree = "<group>"; };
+		9E1C75D256B64B528D68CE7F945D5FAE /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		A00B87FFCCD55185339DDDCCD560D6C5 /* ProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		A14A8DB76A6127BC21C09F9EFB461B4E /* GCSWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSWidgetView.h; path = Headers/Public/GCSWidgetView.h; sourceTree = "<group>"; };
+		A3F804832913327EEBF015F8523C27BC /* libGTM_DebugUtils.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_DebugUtils.a; path = Libraries/libGTM_DebugUtils.a; sourceTree = "<group>"; };
+		A9722F623A7C8D2A7E6029727812ED1A /* GCSCardboardAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSCardboardAudioEngine.h; path = Headers/Public/GCSCardboardAudioEngine.h; sourceTree = "<group>"; };
+		A9BA34A83BE5D355852AA1E47DD34FCE /* libGTM_KVO.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_KVO.a; path = Libraries/libGTM_KVO.a; sourceTree = "<group>"; };
+		AA0C7C95446B7E340AF81BB0EA197965 /* libGTM_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_core.a; path = Libraries/libGTM_core.a; sourceTree = "<group>"; };
+		AA1DE6C7E098ED6BCFEAA9524D594116 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFF10358EA5B794FF114B6660AF5221 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		AB1F41DE17019C278337D378729D7C9B /* GGLErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = Headers/GGLCore/Public/GGLErrorCode.h; sourceTree = "<group>"; };
+		AD97BB8162F4E54917CCC481B6E260B6 /* libGTM_NSData+zlib.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGTM_NSData+zlib.a"; path = "Libraries/libGTM_NSData+zlib.a"; sourceTree = "<group>"; };
+		B32446CF0E2EAA72DB68EA6814DB1553 /* ProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = ProgressHUD/ProgressHUD/ProgressHUD.m; sourceTree = "<group>"; };
+		B4D29BE26DC65DA08C0F61B26460FA8C /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		BAD2A8C5055821B4973462289299AA01 /* libGTM_StringEncoding.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_StringEncoding.a; path = Libraries/libGTM_StringEncoding.a; sourceTree = "<group>"; };
+		BC24D8444D22CFC2BD64582343D430E6 /* Pods-Squire-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Squire-acknowledgements.plist"; sourceTree = "<group>"; };
+		BDB0EAAA114D958DA260E8B396111D33 /* Pods-Squire-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Squire-resources.sh"; sourceTree = "<group>"; };
+		C577397193CBDB60C0504F4218A0A1F3 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		C745405578A1796C4BCD08FBF07B25CE /* Pods_Squire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Squire.framework; path = "Pods-Squire.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA24C8DDC1A4EB427C1F5298CB76240A /* GoogleKitCore.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitCore.bundle; path = Resources/GoogleKitCore.bundle; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CCAF0F41EF7853F5427808B416F2D33B /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		CE6986867AB97E746A4DECAD16E53A46 /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Headers/Public/GAIFields.h; sourceTree = "<group>"; };
+		CEDCAAA932B159C08AFF946A99B27C60 /* GCSCardboardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSCardboardView.h; path = Headers/Public/GCSCardboardView.h; sourceTree = "<group>"; };
+		D0E4CC200A551467B671B8A73B73C470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1A87466A6E79DBFE6876B71452C95B9 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		D4850B520C7A2B3563C32DF93BCDDE59 /* GoogleKitDialogs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitDialogs.bundle; path = Resources/GoogleKitDialogs.bundle; sourceTree = "<group>"; };
+		D5A2324D1266D3CC6975A4B8C57EB245 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		D75148DC964F92A0E713949331BA7770 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		D9E0127B129F5CC61BD4388EBB6C10DC /* libGTM_NSScannerJSON.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTM_NSScannerJSON.a; path = Libraries/libGTM_NSScannerJSON.a; sourceTree = "<group>"; };
+		DCE93F4CA5D74F2F2A362DE8327E25B0 /* Pods-Squire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Squire.modulemap"; sourceTree = "<group>"; };
+		DF09B0EB3CBBAC63BDBB38F50BAFBD53 /* libProtocolBuffers.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libProtocolBuffers.a; path = Libraries/libProtocolBuffers.a; sourceTree = "<group>"; };
+		E16849FFC051EADB2BFBBF38B98E11A0 /* libGSDK_Overload.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGSDK_Overload.a; path = Libraries/libGSDK_Overload.a; sourceTree = "<group>"; };
+		E20AAB26DA2790BDD445C0CBA967609D /* GGLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = Headers/GGLCore/Public/GGLConfiguration.h; sourceTree = "<group>"; };
+		EB9166AC75EB9A44144B5DB2F600B442 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		EFF61A9D81E2119625FA802C28C09254 /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		F2C2B6E82BFB09BB9E7B60A8A437FB22 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		F4773ABFFDC48B815C1B50944C5A9028 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		F57E5170D5566BD09FA90E6BDC7A68D5 /* ProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressHUD.xcconfig; sourceTree = "<group>"; };
+		F7E8A20F8008810B406D7A0A7AC2172F /* Pods-Squire-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Squire-frameworks.sh"; sourceTree = "<group>"; };
+		FA53D246656FAF0721A9411E8DA0DE26 /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Headers/Public/GAITrackedViewController.h; sourceTree = "<group>"; };
+		FC2544985EFFFE5DBED4FF8BDAEF70E2 /* libGTMSessionFetcher_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGTMSessionFetcher_core.a; path = Libraries/libGTMSessionFetcher_core.a; sourceTree = "<group>"; };
+		FE2D423AE1641935D7508AA8D3C671E7 /* GCSHeadTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSHeadTransform.h; path = Headers/Public/GCSHeadTransform.h; sourceTree = "<group>"; };
+		FF2999AFF201CE61A957FF7B25AC3D94 /* GGLContext+Analytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGLContext+Analytics.h"; path = "Headers/GGLAnalytics/Public/GGLContext+Analytics.h"; sourceTree = "<group>"; };
+		FF59C78D275A2BB2752923D0171EB97E /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Headers/Public/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD8AE5A75324001742221340AE72520B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F533916DB0914719A2E86476B5DBC5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA411BA6CA4917182D65874D84D95B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2EADE868180334DBE0751FE179E37F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3E06BAF96B533D14A5C27D6647FDB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC28649630318716AAA178EB6B56D47 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F69DA5014A2AC5D7F4541EAEE7F81E17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96305F3B1C6B737ADBF4D926D470F6DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07FED6991E8F52E8560DA20C7DB6E0D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AB91754FF2DAD1BCCAAB6B4CD92EEE0 /* CardboardSDK */,
+				6F9BD066211B9097922E354430DC0C71 /* Google */,
+				C359FC0D56A1351DFFCEC57779955AD1 /* GoogleAnalytics */,
+				5AE88A8FF5C5E402BFE86311A298968D /* GoogleInterchangeUtilities */,
+				2BD3DBF76B456D4317431F54A261F010 /* GoogleNetworkingUtilities */,
+				E671A4718681375171E0BEAA3AB8295A /* GoogleSymbolUtilities */,
+				650135C26AA26731E63A14908A49A8A5 /* GoogleUtilities */,
+				C733FDEF145FF0F7F19BF9C6EA4570F6 /* ProgressHUD */,
+				4FC043E44814850FCAA37846E2EBEF53 /* SkyFloatingLabelTextField */,
+				E7D86836FAB3D6E1EF183EEBAF2952DC /* TPKeyboardAvoiding */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0FC2798A33C0CE1BE541FEFC5BCF4BA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC2544985EFFFE5DBED4FF8BDAEF70E2 /* libGTMSessionFetcher_core.a */,
+				82DBEACDA6E1B97898C4488F8099D39D /* libGTMSessionFetcher_full.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B9688573D859333786BA87844994C18 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				719AE8E9F331886C1FB4F95290F332DC /* Pods-Squire */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		260288A35B798A743C7B2534C44C646A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF09B0EB3CBBAC63BDBB38F50BAFBD53 /* libProtocolBuffers.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BD3DBF76B456D4317431F54A261F010 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				0FC2798A33C0CE1BE541FEFC5BCF4BA7 /* Frameworks */,
+			);
+			name = GoogleNetworkingUtilities;
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		3AB91754FF2DAD1BCCAAB6B4CD92EEE0 /* CardboardSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A9722F623A7C8D2A7E6029727812ED1A /* GCSCardboardAudioEngine.h */,
+				CEDCAAA932B159C08AFF946A99B27C60 /* GCSCardboardView.h */,
+				FE2D423AE1641935D7508AA8D3C671E7 /* GCSHeadTransform.h */,
+				89A7F00CDA525566525D7E0C3C15D578 /* GCSPanoramaView.h */,
+				2A400FE3AAD6A12E36B5B5DF02F1F40D /* GCSVideoView.h */,
+				A14A8DB76A6127BC21C09F9EFB461B4E /* GCSWidgetView.h */,
+				98474F5C44DD8E173122D69130D9977E /* Frameworks */,
+				B1FFE97654EF6BDB3699E7FF2343E30B /* Resources */,
+			);
+			name = CardboardSDK;
+			path = CardboardSDK;
+			sourceTree = "<group>";
+		};
+		4B4091DC4386618751B5F604EC6A4190 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				960043AFEAB46A4497B7B956F68985C9 /* AdMob-Module.h */,
+				33DC3A61945E8CE74DAC1318CBEE33F6 /* Analytics-Module.h */,
+				186BA49AAAC74E8E9CC48E833E1DD636 /* AppInvite-Module.h */,
+				24A902E9A77D35B971AC8F9AF9E4F592 /* CloudMessaging-Module.h */,
+				3CC2EDEEB4CC816F0AD01A41AE9E7851 /* Core.h */,
+				502CEA0B6AC774BAFC39AB10ED954CF0 /* Core-Module.h */,
+				E20AAB26DA2790BDD445C0CBA967609D /* GGLConfiguration.h */,
+				54D0390D4F4937C91D5C328C24A016BF /* GGLContext.h */,
+				AB1F41DE17019C278337D378729D7C9B /* GGLErrorCode.h */,
+				31ADB95D24D72455DC287AEAC4ABA5EB /* GMRConfiguration.h */,
+				37B776FCDDD0B3544D00B1A4B216132B /* SignIn-Module.h */,
+				FF675E78481B6226A070C705DD9E2BF6 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4FC043E44814850FCAA37846E2EBEF53 /* SkyFloatingLabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				D5A2324D1266D3CC6975A4B8C57EB245 /* SkyFloatingLabelTextField.swift */,
+				F4773ABFFDC48B815C1B50944C5A9028 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				F2C2B6E82BFB09BB9E7B60A8A437FB22 /* UITextField+fixCaretPosition.swift */,
+				EA112403E0B9708EDF06C5EB26B9DCF0 /* Support Files */,
+			);
+			name = SkyFloatingLabelTextField;
+			path = SkyFloatingLabelTextField;
+			sourceTree = "<group>";
+		};
+		5AE88A8FF5C5E402BFE86311A298968D /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				260288A35B798A743C7B2534C44C646A /* Frameworks */,
+			);
+			name = GoogleInterchangeUtilities;
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		650135C26AA26731E63A14908A49A8A5 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				CCADB5D0C3DB8E6E39C450E90714A6B4 /* Frameworks */,
+			);
+			name = GoogleUtilities;
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		6F9BD066211B9097922E354430DC0C71 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				7FAC5FAFE99DD31C938A2B929EEA0C16 /* Analytics */,
+				4B4091DC4386618751B5F604EC6A4190 /* Core */,
+			);
+			name = Google;
+			path = Google;
+			sourceTree = "<group>";
+		};
+		719AE8E9F331886C1FB4F95290F332DC /* Pods-Squire */ = {
+			isa = PBXGroup;
+			children = (
+				8C24BFB60BA3DD2884ACD832F3B90470 /* Info.plist */,
+				DCE93F4CA5D74F2F2A362DE8327E25B0 /* Pods-Squire.modulemap */,
+				95F7B796C38363ABB0E359219AF00E77 /* Pods-Squire-acknowledgements.markdown */,
+				BC24D8444D22CFC2BD64582343D430E6 /* Pods-Squire-acknowledgements.plist */,
+				84C408686A2D94259C27460D07430B46 /* Pods-Squire-dummy.m */,
+				F7E8A20F8008810B406D7A0A7AC2172F /* Pods-Squire-frameworks.sh */,
+				BDB0EAAA114D958DA260E8B396111D33 /* Pods-Squire-resources.sh */,
+				22B5A203D2C253CB4FBF2B66BA26C6A4 /* Pods-Squire-umbrella.h */,
+				6967411E0F9195A48A5D521533C1C5A3 /* Pods-Squire.debug.xcconfig */,
+				8E856EA22F8C18F52C4D058E50D7CE4A /* Pods-Squire.release.xcconfig */,
+			);
+			name = "Pods-Squire";
+			path = "Target Support Files/Pods-Squire";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7670FF9E78175D15C29C9EB86839462A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0E4CC200A551467B671B8A73B73C470 /* Info.plist */,
+				55F7B90810CCA0D03351BA96C93B8C17 /* TPKeyboardAvoiding.modulemap */,
+				7FD3FAE872A8A6BAF9EDDEC13639BD67 /* TPKeyboardAvoiding.xcconfig */,
+				0631EEEA340006F313DC004F52B45C46 /* TPKeyboardAvoiding-dummy.m */,
+				9E1C75D256B64B528D68CE7F945D5FAE /* TPKeyboardAvoiding-prefix.pch */,
+				D1A87466A6E79DBFE6876B71452C95B9 /* TPKeyboardAvoiding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		785061D0CAD9CCE040FA092D71FAA9C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A9007A55E8FA935503F6F515F3E3962 /* ProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				07FED6991E8F52E8560DA20C7DB6E0D8 /* Pods */,
+				D35C476C46FDB5B42714A4AAB279FEC9 /* Products */,
+				1B9688573D859333786BA87844994C18 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FAC5FAFE99DD31C938A2B929EEA0C16 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				9842F0893C478E36D7DB058B1CAB9B95 /* Analytics.h */,
+				FF2999AFF201CE61A957FF7B25AC3D94 /* GGLContext+Analytics.h */,
+				C768B59FF327476A44F378F7E25E5ECF /* Frameworks */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		80E176BD991D6B8193DA7BB7972FE889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4D29BE26DC65DA08C0F61B26460FA8C /* libGoogleAnalytics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93573DEB09054FAB580057BD2C64787B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				122EE925750CD9AB8D8069C6E82D9F9C /* Info.plist */,
+				1891B1B9A1A5E17A7A8649990BFA48BF /* ProgressHUD.modulemap */,
+				F57E5170D5566BD09FA90E6BDC7A68D5 /* ProgressHUD.xcconfig */,
+				A00B87FFCCD55185339DDDCCD560D6C5 /* ProgressHUD-dummy.m */,
+				27125A29FD6CE1371A233C5886843BFA /* ProgressHUD-prefix.pch */,
+				04EC1C75B39604CCFAB5DD15CD9230F6 /* ProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProgressHUD";
+			sourceTree = "<group>";
+		};
+		98474F5C44DD8E173122D69130D9977E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63324E6D51813879D099060674F0D81E /* libCardboardSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CCD14BF594950EC2D51967B4534A72B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16849FFC051EADB2BFBBF38B98E11A0 /* libGSDK_Overload.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1FFE97654EF6BDB3699E7FF2343E30B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95BA9F691A7C3A482E27DA253177A452 /* CardboardSDK.bundle */,
+				CA24C8DDC1A4EB427C1F5298CB76240A /* GoogleKitCore.bundle */,
+				D4850B520C7A2B3563C32DF93BCDDE59 /* GoogleKitDialogs.bundle */,
+				277A756199BA1062DB9FE6DE4B395B86 /* GoogleKitHUD.bundle */,
+				11EEF4CB843E9FE770DDF6D57441A73E /* MaterialTypography.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C359FC0D56A1351DFFCEC57779955AD1 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				5E2501E997E27F28BB7F7D6293D273BC /* GAI.h */,
+				FF59C78D275A2BB2752923D0171EB97E /* GAIDictionaryBuilder.h */,
+				72A4D780ABFC88F9858D12EC34ED263F /* GAIEcommerceFields.h */,
+				4CD02C20174068538F0A4A1139B46EBF /* GAIEcommerceProduct.h */,
+				5D2D260D27A6A3CF11B64827C6519FB6 /* GAIEcommerceProductAction.h */,
+				27CD5424D742F0F9CF51B11419DF5241 /* GAIEcommercePromotion.h */,
+				CE6986867AB97E746A4DECAD16E53A46 /* GAIFields.h */,
+				91F06B60DF38C1C3D1DBF0172DB6A7C8 /* GAILogger.h */,
+				FA53D246656FAF0721A9411E8DA0DE26 /* GAITrackedViewController.h */,
+				3EFE8FF48298B039367EF6356F436E5B /* GAITracker.h */,
+				80E176BD991D6B8193DA7BB7972FE889 /* Frameworks */,
+			);
+			name = GoogleAnalytics;
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		C733FDEF145FF0F7F19BF9C6EA4570F6 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				19410440DE3DCF123AA27CE7931002BD /* ProgressHUD.h */,
+				B32446CF0E2EAA72DB68EA6814DB1553 /* ProgressHUD.m */,
+				785061D0CAD9CCE040FA092D71FAA9C1 /* Resources */,
+				93573DEB09054FAB580057BD2C64787B /* Support Files */,
+			);
+			name = ProgressHUD;
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		C768B59FF327476A44F378F7E25E5ECF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2936DD7AD69122F4C84547D0D487BB9A /* libGGLAnalytics.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCADB5D0C3DB8E6E39C450E90714A6B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05898CEB6521CD2F4BD904F308DDF261 /* libGTM_AddressBook.a */,
+				AA0C7C95446B7E340AF81BB0EA197965 /* libGTM_core.a */,
+				A3F804832913327EEBF015F8523C27BC /* libGTM_DebugUtils.a */,
+				710F827DB75B326A34BAC408E1116F15 /* libGTM_GTMURLBuilder.a */,
+				6630FD04669FACC0E958FB7D5114B398 /* libGTM_iPhone.a */,
+				A9BA34A83BE5D355852AA1E47DD34FCE /* libGTM_KVO.a */,
+				AD97BB8162F4E54917CCC481B6E260B6 /* libGTM_NSData+zlib.a */,
+				88F793C4B2E40F34C93102B241F52E8D /* libGTM_NSDictionary+URLArguments.a */,
+				D9E0127B129F5CC61BD4388EBB6C10DC /* libGTM_NSScannerJSON.a */,
+				639C818EBAA16545CC28DD0AD55C6827 /* libGTM_NSStringHTML.a */,
+				3CC99F484B8EB98487AA62FCE9883F1A /* libGTM_NSStringXML.a */,
+				1DAEF9E131448A3BE5EA6D9C6F3F69B5 /* libGTM_Regex.a */,
+				01FAE397B513C6783E36973C8A8B0E6E /* libGTM_RoundedRectPath.a */,
+				BAD2A8C5055821B4973462289299AA01 /* libGTM_StringEncoding.a */,
+				665B8A246D41D0F6AA27F8407F4D1923 /* libGTM_SystemVersion.a */,
+				996D9CDBD035F15E6EB0FA8D4B4A6043 /* libGTM_UIFont+LineHeight.a */,
+				1795B39356C76E5B7B985225C1C28B98 /* libGTMStackTrace.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35C476C46FDB5B42714A4AAB279FEC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C745405578A1796C4BCD08FBF07B25CE /* Pods_Squire.framework */,
+				66084452E5EB29B55757BB7684631F38 /* ProgressHUD.framework */,
+				AA1DE6C7E098ED6BCFEAA9524D594116 /* SkyFloatingLabelTextField.framework */,
+				8BC7BC247821A655A8A211D62CD76065 /* TPKeyboardAvoiding.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E671A4718681375171E0BEAA3AB8295A /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				9CCD14BF594950EC2D51967B4534A72B /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		E7D86836FAB3D6E1EF183EEBAF2952DC /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				5D2D6360071E75B9DEF6BB99C0F0E366 /* TPKeyboardAvoidingCollectionView.h */,
+				C577397193CBDB60C0504F4218A0A1F3 /* TPKeyboardAvoidingCollectionView.m */,
+				700204BA491A3FCCFDAA6ED898FA32BD /* TPKeyboardAvoidingScrollView.h */,
+				177E483C9E1B4A64CE538F8ED0838F86 /* TPKeyboardAvoidingScrollView.m */,
+				84B9E6B125F7D6D62CCA83CC29E452F3 /* TPKeyboardAvoidingTableView.h */,
+				86209FD5728350F1E9A5996317FBA56F /* TPKeyboardAvoidingTableView.m */,
+				AAFF10358EA5B794FF114B6660AF5221 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				CCAF0F41EF7853F5427808B416F2D33B /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				7670FF9E78175D15C29C9EB86839462A /* Support Files */,
+			);
+			name = TPKeyboardAvoiding;
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		EA112403E0B9708EDF06C5EB26B9DCF0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53AD6E77A3461E0E686F29A2A1D3726B /* Info.plist */,
+				17CB207BC747337001695EA3D69FE4A3 /* SkyFloatingLabelTextField.modulemap */,
+				D75148DC964F92A0E713949331BA7770 /* SkyFloatingLabelTextField.xcconfig */,
+				5A03DF0AF984004DF03C514808BDDCCD /* SkyFloatingLabelTextField-dummy.m */,
+				EFF61A9D81E2119625FA802C28C09254 /* SkyFloatingLabelTextField-prefix.pch */,
+				EB9166AC75EB9A44144B5DB2F600B442 /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
+			sourceTree = "<group>";
+		};
+		FF675E78481B6226A070C705DD9E2BF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				299966A0D3C6F2D35828D957E6AE10D6 /* libGGLCore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F8F96562624D92A11509BA81B03F4E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED3DF4DC2AB3254ECD83CC793555EF1 /* ProgressHUD-umbrella.h in Headers */,
+				C3E87329B6420D2043EF86D3FDB15738 /* ProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E216E7BE51E191C9FAC14A37068E596 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F2FB57A9F687DDEE78D95829B9401C /* Pods-Squire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0DD78CD29B6592A54C42ABF8569A17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD6FA161D2E654172DB13B01CE05D18 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10D161C62D1BA22B59B3D221AE962A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E97FDA6F54D8E50BA88604B0A5BB015 /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				376ACC1AE8D16E6448530C2FE37BB15F /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				6E0D447EEFBE8EC4A2B1C197785B1D1D /* TPKeyboardAvoidingScrollView.h in Headers */,
+				9D3C77F48C7844CA119318BBBC97F06B /* TPKeyboardAvoidingTableView.h in Headers */,
+				E039A919BDDF69E813EBB97A3BBF6C45 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F7755AE9D9C551F98C1E7967AAF4A43 /* SkyFloatingLabelTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FB11F82EE371C8A4CE6CB3681EE6175 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildPhases = (
+				3C81049D073ADFE00A6C9993CE8AE5E5 /* Sources */,
+				F69DA5014A2AC5D7F4541EAEE7F81E17 /* Frameworks */,
+				AE0DD78CD29B6592A54C42ABF8569A17 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyFloatingLabelTextField;
+			productName = SkyFloatingLabelTextField;
+			productReference = AA1DE6C7E098ED6BCFEAA9524D594116 /* SkyFloatingLabelTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0C641142D182CE2530E14446DDB5AE3 /* Pods-Squire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE99F0B00A45980D1BC0B8D3B42080E /* Build configuration list for PBXNativeTarget "Pods-Squire" */;
+			buildPhases = (
+				92DB6EAC2BE840386E5CA777004A30FF /* Sources */,
+				DB3E06BAF96B533D14A5C27D6647FDB7 /* Frameworks */,
+				1E216E7BE51E191C9FAC14A37068E596 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F37C5882FC8ABEB5637F8000285EB512 /* PBXTargetDependency */,
+				6D0EDB49D738C903DE8E8C0C7D651294 /* PBXTargetDependency */,
+				49A0F464DA6CAB834BCF9C73D12DFAD5 /* PBXTargetDependency */,
+			);
+			name = "Pods-Squire";
+			productName = "Pods-Squire";
+			productReference = C745405578A1796C4BCD08FBF07B25CE /* Pods_Squire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F03CD497616AFE9EE5D490D77612F186 /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F0BE8F40DAC754EBAF60651A79AA9E /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				BE8EB274256009710B544CFA319A525C /* Sources */,
+				DA411BA6CA4917182D65874D84D95B8C /* Frameworks */,
+				E10D161C62D1BA22B59B3D221AE962A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = 8BC7BC247821A655A8A211D62CD76065 /* TPKeyboardAvoiding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F851255CFAD3A485635B2C067CE1EB56 /* ProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 453DC7D84718A382EFFA6AE43DA84156 /* Build configuration list for PBXNativeTarget "ProgressHUD" */;
+			buildPhases = (
+				2A2461602B99256FF771D7F7AAD86842 /* Sources */,
+				CD8AE5A75324001742221340AE72520B /* Frameworks */,
+				0F8F96562624D92A11509BA81B03F4E8 /* Headers */,
+				534E829F18CF5F6F7F5642BAB48ADE18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressHUD;
+			productName = ProgressHUD;
+			productReference = 66084452E5EB29B55757BB7684631F38 /* ProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D35C476C46FDB5B42714A4AAB279FEC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0C641142D182CE2530E14446DDB5AE3 /* Pods-Squire */,
+				F851255CFAD3A485635B2C067CE1EB56 /* ProgressHUD */,
+				1F7755AE9D9C551F98C1E7967AAF4A43 /* SkyFloatingLabelTextField */,
+				F03CD497616AFE9EE5D490D77612F186 /* TPKeyboardAvoiding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		534E829F18CF5F6F7F5642BAB48ADE18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F7C06C96B6E20E577465E715169DA2 /* ProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A2461602B99256FF771D7F7AAD86842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D0B1F460EB35D703D78F0B0FCFE2D66 /* ProgressHUD-dummy.m in Sources */,
+				9A708EE7BE063F36B3E496A2F00EB8DE /* ProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C81049D073ADFE00A6C9993CE8AE5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6D1E4AA032882675E5D55C34035583 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				27D56FB7F0124B5C56882A07F4BFF56C /* SkyFloatingLabelTextField.swift in Sources */,
+				00AFD6E72EFBF688D89C3BA669B57583 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				1E2609FED88492F5DCCF2A71A6AE172A /* UITextField+fixCaretPosition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DB6EAC2BE840386E5CA777004A30FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FD01594CC9AC098044E4AC19F73440 /* Pods-Squire-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8EB274256009710B544CFA319A525C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F691DB6DD8B4128A3FA86742763EC5 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				1A3C6401B7F3739FA2BFB43F37B97A87 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				84790C4C5AA7A8C096F60A26D2075F10 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				45AE8892EF83116D3278D7DD78978CA5 /* TPKeyboardAvoidingTableView.m in Sources */,
+				FA67B7DE0ADF5A1AC1392F384AC8147C /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49A0F464DA6CAB834BCF9C73D12DFAD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = F03CD497616AFE9EE5D490D77612F186 /* TPKeyboardAvoiding */;
+			targetProxy = 3E28DBE4BBB7EF53EC5E33C51D326FDA /* PBXContainerItemProxy */;
+		};
+		6D0EDB49D738C903DE8E8C0C7D651294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = 1F7755AE9D9C551F98C1E7967AAF4A43 /* SkyFloatingLabelTextField */;
+			targetProxy = 081C516B3BC69328644ECF6BACB16347 /* PBXContainerItemProxy */;
+		};
+		F37C5882FC8ABEB5637F8000285EB512 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProgressHUD;
+			target = F851255CFAD3A485635B2C067CE1EB56 /* ProgressHUD */;
+			targetProxy = D0A5C43E58DC86BF359E20CCA9CD4CCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0E11B3A21EAC6E783BEE5CB17CDEEC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6967411E0F9195A48A5D521533C1C5A3 /* Pods-Squire.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Squire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Squire/Pods-Squire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Squire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74EEBFCB3310B638F929E050E99C3DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57E5170D5566BD09FA90E6BDC7A68D5 /* ProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressHUD/ProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProgressHUD/ProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A7D93199DB2C6F59C3C744312822E17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E856EA22F8C18F52C4D058E50D7CE4A /* Pods-Squire.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Squire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Squire/Pods-Squire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Squire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DD998F3F3A4DB964CA1B298AC242A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75148DC964F92A0E713949331BA7770 /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AE68E2F0D119D657C2B2C33E7401CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57E5170D5566BD09FA90E6BDC7A68D5 /* ProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressHUD/ProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProgressHUD/ProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D705CC9EA54613F956EAC1C4E5DA17F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75148DC964F92A0E713949331BA7770 /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF42EF98197BBDF5E9E8F07FA3AE467E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD3FAE872A8A6BAF9EDDEC13639BD67 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDC798698B3789A768D53E17C12A98CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD3FAE872A8A6BAF9EDDEC13639BD67 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		453DC7D84718A382EFFA6AE43DA84156 /* Build configuration list for PBXNativeTarget "ProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74EEBFCB3310B638F929E050E99C3DB8 /* Debug */,
+				9AE68E2F0D119D657C2B2C33E7401CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FB11F82EE371C8A4CE6CB3681EE6175 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D705CC9EA54613F956EAC1C4E5DA17F4 /* Debug */,
+				8DD998F3F3A4DB964CA1B298AC242A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F0BE8F40DAC754EBAF60651A79AA9E /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC798698B3789A768D53E17C12A98CB /* Debug */,
+				DF42EF98197BBDF5E9E8F07FA3AE467E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEE99F0B00A45980D1BC0B8D3B42080E /* Build configuration list for PBXNativeTarget "Pods-Squire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E11B3A21EAC6E783BEE5CB17CDEEC6E /* Debug */,
+				7A7D93199DB2C6F59C3C744312822E17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

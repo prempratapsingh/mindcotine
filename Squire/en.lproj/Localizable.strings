@@ -1,0 +1,137 @@
+
+/*
+  Localizable.strings
+  Squire
+
+  Created by Héctor Cuevas Morfín on 2/25/17.
+  Copyright © 2017 AppData. All rights reserved.
+*/
+
+//Gender
+"gender" = "Gender";
+"genderMale" = "Male";
+"genderFemale" = "Female";
+"genderX" = "X";
+
+//education
+"education" = "completed education";
+"elementary" = "primary school";
+"high" = "high school";
+"graduated" = "Graduated";
+"master" = "Master";
+"doctor" = "doctorate";
+
+//quit smoke
+"quit" = "What did you have tried to quit smoking?";
+"none" = "none";
+"pills" = "pills";
+"patches" ="patches";
+"gums" ="gums";
+"e-cigarettes" = "e-cigarettes";
+"therapies" = "therapies";
+
+
+//login
+"starting" = "Starting...";
+"login" = "Log In";
+"skip" = "Skip";
+//get region
+
+"region" = "EN";
+
+
+//Instructions
+
+"s11" = "In order to get the best out of this experience we recommend you to:";
+"s12" = "• Find a quiet place";
+"s13" = "• Sit on chair in front of a clean table";
+"s14" = "• Put your headphones on and plug it to the smartphone";
+"s15" = "• Just relax and enjoy";
+"s21" = "Watch this video in virtual reality with your VR headset in order to get an immersive experience.";
+"s31" = "You don’t have a VR headset? Select the eye icon on your smartphone.";
+"playVideo" = "Play Video";
+
+
+"library" = "Library";
+
+//Video description
+"completeData" = "Complete Data";
+
+//SignUp1
+
+"back" = "Back";
+"text1" = "Please complete the following questions if you are a current smoker. This does not include anyone who solely uses tobacco replacement products.";
+"text2" = "For each of the following affirmations, please indicate if you agree or disagree with them, using a number from 1 to 7. The closer to 1, stronger the disagreement. The closer to 7, stronger the agreement.";
+"contactus" = "Contact us";
+"name" = "name";
+"lastname" = "last name";
+"user" = "user";
+"email" = "email";
+"password" = "password";
+"re-enterpassword" = "re-enter  password";
+"birthdaydate" = "date of birth";
+"country" = "country";
+"state" = "state";
+"city" = "city";
+"gender" = "gender";
+"completededucation" = "completed education";
+
+"Q1" = "What did you have tried to quit smoking?";
+"Q2" = "Have you been a regular smoker during the last ten years?";
+"Q3" = "What date did you start smoking?";
+"Q4" = "How many cigarettes do you smoke daily?";
+"Q5" = "How many cigars do you smoke daily?";
+"Q6" = "How many grams of rolling tobacco do you smoke weekly?";
+"Q7" = "How many grams of pipe tobacco do you smoke weekly?";
+"Q8" = "I have a desire for a cigarette right now";
+"Q9" = "Nothing would be better than smoking a cigarette right now";
+"Q10" = "If it were possible I would probably smoke now";
+"Q11" = "I could control things better right now if I could smoke ";
+"Q12" = "All I want right now is a cigarette";
+"Q13" = "I have an urge for a cigarette ";
+"Q14" = "A cigarette would taste good now";
+"Q15" = "I would do almost anything for a cigarette now";
+"Q16" = "Smoking would make me less depressed ";
+"Q17" = "I am going to smoke as soon as possible ";
+"Q18" = "How soon after you wake up do you smoke your first cigarette?";
+"Q19" = "Do you find it difficult to refrain from smoking in places where it is forbidden?";
+"Q20" = "Which cigarette would you hate most to give up?";
+"Q21" = "How many cigarettes per day do you smoke?";
+"Q22" = "Do you smoke more frequently during the first hours after awakening than during the rest of the day?";
+"Q23" = "Do you smoke even if you are so ill that you are in bed most of the day?";
+
+//password
+"newaccount" = "Create a new account";
+"passworerror" = "Passwords do not match";
+
+///time to smoke
+
+
+"T5" = "Within 5 minutes";
+"T30" = "6-30 minutes";
+"T60" = "31-60 minutes";
+"T60s" = "After 60 minutes";
+
+
+//DescriptionVideos
+
+"morningTitle" = "All Morning";
+"morningSubtitle" = "WAKING UP";
+"morningDescription" = "Following you will live an immersive experience that will help you register the sensations produced by your relation with tobacco. The key resides on learning how to direct the attention by observing our interior.";
+"morningUrlMan" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/videos/MINDCOTINE_VR_V1_English_1_4.mp4";
+"morningUrlWoman" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/videos/MINDCOTINE_VR_V2_English_1_3.mp4";
+
+
+"dayTitle" = "All Day";
+"daySubtitle" = "SHORTCUT";
+"dayDescription" = "Following you will live an immersive experience that will help you register the sensations produced by your relation with tobacco. The key resides on learning how to direct the attention by observing our interior.";
+"dayUrlMan" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/audios/Mindcotine_V2_Eng.mp4";
+"dayUrlWoman" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/audios/Mindcotine_V2_Eng.mp4";
+
+
+"nightTitle" = "All Night";
+"nightSubtitle" = "SELF DREAM";
+"nightDescription" = "Following you will live an immersive experience that will help you register the sensations produced by your relation with tobacco. The key resides on learning how to direct the attention by observing our interior.";
+"nightUrlMan" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/videos/MINDCOTINE-V5-HOMBRE.mp4";
+"nightUrlWoman" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/videos/MINDCOTINE-V6-MUJER.mp4";
+

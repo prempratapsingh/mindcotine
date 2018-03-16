@@ -1,0 +1,143 @@
+/* 
+  Localizable.strings
+  Squire
+
+  Created by Héctor Cuevas Morfín on 2/25/17.
+  Copyright © 2017 AppData. All rights reserved.
+*/
+
+//Gender
+"gender" = "Género";
+"genderMale" = "Hombre";
+"genderFemale" = "Mujer";
+"genderX" = "X";
+
+//education
+"education" = "educación completada";
+"elementary" = "primaria";
+"high" = "secundaria";
+"graduated" = "Universitaria";
+"master" = "maestría";
+"doctor" = "doctorado";
+//quit smoke
+"quit" = "¿qué has intentado para dejar de fumar? ";
+"none" = "nada";
+"pills" = "pastillas";
+"patches" = "parches";
+"gums" = "chicles";
+"e-cigarettes" = "cigarrillo electrónico";
+"therapies" = "Terapias";
+
+"back" = "Regresar";
+//login
+"starting" = "Iniciando...";
+"login" = "Entrar";
+"skip" = "Omitir";
+
+//get region
+"region" = "ES";
+
+//
+
+//Instructions
+
+"s11" = "Para lograr la mejor experiencia inmersiva, te recomendamos que:";
+"s12" = "• Encuentres un lugar tranquilo";
+"s13" = "• Siéntate en una silla frente a una mesa limpia";
+"s14" = "• Colócate los auriculares y conectalos a tu smartphone";
+"s15" = "• Solamente relajate y disfruta";
+"s21" = "Mira este video en realidad virtual con tu cajita de VR para tener la mejor experiencia.";
+"s31" = "No tienes tu cajita VR? Selecciona el visor en tu smartphone.";
+"playVideo" = "Reproducir Video";
+"" = "";
+"library" = "Biblioteca";
+
+
+//vide description
+"completeData" = "Completa la información";
+
+"text1" = "Por favor completa las siguientes preguntas si eres actualmente un fumador. Esto no incluye a nadie que solo use productos que reemplazan el tabaco.";
+
+"text2" = "Indique cuánto usted está de acuerdo o en desacuerdo con las siguientes afirmaciones, marcando un número entre 1 a 7 para ello. Mientras más cerca del 1, más en desacuerdo. Mientras más cerca del 7, más en acuerdo.";
+
+
+"contactus" = "Contáctanos";
+
+
+//SingUp
+
+"name" = "nombre";
+"lastname" = "apellido";
+"user" = "usuario";
+"email" = "correo";
+"password" = "contraseña";
+"re-enterpassword" = "re ingres contraseña";
+"birthdaydate" = "fecha de cumpleaños";
+"country" = "pais";
+"state" = "estado";
+"city" = "ciudad";
+"gender" = "género";
+"completededucation" = "educación completada";
+
+"Q1" = "¿qué has intentado para dejar de fumar?";
+"Q2" = "¿has sido un fumador regular durante los últimos diez años?";
+"Q3" = "¿en qué fecha comenzaste a fumar?";
+"Q4" = "¿cuántos cigarrillos fumas a diario? ";
+"Q5" = "¿cuántos cigarros fumas a diario?";
+"Q6" = "¿cuántos gramos de tabaco rolado fumas semanalmente?";
+"Q7" = "¿cuántos gramos de tabaco de pipa fumas semanalmente?";
+"Q8" = "Tengo deseo por un cigarrillo ahora mismo.";
+"Q9" = "Nada sería mejor que fumar un cigarrillo ahora mismo.";
+"Q10" = "Si fuera posible probablemente fumaría ahora.";
+"Q11" = "Podría controlar las cosas mejor en este momento si pudiese fumar.";
+"Q12" = "Todo lo que quiero ahora es un cigarrillo.";
+"Q13" = "Tengo un impulso por un cigarrillo.";
+"Q14" = "Saborear un cigarrillo ahora sería bueno.";
+"Q15" = "Haría casi cualquier cosa por un cigarrillo ahora.";
+"Q16" = "Fumar me haría menos depresivo.";
+"Q17" = "Voy a fumar lo antes posible.";
+"Q18" = "¿Cuánto tiempo pasa entre que se levanta y fuma su primer cigarrillo?";
+"Q19" = "¿Encuentra difícil no fumar en lugares donde está prohibido, como la biblioteca o el cine?";
+"Q20" = "¿Qué cigarrillo le molesta más dejar de fumar? ";
+"Q21" = "¿Cuántos cigarrillos fuma cada día?";
+"Q22" = "¿Fuma con más frecuencia durante las primeras horas después de levantarse que durante el resto del día?";
+"Q23" = "¿Fuma aunque esté tan enfermo que tenga que guardar cama la mayor parte del día?";
+
+//password errro
+"newaccount" = "Crear una nueva cuenta";
+"passworerror" = "Contraseñas no coinciden";
+
+
+///time to smoke
+
+
+"T5" = "hasta 5 minutos";
+"T30" = "entre 6 y 30 minutos";
+"T60" = "31 - 60 minutos";
+"T60s" = "Más de 60 minutos";
+
+
+//DescriptionVideos
+
+"morningTitle" = "A la mañana";
+"morningSubtitle" = "DESPERTANDO";
+"morningDescription" = "A continuación usted vivirá una experiencia inmersiva que le ayudará a registrar las sensaciones que le produce su relación con el tabaco. La clave reside en aprender cómo dirigir la atención observando nuestro interior.";
+"morningUrlMan" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/videos/android/MINDCOTINE_VR_V1_Spanish_1.mp4";
+"morningUrlWoman" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/videos/android/MINDCOTINE_VR_V2_Spanish_1.mp4";
+
+
+"dayTitle" = "Todo el día";
+"daySubtitle" = "EL ATAJO";
+"dayDescription" = "A continuación usted vivirá una experiencia inmersiva que le ayudará a registrar las sensaciones que le produce su relación con el tabaco. La clave reside en aprender cómo dirigir la atención observando nuestro interior.";
+"dayUrlMan" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/audios/Mindcotine_V2_Esp.mp4";
+"dayUrlWoman" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/audios/Mindcotine_V2_Esp.mp4";
+
+
+"nightTitle" = "A la noche";
+"nightSubtitle" = "SUEÑO PROPIO";
+"nightDescription" = "A continuación usted vivirá una experiencia inmersiva que le ayudará a registrar las sensaciones que le produce su relación con el tabaco. La clave reside en aprender cómo dirigir la atención observando nuestro interior.";
+"nightUrlMan" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/videos/MINDCOTINE-V5-HOMBRE.mp4";
+"nightUrlWoman" = "http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/videos/MINDCOTINE-V6-MUJER.mp4";
+
+
+
