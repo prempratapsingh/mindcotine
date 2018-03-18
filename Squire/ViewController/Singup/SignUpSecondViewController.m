@@ -140,7 +140,8 @@
 }
 - (IBAction)showThird:(id)sender {
     if([self isValidation]){
-            [self performSegueWithIdentifier:@"showThird" sender:nil];
+        [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
+        //[self performSegueWithIdentifier:@"showThird" sender:nil];
         
     }
 }
