@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E734C67ACB52CC51EE93648 /* Pods_Squire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0BA2631827D1B22B2AEC3F /* Pods_Squire.framework */; };
 		9785BFEF1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9785BFEE1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd */; };
+		C194DEEC205E4666000714C7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C194DEEB205E4666000714C7 /* LanguageManager.m */; };
 		F5364ADC1F53E5D20048F904 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5364AA31F53E5D10048F904 /* AppDelegate.m */; };
 		F5364ADD1F53E5D20048F904 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5364AA71F53E5D10048F904 /* SVIndefiniteAnimatedView.m */; };
 		F5364ADE1F53E5D20048F904 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5364AA91F53E5D10048F904 /* SVProgressAnimatedView.m */; };
@@ -104,6 +105,8 @@
 		5C0BA2631827D1B22B2AEC3F /* Pods_Squire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9785BFEE1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		97A085571CA4DCEF005858AD /* Squire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C194DEEA205E4656000714C7 /* LanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
+		C194DEEB205E4666000714C7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 		EBAFF1CEE7004E78204271CF /* Pods-Squire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Squire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Squire/Pods-Squire.debug.xcconfig"; sourceTree = "<group>"; };
 		F5364AA21F53E5D10048F904 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Squire/AppDelegate.h; sourceTree = "<group>"; };
 		F5364AA31F53E5D10048F904 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Squire/AppDelegate.m; sourceTree = "<group>"; };
@@ -286,6 +289,7 @@
 				F5364AA31F53E5D10048F904 /* AppDelegate.m */,
 				F5364AF51F53E5DC0048F904 /* LaunchScreen.storyboard */,
 				F5364AF71F53E5DC0048F904 /* Main.storyboard */,
+				C194DEE9205E462C000714C7 /* Utils */,
 				F5364AA41F53E5D10048F904 /* Library */,
 				F5364AB01F53E5D10048F904 /* Model */,
 				F5364AB31F53E5D10048F904 /* View */,
@@ -306,6 +310,15 @@
 				97A085571CA4DCEF005858AD /* Squire.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C194DEE9205E462C000714C7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C194DEEA205E4656000714C7 /* LanguageManager.h */,
+				C194DEEB205E4666000714C7 /* LanguageManager.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E48E507FC5709F4A02759B21 /* Pods */ = {
@@ -604,7 +617,7 @@
 				TargetAttributes = {
 					97A085561CA4DCEF005858AD = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = PN787RB4TZ;
+						DevelopmentTeam = E7LF2VLC52;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -760,6 +773,7 @@
 				F5364AF31F53E5D20048F904 /* SingUpSixViewController.m in Sources */,
 				F5364AEB1F53E5D20048F904 /* VideoListViewController.m in Sources */,
 				F5364AED1F53E5D20048F904 /* SignUpFifthViewController.m in Sources */,
+				C194DEEC205E4666000714C7 /* LanguageManager.m in Sources */,
 				F5364ADE1F53E5D20048F904 /* SVProgressAnimatedView.m in Sources */,
 				F5DE8FA51F554A1000187ADC /* UIViewController+UIViewController_Alert.m in Sources */,
 				F5364AE11F53E5D20048F904 /* SVRadialGradientLayer.m in Sources */,
@@ -914,7 +928,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = PN787RB4TZ;
+				DEVELOPMENT_TEAM = E7LF2VLC52;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -978,7 +992,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = PN787RB4TZ;
+				DEVELOPMENT_TEAM = E7LF2VLC52;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

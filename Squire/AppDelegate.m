@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "ViewController.h"
 #import <Google/Analytics.h>
+
 @interface AppDelegate ()
 
 @end
@@ -28,6 +29,9 @@
     GAI *gai = [GAI sharedInstance];
     gai.trackUncaughtExceptions = YES;  // report uncaught exceptions
     gai.logger.logLevel = kGAILogLevelVerbose;  // remove before app release
+    
+    // Setting the app language based on the user device language
+    [self setAppLanguage];
     
     [Fabric with:@[[Crashlytics class]]];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
@@ -49,6 +53,24 @@
     
     
     return YES;
+}
+
+/*
+ Detects the device language and sets either of the English and Spanish language.
+ If the language is neither Spanish nor English, the app language is defaulted to English.
+ */
+- (void)setAppLanguage {
+    //Detecing device language
+    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
+    NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:language];
+    NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
+    languageCode = @"es";
+    if( ![languageCode isEqualToString:@"es"] ) {
+        languageCode = @"en";
+    }
+    
+    //Switching the app resource bundle
+    [NSBundle setLanguage:languageCode];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
