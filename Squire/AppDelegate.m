@@ -64,7 +64,6 @@
     NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
     NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:language];
     NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
-    languageCode = @"es";
     if( ![languageCode isEqualToString:@"es"] ) {
         languageCode = @"en";
     }
