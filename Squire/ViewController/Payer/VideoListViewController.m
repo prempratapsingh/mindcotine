@@ -230,14 +230,18 @@
 }
 
 - (IBAction)buttonCloseViewTapped:(id)sender {
+    [self closeMainMenu];
+}
+
+-(void)closeMainMenu {
     [_mainMenuView setTranslatesAutoresizingMaskIntoConstraints:true];
     
     [UIView animateWithDuration:0.7 animations:^{
         
-       
-            _mainMenuView.frame = CGRectMake(0, _mainMenuView.frame.origin.y,
-                                             _mainMenuView.frame.size.width,
-                                             _mainMenuView.frame.size.height);
+        
+        _mainMenuView.frame = CGRectMake(0, _mainMenuView.frame.origin.y,
+                                         _mainMenuView.frame.size.width,
+                                         _mainMenuView.frame.size.height);
         
         
     } completion:^(BOOL finished) {
@@ -298,21 +302,24 @@
     [defs synchronize];
 }
 
+- (IBAction)settingsButtonTapped:(UIButton *)sender {
+    [self closeMainMenu];
+    [self performSegueWithIdentifier:@"showSettingsView" sender:nil];
+}
+
 -(NSString*)locateString:(NSString *)stringToLocate{
     
     NSString *string = NSLocalizedString(stringToLocate, @"");
     return string;
 }
 
-    
-    //orientation
-    
-    - (BOOL)shouldAutorotate
-    {
-        //	(iOS 6)
-        //	No auto rotating
-        return YES;
-    }
+//orientation
+- (BOOL)shouldAutorotate
+{
+    //	(iOS 6)
+    //	No auto rotating
+    return YES;
+}
     
 - (IBAction)sendMail:(id)sender {
     
@@ -360,20 +367,22 @@
     
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
+
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations{
     
     return  UIInterfaceOrientationMaskPortrait;
 }
+
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
-    {
-        //	(iOS 6)
-        //	Force to portrait
-        return UIInterfaceOrientationPortrait;
-    }
+{
+    //	(iOS 6)
+    //	Force to portrait
+    return UIInterfaceOrientationPortrait;
+}
     
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-    {
-        return (interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
-    }
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
+}
 
 @end
