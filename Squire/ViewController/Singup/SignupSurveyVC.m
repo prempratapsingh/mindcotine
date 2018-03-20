@@ -49,10 +49,12 @@
     
     NSString *typeForm;
     if( [GlobalModal.deviceLanguage isEqualToString:@"en"] ) {
-        typeForm = @"http://mindcotinecommunity.typeform.com/to/t4rtLg?useri==xparrow";
+        typeForm = @"http://mindcotinecommunity.typeform.com/to/t4rtLg?useri=";
     } else {
-        typeForm = @"http://mindcotinecommunity.typeform.com/to/cPy9LN?useri=xparrow";
+        typeForm = @"http://mindcotinecommunity.typeform.com/to/cPy9LN?useri=";
     }
+    typeForm = [typeForm stringByAppendingString: signUp.textFieldUserName.text];
+    
     NSURL *url = [[NSURL alloc] initWithString:typeForm];
     NSURLRequest *nsrequest = [NSURLRequest requestWithURL:url];
     [webView loadRequest:nsrequest];
