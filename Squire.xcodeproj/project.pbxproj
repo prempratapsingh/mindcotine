@@ -10,6 +10,7 @@
 		0E734C67ACB52CC51EE93648 /* Pods_Squire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0BA2631827D1B22B2AEC3F /* Pods_Squire.framework */; };
 		9785BFEF1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9785BFEE1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd */; };
 		C13F1DE2205FBFB400447AEC /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C13F1DE1205FBFB400447AEC /* SettingsVC.m */; };
+		C13F1DE6205FD8B100447AEC /* GlobalModal.m in Sources */ = {isa = PBXBuildFile; fileRef = C13F1DE5205FD8B100447AEC /* GlobalModal.m */; };
 		C194DEEC205E4666000714C7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C194DEEB205E4666000714C7 /* LanguageManager.m */; };
 		C194DEEF205E6ECE000714C7 /* SignupSurveyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C194DEEE205E6ECE000714C7 /* SignupSurveyVC.m */; };
 		F5364ADC1F53E5D20048F904 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5364AA31F53E5D10048F904 /* AppDelegate.m */; };
@@ -109,6 +110,8 @@
 		97A085571CA4DCEF005858AD /* Squire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13F1DE1205FBFB400447AEC /* SettingsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
 		C13F1DE3205FBFC300447AEC /* SettingsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		C13F1DE4205FD8A200447AEC /* GlobalModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalModal.h; sourceTree = "<group>"; };
+		C13F1DE5205FD8B100447AEC /* GlobalModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalModal.m; sourceTree = "<group>"; };
 		C194DEEA205E4656000714C7 /* LanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
 		C194DEEB205E4666000714C7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 		C194DEED205E6EBC000714C7 /* SignupSurveyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupSurveyVC.h; sourceTree = "<group>"; };
@@ -378,6 +381,8 @@
 				F5364AB21F53E5D10048F904 /* FileDownloadInfo.m */,
 				F5DE8FAA1F554E6D00187ADC /* Validation.h */,
 				F5DE8FAB1F554E6D00187ADC /* Validation.m */,
+				C13F1DE4205FD8A200447AEC /* GlobalModal.h */,
+				C13F1DE5205FD8B100447AEC /* GlobalModal.m */,
 			);
 			name = Model;
 			path = Squire/Model;
@@ -798,6 +803,7 @@
 				F5364AE11F53E5D20048F904 /* SVRadialGradientLayer.m in Sources */,
 				F5DE8FAF1F55597900187ADC /* FloatingLabelTextField.swift in Sources */,
 				F5364AF41F53E5D20048F904 /* ViewController.m in Sources */,
+				C13F1DE6205FD8B100447AEC /* GlobalModal.m in Sources */,
 				F5364AE51F53E5D20048F904 /* DetailVideoViewController.m in Sources */,
 				C194DEEF205E6ECE000714C7 /* SignupSurveyVC.m in Sources */,
 				F5364B4B1F53E6DE0048F904 /* main.m in Sources */,

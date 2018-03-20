@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "ViewController.h"
 #import <Google/Analytics.h>
+#import "GlobalModal.h"
 
 @interface AppDelegate ()
 
@@ -60,16 +61,8 @@
  If the language is neither Spanish nor English, the app language is defaulted to English.
  */
 - (void)setAppLanguage {
-    //Detecing device language
-    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
-    NSDictionary *languageDic = [NSLocale componentsFromLocaleIdentifier:language];
-    NSString *languageCode = [languageDic objectForKey:@"kCFLocaleLanguageCodeKey"];
-    if( ![languageCode isEqualToString:@"es"] ) {
-        languageCode = @"en";
-    }
-    
     //Switching the app resource bundle
-    [NSBundle setLanguage:languageCode];
+    [NSBundle setLanguage: GlobalModal.deviceLanguage];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

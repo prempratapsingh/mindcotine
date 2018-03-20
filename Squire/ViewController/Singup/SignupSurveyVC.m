@@ -9,6 +9,7 @@
 #import "SignUpViewController.h"
 #import "Squire-Swift.h"
 #import "WebKit/WKWebView.h"
+#import "GlobalModal.h"
 
 @interface SignupSurveyVC ()
 
@@ -46,9 +47,13 @@
     webView.navigationDelegate = self;
     [_webViewContainer addSubview:webView];
     
-    // request
-    NSString *google = @"http://mindcotinecommunity.typeform.com/to/t4rtLg?useri=xparrow";
-    NSURL *url = [[NSURL alloc] initWithString:google];
+    NSString *typeForm;
+    if( [GlobalModal.deviceLanguage isEqualToString:@"en"] ) {
+        typeForm = @"http://mindcotinecommunity.typeform.com/to/t4rtLg?useri==xparrow";
+    } else {
+        typeForm = @"http://mindcotinecommunity.typeform.com/to/cPy9LN?useri=xparrow";
+    }
+    NSURL *url = [[NSURL alloc] initWithString:typeForm];
     NSURLRequest *nsrequest = [NSURLRequest requestWithURL:url];
     [webView loadRequest:nsrequest];
 }
