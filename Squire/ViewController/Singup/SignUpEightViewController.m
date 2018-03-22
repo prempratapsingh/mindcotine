@@ -172,7 +172,7 @@
 }
 - (IBAction)showList:(id)sender {
     
-    [self saveDataOnServer];
+    //[self saveDataOnServer];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

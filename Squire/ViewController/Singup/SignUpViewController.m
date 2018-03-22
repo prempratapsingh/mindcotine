@@ -96,8 +96,8 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    //SignUpSecondViewController *controller = segue.destinationViewController;
-    //controller.dictWithInfo = @{@"key": @"value"};
+    SignUpSecondViewController *controller = segue.destinationViewController;
+    controller.dictWithInfo = @{@"key": @"value"};
 }
 
 #pragma mark - Validation
@@ -105,8 +105,7 @@
 - (IBAction)showSecondViewTapped:(id)sender {
     
     if ([self isValidaton]) {
-        [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
-        //[self performSegueWithIdentifier:@"showSecond" sender:nil];
+        [self performSegueWithIdentifier:@"showSecond" sender:nil];
     }
 }
 

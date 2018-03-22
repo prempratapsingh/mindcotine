@@ -142,7 +142,6 @@
     if([self isValidation]){
         [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
         //[self performSegueWithIdentifier:@"showThird" sender:nil];
-        
     }
 }
 -(BOOL)isValidation{

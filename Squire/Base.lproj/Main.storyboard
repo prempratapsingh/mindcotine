@@ -209,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngQ-ac-4EJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="501.60000000000002" y="-1045.7271364317842"/>
+            <point key="canvasLocation" x="559" y="-1048"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -395,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2941.5999999999999" y="832.53373313343332"/>
+            <point key="canvasLocation" x="2164" y="641"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="JPv-Hq-jZ6">
@@ -513,7 +513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlm-DJ-5IS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247" y="651"/>
+            <point key="canvasLocation" x="-910" y="640"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="F1b-45-fe4">
@@ -743,7 +743,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeB-6i-y2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="642"/>
+            <point key="canvasLocation" x="-168" y="639"/>
         </scene>
         <!--Player View Controller-->
         <scene sceneID="7RY-nR-dRQ">
@@ -877,7 +877,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="13y-Ip-VmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1574" y="642"/>
+            <point key="canvasLocation" x="558" y="641"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="tLe-mt-KuX">
@@ -926,7 +926,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-kv-DpQ" userLabel="Current Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="126" width="335" height="40"/>
+                                <rect key="frame" x="20" y="126" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
@@ -952,7 +952,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-n6-6H1" userLabel="New Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="176" width="335" height="40"/>
+                                <rect key="frame" x="20" y="175" width="335" height="39.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -978,7 +978,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-UH-pVz" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="226" width="335" height="39"/>
+                                <rect key="frame" x="20" y="224.5" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -1055,7 +1055,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W3m-nT-FM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1480.8" y="-117.39130434782609"/>
+            <point key="canvasLocation" x="558" y="-153"/>
         </scene>
         <!--Video List View Controller-->
         <scene sceneID="EvE-2t-6v8">
@@ -1289,7 +1289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4i-Vg-uzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2238" y="-117"/>
+            <point key="canvasLocation" x="1364" y="-153"/>
         </scene>
         <!--Detail Video View Controller-->
         <scene sceneID="8M5-n3-V64">
@@ -1390,7 +1390,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7k-i2-OVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3093.5999999999999" y="-153.37331334332833"/>
+            <point key="canvasLocation" x="2164" y="-153"/>
         </scene>
         <!--Simple Player View Controller-->
         <scene sceneID="uLr-mq-YOe">
@@ -1559,7 +1559,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6dD-td-rAh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808.8" y="1751.8740629685158"/>
+            <point key="canvasLocation" x="2127" y="1412"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ZHa-uk-3p7">
@@ -1891,12 +1891,11 @@
                         <outlet property="textFieldUserName" destination="Kxb-WB-h8V" id="1Nm-Sw-VgH"/>
                         <outlet property="usernameInvalid" destination="Z1l-rp-u7E" id="IOk-co-EYq"/>
                         <segue destination="td0-et-QhJ" kind="show" identifier="showSecond" id="fHD-Sw-LYu"/>
-                        <segue destination="tvv-Se-7ic" kind="show" identifier="showSignupSurvey" id="pzw-J4-QS4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPB-Ut-pMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384.8" y="-1046.6266866566718"/>
+            <point key="canvasLocation" x="1364" y="-1047"/>
         </scene>
         <!--Sign Up Second View Controller-->
         <scene sceneID="VjN-ey-rPZ">
@@ -2164,7 +2163,7 @@
                         <outlet property="textFieldEducation" destination="3gk-KG-Raj" id="W7N-mp-ikC"/>
                         <outlet property="textFieldGender" destination="ykV-xR-uwK" id="8wp-Sw-xp2"/>
                         <outlet property="textFieldWhat" destination="h0m-4X-Efz" id="9yY-As-Ok8"/>
-                        <segue destination="PnH-Mj-AbV" kind="show" identifier="showThird" id="Ono-eI-01h"/>
+                        <segue destination="tvv-Se-7ic" kind="show" identifier="showSignupSurvey" id="f2e-gg-HbC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVh-ln-YFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2198,11 +2197,12 @@
                     </view>
                     <connections>
                         <outlet property="webViewContainer" destination="Lwj-uY-H9K" id="NfH-Pd-ssp"/>
+                        <segue destination="VJj-2N-Ssa" kind="show" identifier="showListVideosss" id="uQh-VS-d2z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxw-nr-ZqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2936.8000000000002" y="-1741.0794602698652"/>
+            <point key="canvasLocation" x="2942" y="-1048"/>
         </scene>
         <!--Sign Up Third View Controller-->
         <scene sceneID="QgZ-zp-uT6">
@@ -2213,14 +2213,14 @@
                         <viewControllerLayoutGuide type="bottom" id="jfc-De-lrK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lRS-H6-ndV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuF-7p-5bU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-eo-pHy">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDZ-11-DWL">
                                                 <rect key="frame" x="45" y="30" width="188.5" height="27"/>
@@ -2267,7 +2267,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNw-P5-AHI" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                                <rect key="frame" x="45" y="289" width="285" height="44"/>
+                                                <rect key="frame" x="45" y="322" width="285" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2294,7 +2294,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aO5-3X-bzH" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                                <rect key="frame" x="45" y="368" width="285" height="44"/>
+                                                <rect key="frame" x="45" y="410" width="285" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2328,14 +2328,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What date did you start smoking?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUB-Lp-xkP">
-                                                <rect key="frame" x="45" y="259" width="285" height="26"/>
+                                                <rect key="frame" x="45" y="288" width="285" height="26"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hML-oN-9kC">
-                                                <rect key="frame" x="45" y="339" width="285" height="26"/>
+                                                <rect key="frame" x="45" y="377" width="285" height="26"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2373,7 +2373,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mFY-o7-x81" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                                <rect key="frame" x="45" y="447" width="285" height="44"/>
+                                                <rect key="frame" x="45" y="498" width="285" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2400,14 +2400,14 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aha-kZ-fIW">
-                                                <rect key="frame" x="45" y="418" width="285" height="26"/>
+                                                <rect key="frame" x="45" y="464" width="285" height="26"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj7-DL-tmU">
-                                                <rect key="frame" x="255" y="538" width="112" height="43"/>
+                                                <rect key="frame" x="255" y="602" width="112" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="wbB-tm-28Q"/>
                                                     <constraint firstAttribute="width" constant="112" id="zhc-9a-11b"/>
@@ -2441,14 +2441,14 @@
                                 </constraints>
                             </scrollView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-sm-AGb">
-                                <rect key="frame" x="0.0" y="-60" width="375" height="663"/>
+                                <rect key="frame" x="0.0" y="-60" width="375" height="727"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="urU-Gb-aEn">
-                                        <rect key="frame" x="47" y="210" width="280" height="243"/>
+                                        <rect key="frame" x="47" y="230" width="280" height="267"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc7-8y-dN8">
-                                                <rect key="frame" x="7" y="205" width="125" height="29"/>
+                                                <rect key="frame" x="7" y="229" width="125" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" title="Cancel"/>
                                                 <connections>
@@ -2457,14 +2457,14 @@
                                                 </connections>
                                             </button>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="J7h-Ln-BOF">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="225"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="510624263.61278802">
                                                     <!--2017-03-08 00:04:23 +0000-->
                                                 </date>
                                             </datePicker>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfw-Pb-Fw0">
-                                                <rect key="frame" x="148" y="205" width="125" height="30"/>
+                                                <rect key="frame" x="148" y="229" width="125" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" title="Ok"/>
                                                 <connections>
@@ -2473,12 +2473,12 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIa-oh-VJi">
-                                                <rect key="frame" x="0.0" y="197" width="280" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="221" width="280" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="76W-Rz-Xug">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="225"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </pickerView>
                                         </subviews>
@@ -2531,7 +2531,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xjW-dy-LFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2936.8000000000002" y="-1048.4257871064469"/>
+            <point key="canvasLocation" x="3727" y="-1048"/>
         </scene>
         <!--Sign Up Four View Controller-->
         <scene sceneID="wrL-2E-K6B">
@@ -2542,17 +2542,17 @@
                         <viewControllerLayoutGuide type="bottom" id="erq-fC-jFo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="u7J-8u-XP6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9D-pJ-6Sl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZU-Ke-k6t">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnW-MJ-JU3">
-                                                <rect key="frame" x="255" y="532" width="112" height="43"/>
+                                                <rect key="frame" x="255" y="596" width="112" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="112" id="F77-22-GyL"/>
                                                     <constraint firstAttribute="height" constant="43" id="b7B-0D-kZ5"/>
@@ -2600,12 +2600,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HiD-bb-xMF">
-                                                <rect key="frame" x="47" y="400" width="285" height="2"/>
+                                                <rect key="frame" x="47" y="443" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ot-FH-bMk">
-                                                <rect key="frame" x="292" y="430" width="58" height="44"/>
+                                                <rect key="frame" x="292" y="479" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -2615,26 +2615,26 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EVR-gb-uM1">
-                                                <rect key="frame" x="47" y="473" width="285" height="2"/>
+                                                <rect key="frame" x="47" y="523" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Q7-eK-fM7">
-                                                <rect key="frame" x="47" y="345" width="237" height="49"/>
+                                                <rect key="frame" x="47" y="385" width="237" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe2-GP-zbc">
-                                                <rect key="frame" x="47" y="426" width="230" height="46"/>
+                                                <rect key="frame" x="47" y="475" width="230" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MoE-TK-MY6">
-                                                <rect key="frame" x="292" y="353" width="58" height="44"/>
+                                                <rect key="frame" x="292" y="393" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -2644,7 +2644,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUT-qo-xxV" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                                <rect key="frame" x="47" y="186" width="285" height="44"/>
+                                                <rect key="frame" x="47" y="207" width="285" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2665,21 +2665,21 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many ounces/grams of rolling tobacco do you smoke weekly?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q3-Ab-uqV">
-                                                <rect key="frame" x="47" y="146" width="285" height="45"/>
+                                                <rect key="frame" x="47" y="163" width="285" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many ounces/grams of pipe tobacco do you smoke weekly?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSv-3V-cs7">
-                                                <rect key="frame" x="47" y="243" width="285" height="45"/>
+                                                <rect key="frame" x="47" y="271" width="285" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aqp-Uf-HtW" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                                <rect key="frame" x="47" y="290" width="285" height="44"/>
+                                                <rect key="frame" x="47" y="323" width="285" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2724,14 +2724,14 @@
                                 </constraints>
                             </scrollView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vb3-H5-JBj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EJE-gb-CoR">
-                                        <rect key="frame" x="47" y="191" width="280" height="221"/>
+                                        <rect key="frame" x="47" y="211" width="280" height="245"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cas-83-5Mg">
-                                                <rect key="frame" x="7" y="182" width="125" height="30"/>
+                                                <rect key="frame" x="7" y="206" width="125" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" title="Cancel"/>
                                                 <connections>
@@ -2741,14 +2741,14 @@
                                                 </connections>
                                             </button>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GGM-vO-aK8">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="175"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="199"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="510624263.61278802">
                                                     <!--2017-03-08 00:04:23 +0000-->
                                                 </date>
                                             </datePicker>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-dd-yr2">
-                                                <rect key="frame" x="148" y="182" width="125" height="30"/>
+                                                <rect key="frame" x="148" y="206" width="125" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" title="Ok"/>
                                                 <connections>
@@ -2758,12 +2758,12 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eqj-pK-ALX">
-                                                <rect key="frame" x="0.0" y="175" width="280" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="199" width="280" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9EN-Fi-6fE">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="175"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="199"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </pickerView>
                                         </subviews>
@@ -2812,7 +2812,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUo-if-vKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3709.5999999999999" y="-1046.6266866566718"/>
+            <point key="canvasLocation" x="4500" y="-1047"/>
         </scene>
         <!--Sign Up Fifth View Controller-->
         <scene sceneID="okC-d5-0aL">
@@ -2823,17 +2823,17 @@
                         <viewControllerLayoutGuide type="bottom" id="EBn-U2-x1w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uN0-zJ-KCt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xp9-QT-AOa">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YP-2l-9ry">
-                                        <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="731"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGM-RG-HIF">
-                                                <rect key="frame" x="255" y="605" width="112" height="43"/>
+                                                <rect key="frame" x="255" y="669" width="112" height="43"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="112" id="6CV-h8-E3T"/>
                                                     <constraint firstAttribute="height" constant="43" id="nDQ-TL-leX"/>
@@ -2881,19 +2881,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUB-gs-z1m">
-                                                <rect key="frame" x="36" y="407" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="446" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-tj-VcX">
-                                                <rect key="frame" x="36" y="362" width="237" height="40"/>
+                                                <rect key="frame" x="36" y="399" width="237" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDD-qM-QMY">
-                                                <rect key="frame" x="281" y="358" width="58" height="44"/>
+                                                <rect key="frame" x="281" y="395" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -2903,12 +2903,12 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hw-ZP-zsB">
-                                                <rect key="frame" x="36" y="294" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="322" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJC-gI-mAr">
-                                                <rect key="frame" x="281" y="304" width="58" height="44"/>
+                                                <rect key="frame" x="281" y="335" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -2918,26 +2918,26 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVd-si-dvu">
-                                                <rect key="frame" x="36" y="348" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="381" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EsT-hb-qcf">
-                                                <rect key="frame" x="36" y="250" width="237" height="46"/>
+                                                <rect key="frame" x="36" y="276" width="237" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abF-tu-xK8">
-                                                <rect key="frame" x="36" y="308" width="237" height="38"/>
+                                                <rect key="frame" x="36" y="339" width="237" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EjT-vX-yBV">
-                                                <rect key="frame" x="281" y="245" width="58" height="44"/>
+                                                <rect key="frame" x="281" y="270" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -2947,12 +2947,12 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lBZ-jo-797">
-                                                <rect key="frame" x="36" y="181" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="198" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TKl-Nb-5y6">
-                                                <rect key="frame" x="281" y="191" width="58" height="44"/>
+                                                <rect key="frame" x="281" y="211" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -2962,26 +2962,26 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ODf-XX-qVB">
-                                                <rect key="frame" x="36" y="235" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="258" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emp-VT-rND">
-                                                <rect key="frame" x="36" y="137" width="237" height="46"/>
+                                                <rect key="frame" x="36" y="151" width="237" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1Z-qp-NK4">
-                                                <rect key="frame" x="36" y="194" width="237" height="38"/>
+                                                <rect key="frame" x="36" y="214" width="237" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zvd-Bi-p4A">
-                                                <rect key="frame" x="281" y="132" width="58" height="44"/>
+                                                <rect key="frame" x="281" y="146" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -2991,7 +2991,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ma-2q-uF2">
-                                                <rect key="frame" x="281" y="417" width="58" height="44"/>
+                                                <rect key="frame" x="281" y="460" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -3001,24 +3001,24 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htW-cG-Ooh">
-                                                <rect key="frame" x="36" y="461" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="505" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHk-uK-qfa">
-                                                <rect key="frame" x="36" y="420" width="237" height="38"/>
+                                                <rect key="frame" x="36" y="463" width="237" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mjl-UR-4hB">
-                                                <rect key="frame" x="36" y="525" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="576" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BwR-qj-kZa">
-                                                <rect key="frame" x="281" y="533" width="58" height="44"/>
+                                                <rect key="frame" x="281" y="588" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -3028,21 +3028,21 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw9-Y1-hip">
-                                                <rect key="frame" x="36" y="471" width="237" height="56"/>
+                                                <rect key="frame" x="36" y="520" width="237" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="W3G-np-1gm">
-                                                <rect key="frame" x="36" y="527" width="237" height="49"/>
+                                                <rect key="frame" x="36" y="582" width="237" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Qo-gz-uKi">
-                                                <rect key="frame" x="281" y="479" width="58" height="44"/>
+                                                <rect key="frame" x="281" y="528" width="58" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="44"/>
@@ -3052,7 +3052,7 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c19-M3-S3j">
-                                                <rect key="frame" x="36" y="582" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="638" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
@@ -3073,14 +3073,14 @@
                                 </constraints>
                             </scrollView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqq-7P-G0P">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTN-5X-tis">
-                                        <rect key="frame" x="47" y="191" width="280" height="221"/>
+                                        <rect key="frame" x="47" y="211" width="280" height="245"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTn-n2-VvR">
-                                                <rect key="frame" x="7" y="182" width="125" height="30"/>
+                                                <rect key="frame" x="7" y="206" width="125" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" title="Cancel"/>
                                                 <connections>
@@ -3091,14 +3091,14 @@
                                                 </connections>
                                             </button>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2nv-Lj-vIH">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="175"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="199"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="510624263.61278802">
                                                     <!--2017-03-08 00:04:23 +0000-->
                                                 </date>
                                             </datePicker>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX7-Ud-b9n">
-                                                <rect key="frame" x="148" y="182" width="125" height="30"/>
+                                                <rect key="frame" x="148" y="206" width="125" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" title="Ok"/>
                                                 <connections>
@@ -3109,12 +3109,12 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qIf-aL-T3Z">
-                                                <rect key="frame" x="0.0" y="175" width="280" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="199" width="280" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIp-8y-gh4">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="175"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="199"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </pickerView>
                                         </subviews>
@@ -3169,7 +3169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KN1-oZ-jCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4456.8000000000002" y="-1046.6266866566718"/>
+            <point key="canvasLocation" x="5247" y="-1047"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uOa-9j-7dT">
@@ -3187,7 +3187,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jr-pa-HcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-340" y="-1046"/>
+            <point key="canvasLocation" x="-212" y="-1047"/>
         </scene>
         <!--Sign Up Eight View Controller-->
         <scene sceneID="BQs-FO-i4Q">
@@ -3198,17 +3198,17 @@
                         <viewControllerLayoutGuide type="bottom" id="bvW-NL-lS8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pw6-75-9oT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zr7-yy-1Rs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLL-18-7ib">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efY-B5-tF2">
-                                                <rect key="frame" x="37" y="224" width="300" height="47"/>
+                                                <rect key="frame" x="37" y="250" width="300" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3250,7 +3250,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-NO-pf8">
-                                                <rect key="frame" x="36" y="509" width="303" height="56"/>
+                                                <rect key="frame" x="36" y="573" width="303" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <color key="backgroundColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Submit">
@@ -3266,7 +3266,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9N-EV-vGD">
-                                                <rect key="frame" x="36" y="305" width="133" height="45"/>
+                                                <rect key="frame" x="36" y="340" width="133" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Yes">
@@ -3282,7 +3282,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WK-be-YBS">
-                                                <rect key="frame" x="207" y="305" width="132" height="45"/>
+                                                <rect key="frame" x="207" y="340" width="132" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="No">
                                                     <color key="titleColor" red="0.2208048403" green="0.29238680010000001" blue="0.38795781140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3325,12 +3325,11 @@
                         <outlet property="Q23" destination="efY-B5-tF2" id="oRl-yG-0cn"/>
                         <outlet property="buttonNo" destination="7WK-be-YBS" id="bjz-OK-kfo"/>
                         <outlet property="buttonYes" destination="K9N-EV-vGD" id="VRQ-3t-Bgb"/>
-                        <segue destination="VJj-2N-Ssa" kind="show" identifier="showListVideosss" id="SGB-Th-uXr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPh-hN-qdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5969" y="-1046"/>
+            <point key="canvasLocation" x="6759" y="-1047"/>
         </scene>
         <!--Singn Up Seven View Controller-->
         <scene sceneID="x8Q-b2-z8r">
@@ -3341,22 +3340,22 @@
                         <viewControllerLayoutGuide type="bottom" id="ayn-Ab-eZF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rrW-LA-pXt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcW-CE-nzz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZy-EM-T2e">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XgI-fN-IqU">
-                                                <rect key="frame" x="34" y="530" width="285" height="2"/>
+                                                <rect key="frame" x="34" y="586" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D8U-Pj-XrX">
-                                                <rect key="frame" x="39" y="496" width="280" height="32"/>
+                                                <rect key="frame" x="39" y="552" width="280" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="37"/>
@@ -3366,12 +3365,12 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5AX-4a-vsh">
-                                                <rect key="frame" x="36" y="269" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="298" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b70-xg-5sw">
-                                                <rect key="frame" x="39" y="414" width="280" height="38"/>
+                                                <rect key="frame" x="39" y="461" width="280" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="textColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="37"/>
@@ -3381,26 +3380,26 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SKI-iH-apl">
-                                                <rect key="frame" x="34" y="449" width="285" height="2"/>
+                                                <rect key="frame" x="34" y="497" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-10-N2s">
-                                                <rect key="frame" x="36" y="152" width="303" height="46"/>
+                                                <rect key="frame" x="36" y="169" width="303" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZ2-i7-D8c">
-                                                <rect key="frame" x="37" y="274" width="300" height="47"/>
+                                                <rect key="frame" x="37" y="306" width="300" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigars do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJq-sU-Vu6">
-                                                <rect key="frame" x="39" y="379" width="300" height="37"/>
+                                                <rect key="frame" x="39" y="422" width="300" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -3442,14 +3441,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mz9-yJ-nyB">
-                                                <rect key="frame" x="39" y="455" width="298" height="47"/>
+                                                <rect key="frame" x="39" y="507" width="298" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eQ-ct-nkB">
-                                                <rect key="frame" x="246" y="540" width="112" height="43"/>
+                                                <rect key="frame" x="246" y="604" width="112" height="43"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" image="nextButton">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3459,7 +3458,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kl-pY-mh8">
-                                                <rect key="frame" x="34" y="214" width="133" height="45"/>
+                                                <rect key="frame" x="34" y="239" width="133" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Yes">
@@ -3475,7 +3474,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqh-P7-FTa">
-                                                <rect key="frame" x="205" y="214" width="132" height="45"/>
+                                                <rect key="frame" x="205" y="239" width="132" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="No">
                                                     <color key="titleColor" red="0.2208048403" green="0.29238680010000001" blue="0.38795781140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3490,19 +3489,19 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDb-fK-KvR">
-                                                <rect key="frame" x="36" y="142" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="157" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many cigarettes do you smoke daily?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-x7-K3q">
-                                                <rect key="frame" x="37" y="65" width="300" height="55"/>
+                                                <rect key="frame" x="37" y="73" width="300" height="55"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7K-5O-B0p">
-                                                <rect key="frame" x="36" y="107" width="303" height="33"/>
+                                                <rect key="frame" x="36" y="119" width="303" height="33"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -3511,12 +3510,12 @@
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cgc-D6-qyI">
-                                                <rect key="frame" x="36" y="369" width="285" height="2"/>
+                                                <rect key="frame" x="36" y="408" width="285" height="2"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYF-wy-gtq">
-                                                <rect key="frame" x="41" y="326" width="280" height="41"/>
+                                                <rect key="frame" x="41" y="363" width="280" height="41"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -3537,14 +3536,14 @@
                                 </constraints>
                             </scrollView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4PO-af-mCs">
-                                <rect key="frame" x="0.0" y="-67" width="375" height="670"/>
+                                <rect key="frame" x="0.0" y="-67" width="375" height="734"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j3M-uP-FbT">
-                                        <rect key="frame" x="47" y="212" width="280" height="246"/>
+                                        <rect key="frame" x="47" y="232" width="280" height="270"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MK-QW-FwV">
-                                                <rect key="frame" x="7" y="208" width="125" height="29"/>
+                                                <rect key="frame" x="7" y="232" width="125" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" title="Cancel"/>
                                                 <connections>
@@ -3563,7 +3562,7 @@
                                                 </date>
                                             </datePicker>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDU-bq-Znd">
-                                                <rect key="frame" x="148" y="208" width="125" height="30"/>
+                                                <rect key="frame" x="148" y="232" width="125" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                                 <state key="normal" title="Ok"/>
                                                 <connections>
@@ -3575,12 +3574,12 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfd-gT-pm2">
-                                                <rect key="frame" x="0.0" y="200" width="280" height="1"/>
+                                                <rect key="frame" x="0.0" y="224" width="280" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </view>
                                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sn8-p1-F1I">
-                                                <rect key="frame" x="0.0" y="0.0" width="281" height="201"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="281" height="225"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </pickerView>
@@ -3632,7 +3631,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M3s-uc-MH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5237.6000000000004" y="-1048.4257871064469"/>
+            <point key="canvasLocation" x="6028" y="-1048"/>
         </scene>
     </scenes>
     <resources>
@@ -3660,7 +3659,7 @@
         <image name="yellowline" width="6" height="67"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OQO-2p-hnG"/>
-        <segue reference="SGB-Th-uXr"/>
+        <segue reference="bap-Jl-76b"/>
+        <segue reference="uQh-VS-d2z"/>
     </inferredMetricsTieBreakers>
 </document>
