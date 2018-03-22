@@ -205,6 +205,7 @@
                         <outlet property="username" destination="u05-6c-S6n" id="75G-2J-eEa"/>
                         <segue destination="VJj-2N-Ssa" kind="presentation" identifier="showVideoList" id="FRf-YP-leR"/>
                         <segue destination="LBd-kx-dip" kind="show" identifier="showFirstSignUpView" id="Rcm-aZ-5VQ"/>
+                        <segue destination="tvv-Se-7ic" kind="show" identifier="showSignupSurvey" id="tZS-zj-mON"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngQ-ac-4EJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1066,11 +1067,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8UV-M9-Bgk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FHV-IT-eDV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksm-6M-W1H">
-                                <rect key="frame" x="0.0" y="520" width="254" height="83"/>
+                                <rect key="frame" x="0.0" y="584" width="254" height="83"/>
                                 <color key="backgroundColor" red="0.13948893547058105" green="0.18298506736755371" blue="0.25358507037162781" alpha="0.41358090753424659" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="9T2-XZ-zMq"/>
@@ -1084,7 +1085,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr5-Th-sbb">
-                                <rect key="frame" x="0.0" y="432" width="254" height="83"/>
+                                <rect key="frame" x="0.0" y="496" width="254" height="83"/>
                                 <color key="backgroundColor" red="0.13948893549999999" green="0.18298506740000001" blue="0.2535850704" alpha="0.41358090749999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="x9K-3c-oMi"/>
@@ -1122,7 +1123,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIY-Tn-euX">
-                                <rect key="frame" x="214" y="28" width="40" height="36"/>
+                                <rect key="frame" x="214" y="28" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="closeButton"/>
                                 <connections>
@@ -1137,7 +1138,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzi-G4-heU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="mindCotineLogo" translatesAutoresizingMaskIntoConstraints="NO" id="w8d-jz-bwo">
@@ -1145,7 +1146,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1c-oO-dr4">
-                                        <rect key="frame" x="0.0" y="75" width="375" height="528"/>
+                                        <rect key="frame" x="0.0" y="75" width="375" height="592"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yos-P7-jd2">
@@ -1166,7 +1167,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="240" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tmu-p3-kiJ">
-                                                <rect key="frame" x="0.0" y="47" width="375" height="481"/>
+                                                <rect key="frame" x="0.0" y="47" width="375" height="545"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
@@ -1984,19 +1985,6 @@
                                                     <outlet property="delegate" destination="td0-et-QhJ" id="tfN-yV-Oe6"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01n-Ok-ZCc">
-                                                <rect key="frame" x="255" y="542" width="112" height="43"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="Wug-QK-dAI"/>
-                                                    <constraint firstAttribute="width" constant="112" id="yTP-m2-Utw"/>
-                                                </constraints>
-                                                <state key="normal" image="nextButton">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="showThird:" destination="td0-et-QhJ" eventType="touchUpInside" id="0Um-ia-eVb"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uno-SM-sdQ">
                                                 <rect key="frame" x="45" y="30" width="183.5" height="27"/>
                                                 <attributedString key="attributedText">
@@ -2054,18 +2042,38 @@
                                                     <outlet property="delegate" destination="td0-et-QhJ" id="CtL-nZ-EsR"/>
                                                 </connections>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C44-IQ-ZET">
+                                                <rect key="frame" x="20" y="527" width="335" height="56"/>
+                                                <color key="backgroundColor" red="0.16589272020000001" green="0.92527741190000001" blue="0.68030232189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="AMR-an-TMB"/>
+                                                </constraints>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" red="0.2208048403" green="0.29238680010000001" blue="0.38795781140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="22.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didClickOnSubmitButton:" destination="td0-et-QhJ" eventType="touchUpInside" id="QG6-KI-tVH"/>
+                                                    <action selector="showList:" destination="MCS-kT-hQg" eventType="touchUpInside" id="qkl-cX-bxl"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="h0m-4X-Efz" firstAttribute="top" secondItem="3gk-KG-Raj" secondAttribute="bottom" constant="8" id="0J9-Mr-3WM"/>
+                                            <constraint firstAttribute="bottom" secondItem="C44-IQ-ZET" secondAttribute="bottom" constant="20" id="2yC-7Z-CXT"/>
                                             <constraint firstItem="Uno-SM-sdQ" firstAttribute="top" secondItem="vcz-af-2wW" secondAttribute="top" constant="30" id="7CU-EX-ebj"/>
                                             <constraint firstItem="h0m-4X-Efz" firstAttribute="trailing" secondItem="3gk-KG-Raj" secondAttribute="trailing" id="CjG-VU-oDq"/>
                                             <constraint firstItem="dYm-N9-TTo" firstAttribute="leading" secondItem="vcz-af-2wW" secondAttribute="leading" constant="45" id="En9-Ju-ShI"/>
+                                            <constraint firstAttribute="trailing" secondItem="C44-IQ-ZET" secondAttribute="trailing" constant="20" id="Eua-hY-6VZ"/>
                                             <constraint firstItem="dYm-N9-TTo" firstAttribute="top" secondItem="Uno-SM-sdQ" secondAttribute="bottom" constant="24" id="PdN-Uf-ksj"/>
-                                            <constraint firstAttribute="trailing" secondItem="01n-Ok-ZCc" secondAttribute="trailing" constant="8" id="QDC-wd-S7N"/>
                                             <constraint firstItem="3gk-KG-Raj" firstAttribute="top" secondItem="ykV-xR-uwK" secondAttribute="bottom" constant="6" id="UqL-Jd-J4m"/>
-                                            <constraint firstAttribute="bottom" secondItem="01n-Ok-ZCc" secondAttribute="bottom" constant="18" id="VfH-aw-Lkj"/>
                                             <constraint firstItem="ykV-xR-uwK" firstAttribute="top" secondItem="Uno-SM-sdQ" secondAttribute="bottom" constant="24" id="ehr-MI-ewo"/>
+                                            <constraint firstItem="C44-IQ-ZET" firstAttribute="leading" secondItem="vcz-af-2wW" secondAttribute="leading" constant="20" id="h1a-zi-fbS"/>
                                             <constraint firstItem="h0m-4X-Efz" firstAttribute="leading" secondItem="3gk-KG-Raj" secondAttribute="leading" id="hbP-An-omv"/>
                                             <constraint firstItem="3gk-KG-Raj" firstAttribute="trailing" secondItem="ykV-xR-uwK" secondAttribute="trailing" id="rvO-bC-AKt"/>
                                             <constraint firstAttribute="trailing" secondItem="ykV-xR-uwK" secondAttribute="trailing" constant="45" id="tdr-hQ-fJF"/>
@@ -2173,17 +2181,17 @@
         <!--Signup SurveyVC-->
         <scene sceneID="ONa-S3-fEd">
             <objects>
-                <viewController id="tvv-Se-7ic" customClass="SignupSurveyVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signupSurveyViewController" id="tvv-Se-7ic" customClass="SignupSurveyVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PU0-49-Ul4"/>
                         <viewControllerLayoutGuide type="bottom" id="Wyy-Zn-b5B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LUI-lq-B0y">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-uY-H9K" userLabel="webViewContainer">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -2197,7 +2205,7 @@
                     </view>
                     <connections>
                         <outlet property="webViewContainer" destination="Lwj-uY-H9K" id="NfH-Pd-ssp"/>
-                        <segue destination="VJj-2N-Ssa" kind="show" identifier="showListVideosss" id="uQh-VS-d2z"/>
+                        <segue destination="VJj-2N-Ssa" kind="show" identifier="showVideoList" id="uQh-VS-d2z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxw-nr-ZqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3659,6 +3667,7 @@
         <image name="yellowline" width="6" height="67"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="tZS-zj-mON"/>
         <segue reference="bap-Jl-76b"/>
         <segue reference="uQh-VS-d2z"/>
     </inferredMetricsTieBreakers>

@@ -132,11 +132,16 @@
                                                                 if ([[dict objectForKey:@"response"] isKindOfClass:[NSDictionary class]]){
                                                                     [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"gender"] forKey:@"gender"];
                                                                     [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"name"] forKey:@"username"];
+                                                                    [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"username"] forKey:@"userId"];
                                                                     [[NSUserDefaults standardUserDefaults] synchronize];
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         [SVProgressHUD dismiss];
-                                                                        
-                                                                        [self performSegueWithIdentifier:@"showVideoList" sender:nil];
+                                                                        BOOL isSignupTypeFormCompleted = [[NSUserDefaults standardUserDefaults]valueForKey:@"isSignupTypeFormCompleted"];
+                                                                        if( isSignupTypeFormCompleted == NO ) {
+                                                                            [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
+                                                                        } else {
+                                                                           [self performSegueWithIdentifier:@"showVideoList" sender:nil];
+                                                                        }
                                                                     });
 
                                                                 }else{

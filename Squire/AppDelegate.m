@@ -42,9 +42,12 @@
 
     if([[[NSUserDefaults standardUserDefaults]objectForKey:@"gender"]intValue])
     {
-        
-      initViewController = [storyboard instantiateViewControllerWithIdentifier:@"videoListViewController"];
-      //   initViewController = [storyboard instantiateViewControllerWithIdentifier:@"tourViewController"];
+        BOOL isSignupTypeFormCompleted = [[NSUserDefaults standardUserDefaults]valueForKey:@"isSignupTypeFormCompleted"];
+        if( isSignupTypeFormCompleted == NO ) {
+            initViewController = [storyboard instantiateViewControllerWithIdentifier:@"signupSurveyViewController"];
+        } else {
+            initViewController = [storyboard instantiateViewControllerWithIdentifier:@"videoListViewController"];
+        }
     }else
     {
        initViewController = [storyboard instantiateViewControllerWithIdentifier:@"navigationLogin"];
