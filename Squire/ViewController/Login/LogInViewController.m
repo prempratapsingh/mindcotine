@@ -136,11 +136,11 @@
                                                                     [[NSUserDefaults standardUserDefaults] synchronize];
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         [SVProgressHUD dismiss];
-                                                                        BOOL isSignupTypeFormCompleted = [[NSUserDefaults standardUserDefaults]valueForKey:@"isSignupTypeFormCompleted"];
+                                                                        BOOL isSignupTypeFormCompleted = [[NSUserDefaults standardUserDefaults] boolForKey:@"isSignupTypeFormCompleted"];
                                                                         if( isSignupTypeFormCompleted == NO ) {
                                                                             [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
                                                                         } else {
-                                                                           [self performSegueWithIdentifier:@"showVideoList" sender:nil];
+                                                                            [self performSegueWithIdentifier:@"showVideoList" sender:nil];
                                                                         }
                                                                     });
 

@@ -42,7 +42,7 @@
 
     if([[[NSUserDefaults standardUserDefaults]objectForKey:@"gender"]intValue])
     {
-        BOOL isSignupTypeFormCompleted = [[NSUserDefaults standardUserDefaults]valueForKey:@"isSignupTypeFormCompleted"];
+        BOOL isSignupTypeFormCompleted = [[NSUserDefaults standardUserDefaults] boolForKey:@"isSignupTypeFormCompleted"];
         if( isSignupTypeFormCompleted == NO ) {
             initViewController = [storyboard instantiateViewControllerWithIdentifier:@"signupSurveyViewController"];
         } else {

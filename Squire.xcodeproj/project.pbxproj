@@ -640,7 +640,7 @@
 				TargetAttributes = {
 					97A085561CA4DCEF005858AD = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = E7LF2VLC52;
+						DevelopmentTeam = 872PUBWK8M;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -896,7 +896,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -937,7 +937,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -954,7 +954,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E7LF2VLC52;
+				DEVELOPMENT_TEAM = 872PUBWK8M;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -962,7 +962,7 @@
 					"$(PROJECT_DIR)/Squire/Frameworks",
 				);
 				INFOPLIST_FILE = Squire/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -999,7 +999,7 @@
 					"-force_load",
 					"$(PODS_ROOT)/GoogleUtilities/Libraries/libGTM_NSData+zlib.a",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = con.inx.mindcotine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindcotine.mindcotinevr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1018,7 +1018,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E7LF2VLC52;
+				DEVELOPMENT_TEAM = 872PUBWK8M;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1026,7 +1026,7 @@
 					"$(PROJECT_DIR)/Squire/Frameworks",
 				);
 				INFOPLIST_FILE = Squire/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1063,7 +1063,7 @@
 					"-force_load",
 					"$(PODS_ROOT)/GoogleUtilities/Libraries/libGTM_NSData+zlib.a",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = con.inx.mindcotine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindcotine.mindcotinevr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -99,7 +99,6 @@
     [_arrayAllGenders addObjectsFromArray:_arrayWithVideosMale];
     [_arrayAllGenders addObjectsFromArray:_arrayWithVideosFemaleMale];
     _tableView.contentInset = UIEdgeInsetsMake(0, 0, 20, 0);
-    
     // Do any additional setup after loading the view.
 }
 
