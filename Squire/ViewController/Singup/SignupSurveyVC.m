@@ -13,6 +13,7 @@
 #import "GlobalModal.h"
 #import "SVProgressHUD.h"
 #import "UIViewController+UIViewController_Alert.h"
+#import "TypeFormManager.h"
 
 @interface SignupSurveyVC ()
 
@@ -74,9 +75,9 @@
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     NSLog(@"didFinishNavigation: %@", webView.URL.absoluteString);
     if( [webView.URL.absoluteString containsString: @"tf=t4rtLg"] || [webView.URL.absoluteString containsString: @"tf=cPy9LN"] ) {
-        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"isSignupTypeFormCompleted"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
         
+        NSString *userName = [[NSUserDefaults standardUserDefaults]valueForKey:@"userId"];
+        [TypeFormManager addToSignedSurveyUsersList:userName];
         [self performSegueWithIdentifier:@"showVideoList" sender:nil];
     }
 }

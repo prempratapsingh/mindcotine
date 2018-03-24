@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import <Google/Analytics.h>
 #import "GlobalModal.h"
+#import "TypeFormManager.h"
 
 @interface AppDelegate ()
 
@@ -42,8 +43,8 @@
 
     if([[[NSUserDefaults standardUserDefaults]objectForKey:@"gender"]intValue])
     {
-        BOOL isSignupTypeFormCompleted = [[NSUserDefaults standardUserDefaults] boolForKey:@"isSignupTypeFormCompleted"];
-        if( isSignupTypeFormCompleted == NO ) {
+        NSString *userName = [[NSUserDefaults standardUserDefaults]valueForKey:@"userId"];
+        if( [TypeFormManager hasUserCompletedSignupSurvey:userName] == NO ) {
             initViewController = [storyboard instantiateViewControllerWithIdentifier:@"signupSurveyViewController"];
         } else {
             initViewController = [storyboard instantiateViewControllerWithIdentifier:@"videoListViewController"];

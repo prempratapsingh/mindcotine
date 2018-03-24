@@ -927,7 +927,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-kv-DpQ" userLabel="Current Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="126" width="335" height="39"/>
+                                <rect key="frame" x="20" y="126" width="335" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
@@ -953,7 +953,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-n6-6H1" userLabel="New Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="175" width="335" height="39.5"/>
+                                <rect key="frame" x="20" y="176" width="335" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -979,7 +979,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-UH-pVz" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="224.5" width="335" height="39"/>
+                                <rect key="frame" x="20" y="226" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>

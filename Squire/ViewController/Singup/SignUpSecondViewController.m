@@ -222,8 +222,6 @@
                                                                     [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"gender"] forKey:@"gender"];
                                                                     [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"name"] forKey:@"username"];
                                                                     [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"username"] forKey:@"userId"];
-                                                                    [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"isSignupTypeFormCompleted"];
-                                                                    [[NSUserDefaults standardUserDefaults] synchronize];
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         [SVProgressHUD dismiss];
                                                                         [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];

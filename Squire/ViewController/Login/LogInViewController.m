@@ -9,10 +9,9 @@
 #import "LogInViewController.h"
 #import "SVProgressHUD.h"
 #import <MessageUI/MessageUI.h>
-
 #import "Squire-Swift.h"
-
 #import "UIViewController+UIViewController_Alert.h"
+#import "TypeFormManager.h"
 
 @interface LogInViewController ()<MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *buttonLogin;
@@ -132,12 +131,13 @@
                                                                 if ([[dict objectForKey:@"response"] isKindOfClass:[NSDictionary class]]){
                                                                     [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"gender"] forKey:@"gender"];
                                                                     [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"name"] forKey:@"username"];
-                                                                    [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"username"] forKey:@"userId"];
+                                                                    
+                                                                    NSString *userName = [[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"username"];
+                                                                    [[NSUserDefaults standardUserDefaults]setObject:userName forKey:@"userId"];
                                                                     [[NSUserDefaults standardUserDefaults] synchronize];
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         [SVProgressHUD dismiss];
-                                                                        BOOL isSignupTypeFormCompleted = [[NSUserDefaults standardUserDefaults] boolForKey:@"isSignupTypeFormCompleted"];
-                                                                        if( isSignupTypeFormCompleted == NO ) {
+                                                                        if( [TypeFormManager hasUserCompletedSignupSurvey:userName] == NO ) {
                                                                             [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
                                                                         } else {
                                                                             [self performSegueWithIdentifier:@"showVideoList" sender:nil];
