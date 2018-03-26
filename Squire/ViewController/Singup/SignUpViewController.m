@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *usernameInvalid;
 @property (weak, nonatomic) IBOutlet UIImageView *emailInvalid;
+@property (weak, nonatomic) IBOutlet UILabel *signupTitle;
 
 
 
@@ -47,12 +48,15 @@
     [[self view]addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewTapped)]];
     _isValidMail = YES;
     
+    _signupTitle.text = NSLocalizedString(@"signupTitle", @"");
     _textFieldName.placeholder = NSLocalizedString(@"firstname", @"");
     _textFieldLastName.placeholder = NSLocalizedString(@"lastname", @"");
     _textFieldMail.placeholder = NSLocalizedString(@"email", @"");
     _textFieldPassword.placeholder = NSLocalizedString(@"password", @"");
     _textFieldReEnttryPassword.placeholder = NSLocalizedString(@"re-enterpassword", @"");
     _textFieldUserName.placeholder = NSLocalizedString(@"username", @"");
+    [_nextButton setTitle:NSLocalizedString(@"next", @"") forState:UIControlStateNormal];
+    
     [[UIDevice currentDevice] setValue:
      [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
                                 forKey:@"orientation"];
@@ -240,47 +244,47 @@
     
     //First Name
     if (self.textFieldName.text.length ==0 ) {
-        mgs = @"Enter Firstname";
+        mgs = NSLocalizedString(@"firstname", @"");
     }else if (![Validation alphabet:self.textFieldName.text]) {
-        mgs = @"Firstname, special characters is not allowed";
+        mgs = NSLocalizedString(@"validationEnterNameError", @"");
     }
     
     //Last Name
     else if (self.textFieldLastName.text.length ==0 ) {
-        mgs = @"Enter Lastname";
+        mgs = NSLocalizedString(@"validationEnterLastName", @"");
     }else if (![Validation alphabet:self.textFieldLastName.text]) {
-        mgs = @"Lastname, special characters is not allowed";
+        mgs = NSLocalizedString(@"validationEnterLastNameError", @"");
     }
     //UsreName
     else if (self.textFieldUserName.text.length ==0 ) {
-        mgs = @"Enter Username";
+        mgs = NSLocalizedString(@"validationEnterUserName", @"");
     }else if (![Validation alphabet:self.textFieldUserName.text]) {
-        mgs = @"Username, special characters is not allowed";
+        mgs = NSLocalizedString(@"validationEnterUserNameError", @"");
     }
     
     //Email
     else if (self.textFieldMail.text.length ==0 ) {
-        mgs = @"Enter E-Mail";
+        mgs = NSLocalizedString(@"validationEnterEmail", @"");
     }else if (![Validation email:self.textFieldMail.text]) {
-        mgs = @"Please enter valid E-Mail";
+        mgs = NSLocalizedString(@"validationEnterEmailError1", @"");
     } else if (self.emailInvalid.isHidden == false ) {
-        mgs = @"Entered email already exist";
+        mgs = NSLocalizedString(@"validationEnterEmailError2", @"");
     }
     
     else if (self.textFieldPassword.text.length ==0 ) {
-        mgs = @"Enter Password";
+        mgs = NSLocalizedString(@"validationEnterPassword", @"");
     }else if (self.textFieldReEnttryPassword.text.length ==0 ) {
-        mgs = @"Enter Password";
+        mgs = NSLocalizedString(@"validationEnterPassword", @"");
     }else if (self.textFieldPassword.text.length <4 ) {
-        mgs = @"Password min length 4";
+        mgs = NSLocalizedString(@"validationEnterPasswordError1", @"");
     }else if (self.textFieldPassword.text.length >8 ) {
-        mgs = @"Password max length 8";
+        mgs = NSLocalizedString(@"validationEnterPasswordError2", @"");
     }else if (![self.textFieldReEnttryPassword.text isEqualToString:self.textFieldPassword.text] ) {
-        mgs = @"please check Re-Entry Password";
+        mgs = NSLocalizedString(@"validationEnterPasswordError3", @"");
     }
     if (mgs.length > 0) {
         
-        [self showAlertTitle:@"Error!" message:mgs];
+        [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:mgs];
         return false;
     }
     

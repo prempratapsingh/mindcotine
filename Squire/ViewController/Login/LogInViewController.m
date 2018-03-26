@@ -32,8 +32,8 @@
     [_createAccount setTitle:NSLocalizedString(@"newaccount", @"") forState:UIControlStateNormal];
     [_contactUs setTitle:NSLocalizedString(@"contactus", @"") forState:UIControlStateNormal];
 
-    _username.placeholder = NSLocalizedString(@"Username", @"");
-    _password.placeholder = NSLocalizedString(@"Password", @"");
+    _username.placeholder = NSLocalizedString(@"userName", @"");
+    _password.placeholder = NSLocalizedString(@"userPassword", @"");
     [_buttonSkip setTitle:NSLocalizedString(@"skip", @"") forState:UIControlStateNormal];
     [[self view]addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewTapped)]];
     [[UIDevice currentDevice] setValue:
@@ -138,7 +138,7 @@
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         [SVProgressHUD dismiss];
                                                                         if( [TypeFormManager hasUserCompletedSignupSurvey:userName] == NO ) {
-                                                                            [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
+                                                                            [self performSegueWithIdentifier:@"showVideoList" sender:nil];
                                                                         } else {
                                                                             [self performSegueWithIdentifier:@"showVideoList" sender:nil];
                                                                         }

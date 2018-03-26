@@ -36,10 +36,13 @@
     _arrayAllGenders = [[NSMutableArray alloc]init];
     
     [[UIDevice currentDevice] setValue:
-     [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
+    [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
                                 forKey:@"orientation"];
     
     _libratyText.text = NSLocalizedString(@"library", @"");
+    _contactUsTitle.text = NSLocalizedString(@"contactUsTitle", @"");
+    [_menuButton setTitle: NSLocalizedString(@"menu", @"") forState:UIControlStateNormal];
+    [_signOutButton setTitle: NSLocalizedString(@"signOut", @"") forState:UIControlStateNormal];
     
     _arrayWithVideosFemaleMale =   @[
                         

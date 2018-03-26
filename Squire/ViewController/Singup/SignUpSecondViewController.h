@@ -14,4 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldEducation;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldWhat;
 @property (nonatomic, strong) NSDictionary *dictWithInfo;
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+@property (weak, nonatomic) IBOutlet UILabel *signupTitle;
+
 @end

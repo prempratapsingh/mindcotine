@@ -6,6 +6,11 @@
   Copyright © 2017 AppData. All rights reserved.
 */
 
+//Global
+"next" = "Siguiente";
+"back" = "Regresar";
+"submit" = "Enviar";
+
 //Gender
 "gender" = "Género";
 "genderMale" = "Hombre";
@@ -19,6 +24,7 @@
 "graduated" = "Universitaria";
 "master" = "maestría";
 "doctor" = "doctorado";
+
 //quit smoke
 "quit" = "¿qué has intentado para dejar de fumar? ";
 "none" = "nada";
@@ -28,19 +34,17 @@
 "e-cigarettes" = "cigarrillo electrónico";
 "therapies" = "Terapias";
 
-"back" = "Regresar";
 //login
 "starting" = "Iniciando...";
 "login" = "Entrar";
 "skip" = "Omitir";
+"userName" = "Nombre de usuario";
+"userPassword" = "Contraseña";
 
 //get region
 "region" = "ES";
 
-//
-
 //Instructions
-
 "s11" = "Para lograr la mejor experiencia inmersiva, te recomendamos que:";
 "s12" = "• Encuentres un lugar tranquilo";
 "s13" = "• Siéntate en una silla frente a una mesa limpia";
@@ -51,7 +55,18 @@
 "playVideo" = "Reproducir Video";
 "" = "";
 "library" = "Biblioteca";
+"menu" = "Menu";
 
+//Side menu
+"contactUsTitle" = "¿Necesitar algo? Contáctenos";
+"signOut" = "Desconectar";
+
+//Settings Screen
+"settingsTitle" = "Configuraciones";
+"resetPasswordTitle" = "Restablecer la contraseña";
+"currentPasswordTitle" = "Contraseña actual";
+"newPasswordTitle" = "Nueva contraseña";
+"confirmPasswordTitle" = "Escriba la contraseña otra vez";
 
 //vide description
 "completeData" = "Completa la información";
@@ -65,9 +80,11 @@
 
 
 //SingUp
-
+"signupTitle" = "Registrarse | Información personal";
 "name" = "nombre";
+"firstname" = "ombre de pila";
 "lastname" = "apellido";
+"username" = "nombre de usuario";
 "user" = "usuario";
 "email" = "correo";
 "password" = "contraseña";
@@ -79,6 +96,27 @@
 "gender" = "género";
 "completededucation" = "educación completada";
 
+// Signup validation
+"validationError" = "Error!";
+"validationEnterName" = "Ingresa el nombre";
+"validationEnterNameError" = "Primer nombre, los caracteres especiales no están permitidos";
+"validationEnterLastName"= "Introduzca el apellido";
+"validationEnterLastNameError"= "Apellido, los caracteres especiales no están permitidos";
+"validationEnterUserName" = "Introduzca su nombre de usuario";
+"validationUserNameError" = "Nombre de usuario, caracteres especiales no está permitido";
+"validationEnterEmail" = "Ingrese correo electrónico";
+"validationEnterEmailError1" = "Por favor introduzca un correo electrónico válido";
+"validationEnterEmailError2" = "El correo electrónico introducido ya existe";
+"validationEnterPassword" = "Introducir la contraseña";
+"validationEnterPasswordError1" = "Contraseña longitud mínima 4";
+"validationEnterPasswordError2" = "Contraseña longitud mínima 8";
+"validationEnterPasswordError3" = "Por favor, compruebe la contraseña de reingreso";
+"validationEnterDOBError" = "Seleccione su fecha de nacimiento";
+"validationEnterGenerError" = "Selecciona tu género";
+"validationEnterEducationError" = "Seleccione su educación";
+"validationEnterDataError" = "Datos completos";
+
+// Survey questions
 "Q1" = "¿qué has intentado para dejar de fumar?";
 "Q2" = "¿has sido un fumador regular durante los últimos diez años?";
 "Q3" = "¿en qué fecha comenzaste a fumar?";

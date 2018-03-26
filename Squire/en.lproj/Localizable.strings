@@ -7,6 +7,10 @@
   Copyright © 2017 AppData. All rights reserved.
 */
 
+//Global
+"next" = "Next";
+"submit" = "Submit";
+
 //Gender
 "gender" = "Gender";
 "genderMale" = "Male";
@@ -35,10 +39,11 @@
 "starting" = "Starting...";
 "login" = "Log In";
 "skip" = "Skip";
+"userName" = "Username";
+"userPassword" = "Password";
+
 //get region
-
 "region" = "EN";
-
 
 //Instructions
 
@@ -50,20 +55,32 @@
 "s21" = "Watch this video in virtual reality with your VR headset in order to get an immersive experience.";
 "s31" = "You don’t have a VR headset? Select the eye icon on your smartphone.";
 "playVideo" = "Play Video";
-
-
 "library" = "Library";
+"menu" = "Menú";
+
+//Side menu
+"contactUsTitle" = "Need something? Contact us";
+"signOut" = "Sign Out";
+
+//Settings Screen
+"settingsTitle" = "Settings";
+"resetPasswordTitle" = "Reset Password";
+"currentPasswordTitle" = "Current password";
+"newPasswordTitle" = "New password";
+"confirmPasswordTitle" = "Re-enter password";
 
 //Video description
 "completeData" = "Complete Data";
 
 //SignUp1
-
+"signupTitle" = "Sign Up | Personal info";
 "back" = "Back";
 "text1" = "Please complete the following questions if you are a current smoker. This does not include anyone who solely uses tobacco replacement products.";
 "text2" = "For each of the following affirmations, please indicate if you agree or disagree with them, using a number from 1 to 7. The closer to 1, stronger the disagreement. The closer to 7, stronger the agreement.";
 "contactus" = "Contact us";
 "name" = "name";
+"username" = "user name";
+"firstname" = "first name";
 "lastname" = "last name";
 "user" = "user";
 "email" = "email";
@@ -76,6 +93,27 @@
 "gender" = "gender";
 "completededucation" = "completed education";
 
+// Signup validation
+"validationError" = "Error!";
+"validationEnterName" = "Enter Firstname";
+"validationEnterNameError" = "Firstname, special characters is not allowed";
+"validationEnterLastName"= "Enter Lastname";
+"validationEnterLastNameError"= "Lastname, special characters is not allowed";
+"validationEnterUserName" = "Enter Username";
+"validationUserNameError" = "Username, special characters is not allowed";
+"validationEnterEmail" = "Enter E-Mail";
+"validationEnterEmailError1" = "Please enter valid E-Mail";
+"validationEnterEmailError2" = "Entered email already exist";
+"validationEnterPassword" = "Enter Password";
+"validationEnterPasswordError1" = "Password min length 4";
+"validationEnterPasswordError2" = "Password min length 8";
+"validationEnterPasswordError3" = "please check Re-Entry Password";
+"validationEnterDOBError" = "Select your DOB";
+"validationEnterGenerError" = "Select your Gender";
+"validationEnterEducationError" = "Select your Education";
+"validationEnterDataError" = "Complete Data";
+
+// Survey questions
 "Q1" = "What did you have tried to quit smoking?";
 "Q2" = "Have you been a regular smoker during the last ten years?";
 "Q3" = "What date did you start smoking?";

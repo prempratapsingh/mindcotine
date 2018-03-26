@@ -49,6 +49,9 @@
     _textFieldGender.placeholder = [self locateString:@"gender"];
     _textFieldWhat.placeholder = [self locateString:@"quit"];
     _textFieldEducation.placeholder = [self locateString:@"education"];
+    [_submitButton setTitle:[self locateString:@"submit"] forState:UIControlStateNormal];
+    _signupTitle.text = NSLocalizedString(@"signupTitle", @"");
+
     // Do any additional setup after loading the view.
 }
 
@@ -155,17 +158,17 @@
     
     NSString * mgs;
     if (_textFieldBirthDay.text.length == 0) {
-        mgs = @"Select your DOB";
+        mgs = NSLocalizedString(@"validationEnterDOBError", @"");
     }else if (_textFieldGender.text.length == 0) {
-        mgs = @"Select your Gender";
+        mgs = NSLocalizedString(@"validationEnterGenerError", @"");
     }else if (_textFieldEducation.text.length == 0) {
-        mgs = @"Select your Education";
+        mgs = NSLocalizedString(@"validationEnterEducationError", @"");
     }else if (_textFieldWhat.text.length == 0) {
-        mgs = @"completeData";
+        mgs = NSLocalizedString(@"validationEnterDataError", @"");
     }
    
     if (mgs.length >0) {
-        [self showAlertTitle:@"Error" message:mgs];
+        [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:mgs];
         return FALSE;
     }
 

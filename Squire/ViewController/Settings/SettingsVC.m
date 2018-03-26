@@ -19,6 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [_backButton setTitle:NSLocalizedString(@"back", @"") forState:UIControlStateNormal];
+    [_submitButton setTitle:NSLocalizedString(@"submit", @"") forState:UIControlStateNormal];
+    _settingsTitle.text = NSLocalizedString(@"settingsTitle", @"");
+    _resetPassword.text = NSLocalizedString(@"resetPasswordTitle", @"");
+    _currentPasswordTF.placeholder = NSLocalizedString(@"currentPasswordTitle", @"");
+    _nwPasswordTF.placeholder = NSLocalizedString(@"newPasswordTitle", @"");
+    _confirmPasswordTF.placeholder = NSLocalizedString(@"confirmPasswordTitle", @"");
 }
 
 -(void)viewWillAppear:(BOOL)animated{
