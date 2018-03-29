@@ -39,6 +39,7 @@
 "starting" = "Starting...";
 "login" = "Log In";
 "skip" = "Skip";
+"resetPassword" = "Password reset";
 "userName" = "Username";
 "userPassword" = "Password";
 
@@ -139,7 +140,7 @@
 "Q23" = "Do you smoke even if you are so ill that you are in bed most of the day?";
 
 //password
-"newaccount" = "Create a new account";
+"newaccount" = "Are you new? Sign up";
 "passworerror" = "Passwords do not match";
 
 ///time to smoke

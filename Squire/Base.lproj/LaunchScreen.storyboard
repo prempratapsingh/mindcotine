@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,16 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="firstScreen" translatesAutoresizingMaskIntoConstraints="NO" id="XB6-DV-tei">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="logo_chico" translatesAutoresizingMaskIntoConstraints="NO" id="XB6-DV-tei">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9Db-Ui-VAj"/>
+                                    <constraint firstAttribute="width" constant="200" id="s09-dJ-7LN"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.91764705879999997" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="XB6-DV-tei" secondAttribute="trailing" id="DIX-c3-2xh"/>
-                            <constraint firstItem="XB6-DV-tei" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HKq-I1-0hV"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="XB6-DV-tei" secondAttribute="bottom" id="hnw-zo-noI"/>
-                            <constraint firstItem="XB6-DV-tei" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="qGL-p9-zvv"/>
+                            <constraint firstItem="XB6-DV-tei" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2Hm-RP-fdG"/>
+                            <constraint firstItem="XB6-DV-tei" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QT3-iH-SWR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="firstScreen" width="1200" height="1920"/>
+        <image name="logo_chico" width="682" height="682"/>
     </resources>
 </document>

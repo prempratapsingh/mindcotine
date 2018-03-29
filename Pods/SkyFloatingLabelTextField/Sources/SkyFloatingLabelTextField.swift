@@ -77,7 +77,7 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
         if let placeholder = placeholder, let font = placeholderFont ?? font {
                 attributedPlaceholder = NSAttributedString(
                     string: placeholder,
-                    attributes: [NSForegroundColorAttributeName: placeholderColor, NSFontAttributeName: font]
+                    attributes: [NSForegroundColorAttributeName: placeholderColor, NSFontAttributeName: UIFont.italicSystemFont(ofSize: 15)]
                 )
         }
     }
@@ -151,7 +151,7 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
     The default implementation converts the text to uppercase.
     */
     open var titleFormatter: ((String) -> String) = { (text: String) -> String in
-        return text.uppercased()
+        return text
     }
 
     /**
@@ -292,7 +292,7 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
     fileprivate func createTitleLabel() {
         let titleLabel = UILabel()
         titleLabel.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        titleLabel.font = .systemFont(ofSize: 13)
+        titleLabel.font = UIFont.italicSystemFont(ofSize: 13.0)
         titleLabel.alpha = 0.0
         titleLabel.textColor = titleColor
 

@@ -34,10 +34,10 @@
 
     _username.placeholder = NSLocalizedString(@"userName", @"");
     _password.placeholder = NSLocalizedString(@"userPassword", @"");
-    [_buttonSkip setTitle:NSLocalizedString(@"skip", @"") forState:UIControlStateNormal];
+    [_buttonSkip setTitle:NSLocalizedString(@"resetPassword", @"") forState:UIControlStateNormal];
     [[self view]addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewTapped)]];
     [[UIDevice currentDevice] setValue:
-     [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
+    [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
                                 forKey:@"orientation"];
 
     [self.username textDidChange:^BOOL(NSString * _Nonnull text) {
@@ -63,13 +63,13 @@
     self.navigationController.navigationBarHidden = YES;
     
     [[UIDevice currentDevice] setValue:
-     [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
+    [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
                                 forKey:@"orientation"];
 }
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    
     return  UIInterfaceOrientationMaskPortrait;
 }
+
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
     //	(iOS 6)
@@ -82,7 +82,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
 }
 
-
 /*
 #pragma mark - Navigation
 
@@ -94,10 +93,7 @@
 */
 
 -(void)loginUser {
-    
-    
-    
-    
+ 
     NSDictionary *headers = @{ @"content-type": @"application/json",
                                @"cache-control": @"no-cache",
                                @"postman-token": @"e5902297-2cd6-b459-02f2-b6763957dfb1" };
@@ -171,6 +167,7 @@
     
 
 }
+
 -(BOOL)isValidaton{
     
     NSString * mgs;
@@ -193,6 +190,7 @@
     
     return YES;
 }
+
 #pragma mark - Button Action
 - (IBAction)buttonLoginTapped:(id)sender {
     
@@ -201,8 +199,8 @@
         [SVProgressHUD showWithStatus: [self locateString:@"starting"]];
         [self loginUser];
     }
-   
 }
+
 - (IBAction)signUpButtonTapped:(id)sender {
     [self performSegueWithIdentifier:@"showFirstSignUpView" sender:nil];
 }
@@ -258,4 +256,5 @@
     NSString *string = NSLocalizedString(stringToLocate, @"");
     return string;
 }
+
 @end

@@ -38,6 +38,7 @@
 "starting" = "Iniciando...";
 "login" = "Entrar";
 "skip" = "Omitir";
+"resetPassword" = "Restablecimiento de contraseña";
 "userName" = "Nombre de usuario";
 "userPassword" = "Contraseña";
 
@@ -142,13 +143,11 @@
 "Q23" = "¿Fuma aunque esté tan enfermo que tenga que guardar cama la mayor parte del día?";
 
 //password errro
-"newaccount" = "Crear una nueva cuenta";
+"newaccount" = "¿Eres nuevo? Regístrate";
 "passworerror" = "Contraseñas no coinciden";
 
 
 ///time to smoke
-
-
 "T5" = "hasta 5 minutos";
 "T30" = "entre 6 y 30 minutos";
 "T60" = "31 - 60 minutos";
