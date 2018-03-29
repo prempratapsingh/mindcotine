@@ -43,7 +43,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKf-y6-1wc" customClass="TPKeyboardAvoidingScrollView">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKf-y6-1wc" customClass="TPKeyboardAvoidingScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HxH-BW-jvR" userLabel="container view">
@@ -218,7 +218,7 @@
                             <constraint firstAttribute="trailing" secondItem="vKf-y6-1wc" secondAttribute="trailing" id="7nM-Zo-vYP"/>
                             <constraint firstItem="vKf-y6-1wc" firstAttribute="top" secondItem="MCY-XS-nEI" secondAttribute="top" id="NpX-bN-hbn"/>
                             <constraint firstItem="vKf-y6-1wc" firstAttribute="leading" secondItem="MCY-XS-nEI" secondAttribute="leading" id="Tqt-5Y-nna"/>
-                            <constraint firstItem="vKf-y6-1wc" firstAttribute="bottom" secondItem="sst-sE-hfY" secondAttribute="top" id="WZI-eu-Bkp"/>
+                            <constraint firstItem="vKf-y6-1wc" firstAttribute="bottom" secondItem="MCY-XS-nEI" secondAttribute="bottom" id="WZI-eu-Bkp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gKy-73-MXB"/>
@@ -954,7 +954,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-kv-DpQ" userLabel="Current Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="126" width="335" height="41.5"/>
+                                <rect key="frame" x="20" y="126" width="335" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
@@ -980,7 +980,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-n6-6H1" userLabel="New Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="177.5" width="335" height="42"/>
+                                <rect key="frame" x="20" y="176" width="335" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -1006,7 +1006,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-UH-pVz" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="229.5" width="335" height="42"/>
+                                <rect key="frame" x="20" y="226" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
