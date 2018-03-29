@@ -9,7 +9,7 @@
 #import "SignUpViewController.h"
 #import "SignUpSecondViewController.h"
 #import "UIViewController+UIViewController_Alert.h"
-
+#import "RadioButtonGroup.h"
 #import "Squire-Swift.h"
 
 @interface SignUpViewController ()<UITextFieldDelegate>
@@ -17,7 +17,9 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *usernameInvalid;
 @property (weak, nonatomic) IBOutlet UIImageView *emailInvalid;
-@property (weak, nonatomic) IBOutlet UILabel *signupTitle;
+@property (weak, nonatomic) IBOutlet UILabel *titleText1;
+@property (weak, nonatomic) IBOutlet UILabel *titleText2;
+@property (weak, nonatomic) IBOutlet UILabel *titleText3;
 
 
 
@@ -48,7 +50,7 @@
     [[self view]addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewTapped)]];
     _isValidMail = YES;
     
-    _signupTitle.text = NSLocalizedString(@"signupTitle", @"");
+    //_signupTitle.text = NSLocalizedString(@"signupTitle", @"");
     _textFieldName.placeholder = NSLocalizedString(@"firstname", @"");
     _textFieldLastName.placeholder = NSLocalizedString(@"lastname", @"");
     _textFieldMail.placeholder = NSLocalizedString(@"email", @"");
@@ -56,6 +58,13 @@
     _textFieldReEnttryPassword.placeholder = NSLocalizedString(@"re-enterpassword", @"");
     _textFieldUserName.placeholder = NSLocalizedString(@"username", @"");
     [_nextButton setTitle:NSLocalizedString(@"next", @"") forState:UIControlStateNormal];
+    
+    NSArray *options = [[NSArray alloc] initWithObjects:NSLocalizedString(@"contentForMale", @""), NSLocalizedString(@"contentForFemale", @""), nil];
+    RadioButtonGroup *group = [[RadioButtonGroup alloc]
+                                initWithFrame: _genderContainerView.bounds
+                                andOptions:options andColumns:1];
+    [_genderContainerView addSubview:group];
+    [group setSelected:1];
     
     [[UIDevice currentDevice] setValue:
      [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]

@@ -96,6 +96,8 @@
 "city" = "ciudad";
 "gender" = "género";
 "completededucation" = "educación completada";
+"contentForMale" = "Ver contenido como masculino";
+"contentForFemale" = "Mirar contenido como mujer";
 
 // Signup validation
 "validationError" = "Error!";

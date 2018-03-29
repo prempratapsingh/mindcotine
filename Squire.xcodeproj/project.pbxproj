@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E734C67ACB52CC51EE93648 /* Pods_Squire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0BA2631827D1B22B2AEC3F /* Pods_Squire.framework */; };
 		9785BFEF1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9785BFEE1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd */; };
+		C121A7B5206D013B0061E41D /* RadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C121A7B4206D013A0061E41D /* RadioButtonGroup.m */; };
 		C12CA5222066537C002E5B44 /* TypeFormManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C12CA5212066537C002E5B44 /* TypeFormManager.m */; };
 		C13F1DE2205FBFB400447AEC /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C13F1DE1205FBFB400447AEC /* SettingsVC.m */; };
 		C13F1DE6205FD8B100447AEC /* GlobalModal.m in Sources */ = {isa = PBXBuildFile; fileRef = C13F1DE5205FD8B100447AEC /* GlobalModal.m */; };
@@ -109,6 +110,8 @@
 		5C0BA2631827D1B22B2AEC3F /* Pods_Squire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Squire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9785BFEE1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		97A085571CA4DCEF005858AD /* Squire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C121A7B3206D013A0061E41D /* RadioButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioButtonGroup.h; sourceTree = "<group>"; };
+		C121A7B4206D013A0061E41D /* RadioButtonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButtonGroup.m; sourceTree = "<group>"; };
 		C12CA5202066536B002E5B44 /* TypeFormManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeFormManager.h; sourceTree = "<group>"; };
 		C12CA5212066537C002E5B44 /* TypeFormManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeFormManager.m; sourceTree = "<group>"; };
 		C13F1DE1205FBFB400447AEC /* SettingsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
@@ -324,6 +327,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C121A7B2206D011C0061E41D /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				C121A7B3206D013A0061E41D /* RadioButtonGroup.h */,
+				C121A7B4206D013A0061E41D /* RadioButtonGroup.m */,
+			);
+			path = RadioButton;
+			sourceTree = "<group>";
+		};
 		C13F1DE0205FBF9700447AEC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +408,7 @@
 		F5364AB31F53E5D10048F904 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C121A7B2206D011C0061E41D /* RadioButton */,
 				F5DE8FAD1F55597900187ADC /* FloatingLabelTextField */,
 				F5364AB41F53E5D10048F904 /* TableViewCell */,
 				F5DE8FA31F554A1000187ADC /* UIViewController+UIViewController_Alert.h */,
@@ -784,6 +797,7 @@
 			files = (
 				F5364AE81F53E5D20048F904 /* MainViewController.m in Sources */,
 				F5364AE31F53E5D20048F904 /* VideoTableViewCell.m in Sources */,
+				C121A7B5206D013B0061E41D /* RadioButtonGroup.m in Sources */,
 				F5364AEA1F53E5D20048F904 /* SimplePlayerViewController.mm in Sources */,
 				F5364ADC1F53E5D20048F904 /* AppDelegate.m in Sources */,
 				F5364AE61F53E5D20048F904 /* DetailViewController.m in Sources */,

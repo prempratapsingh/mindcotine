@@ -80,19 +80,21 @@
 "text2" = "For each of the following affirmations, please indicate if you agree or disagree with them, using a number from 1 to 7. The closer to 1, stronger the disagreement. The closer to 7, stronger the agreement.";
 "contactus" = "Contact us";
 "name" = "name";
-"username" = "user name";
-"firstname" = "first name";
-"lastname" = "last name";
-"user" = "user";
-"email" = "email";
-"password" = "password";
-"re-enterpassword" = "re-enter  password";
+"username" = "Username";
+"firstname" = "First name";
+"lastname" = "Last name";
+"user" = "User";
+"email" = "Email";
+"password" = "Password";
+"re-enterpassword" = "Re-enter  password";
 "birthdaydate" = "date of birth";
 "country" = "country";
 "state" = "state";
 "city" = "city";
 "gender" = "gender";
 "completededucation" = "completed education";
+"contentForMale" = "Watch content as male";
+"contentForFemale" = "Watch content as female";
 
 // Signup validation
 "validationError" = "Error!";

@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet FloatingLabelTextField *textFieldMail;
 @property (weak, nonatomic) IBOutlet FloatingLabelTextField *textFieldPassword;
 @property (weak, nonatomic) IBOutlet FloatingLabelTextField *textFieldReEnttryPassword;
+@property (weak, nonatomic) IBOutlet FloatingLabelTextField *textFieldKitCode;
+@property (weak, nonatomic) IBOutlet UIView *genderContainerView;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 
