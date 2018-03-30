@@ -334,7 +334,7 @@
         mail.mailComposeDelegate = self;
         [mail setSubject:@"Support"];
         [mail setMessageBody:@" " isHTML:NO];
-        [mail setToRecipients:@[@"nicolas@mindcotine.com"]];
+        [mail setToRecipients:@[@"community@mindcotine.com"]];
         
         [self presentViewController:mail animated:YES completion:NULL];
     }

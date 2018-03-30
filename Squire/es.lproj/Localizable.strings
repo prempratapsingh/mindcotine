@@ -59,7 +59,7 @@
 "menu" = "Menu";
 
 //Side menu
-"contactUsTitle" = "¿Necesitar algo? Contáctenos";
+"contactUsTitle" = "¿Necesitas algo? Contáctanos.";
 "signOut" = "Desconectar";
 
 //Settings Screen
@@ -91,7 +91,7 @@
 "user" = "usuario";
 "email" = "correo";
 "password" = "contraseña";
-"re-enterpassword" = "re ingres contraseña";
+"re-enterpassword" = "Confirmar contraseña";
 "kitCode" = "Código del kit Mindcotine";
 "birthdaydate" = "fecha de cumpleaños";
 "country" = "pais";
