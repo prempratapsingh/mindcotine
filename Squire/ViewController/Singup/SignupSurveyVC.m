@@ -28,7 +28,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self showSignupTypeForm];
+}
+
+-(void)showSignupTypeForm {
+    [SVProgressHUD showWithStatus:@""];
     
+    NSString *javaScript = @"console.log('hello world')";
+    WKUserScript *userScript = [[WKUserScript alloc] initWithSource:javaScript
+                                                      injectionTime:WKUserScriptInjectionTimeAtDocumentStart
+                                                   forMainFrameOnly:YES];
+    
+    // webConfiguration
+    webConfiguration = [[WKWebViewConfiguration alloc] init];
+    
+    // webView
+    //CGSize webViewFrame = _webViewContainer.frame;
+    webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, _webViewContainer.frame.size.width, _webViewContainer.frame.size.height) configuration:webConfiguration];
+    webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [webView.configuration.userContentController addUserScript:userScript];
+    webView.navigationDelegate = self;
+    [_webViewContainer addSubview:webView];
+    
+    NSString *userName = [[NSUserDefaults standardUserDefaults]valueForKey:@"userId"];
+    NSString *typeForm;
+    if( [GlobalModal.deviceLanguage isEqualToString:@"en"] ) {
+        typeForm = [NSString stringWithFormat:@"http://mindcotinecommunity.typeform.com/to/pnduNc?user=%@&rdmpday=0", userName];
+    } else {
+        typeForm = [NSString stringWithFormat:@"http://mindcotinecommunity.typeform.com/to/tDGNoh?user=%@&rdmpday=0", userName];
+    }
+    
+    typeForm = [typeForm stringByAppendingString: userName];
+    
+    NSURL *url = [[NSURL alloc] initWithString:typeForm];
+    NSURLRequest *nsrequest = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:nsrequest];
+}
+
+-(void)showSurveyTypeForm {
     [SVProgressHUD showWithStatus:@""];
     
     NSString *javaScript = @"console.log('hello world')";
@@ -74,8 +111,8 @@
 
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     NSLog(@"didFinishNavigation: %@", webView.URL.absoluteString);
+
     if( [webView.URL.absoluteString containsString: @"tf=t4rtLg"] || [webView.URL.absoluteString containsString: @"tf=cPy9LN"] ) {
-        
         NSString *userName = [[NSUserDefaults standardUserDefaults]valueForKey:@"userId"];
         [TypeFormManager addToSignedSurveyUsersList:userName];
         [self performSegueWithIdentifier:@"showVideoList" sender:nil];

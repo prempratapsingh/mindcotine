@@ -1640,13 +1640,6 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_btn_next" translatesAutoresizingMaskIntoConstraints="NO" id="Gwk-Sb-Pvp" userLabel="right arrow">
-                                                <rect key="frame" x="340" y="562.5" width="15" height="15"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="15" id="DIe-tP-de6"/>
-                                                    <constraint firstAttribute="width" constant="15" id="mcL-g1-gwd"/>
-                                                </constraints>
-                                            </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hxe-lp-X2I">
                                                 <rect key="frame" x="0.0" y="84" width="375" height="519"/>
                                                 <subviews>
@@ -1976,11 +1969,18 @@
                                                     <constraint firstItem="7i2-cg-LUe" firstAttribute="trailing" secondItem="L44-Xg-xxd" secondAttribute="trailing" id="y1N-Jw-wd6"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jf-h1-d9V" userLabel="next button">
-                                                <rect key="frame" x="280" y="555" width="75" height="30"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_btn_next" translatesAutoresizingMaskIntoConstraints="NO" id="Gwk-Sb-Pvp" userLabel="right arrow">
+                                                <rect key="frame" x="345" y="563.5" width="15" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="DIe-tP-de6"/>
+                                                    <constraint firstAttribute="width" constant="15" id="mcL-g1-gwd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jf-h1-d9V" userLabel="next button">
+                                                <rect key="frame" x="220" y="555" width="125" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="1j9-Kf-oVI"/>
-                                                    <constraint firstAttribute="width" constant="75" id="XZ3-md-5xg"/>
+                                                    <constraint firstAttribute="width" constant="125" id="XZ3-md-5xg"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <state key="normal" title="Next">
@@ -1996,10 +1996,10 @@
                                             <constraint firstItem="YLK-vr-2pC" firstAttribute="leading" secondItem="8dv-3N-fqy" secondAttribute="leading" constant="45" id="8Px-GX-aOQ"/>
                                             <constraint firstItem="8I9-rZ-vQF" firstAttribute="trailing" secondItem="YLK-vr-2pC" secondAttribute="trailing" id="BjI-vq-xqB"/>
                                             <constraint firstItem="Hxe-lp-X2I" firstAttribute="top" secondItem="YLK-vr-2pC" secondAttribute="bottom" constant="15" id="EXk-G5-HSX"/>
-                                            <constraint firstItem="Gwk-Sb-Pvp" firstAttribute="trailing" secondItem="9Jf-h1-d9V" secondAttribute="trailing" id="GZJ-vO-30f"/>
                                             <constraint firstAttribute="bottom" secondItem="Hxe-lp-X2I" secondAttribute="bottom" id="Hn7-wJ-FgL"/>
-                                            <constraint firstAttribute="trailing" secondItem="9Jf-h1-d9V" secondAttribute="trailing" constant="20" id="KNx-bB-ffE"/>
-                                            <constraint firstItem="Gwk-Sb-Pvp" firstAttribute="centerY" secondItem="9Jf-h1-d9V" secondAttribute="centerY" id="Pvr-Kl-RIG"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Jf-h1-d9V" secondAttribute="trailing" constant="30" id="KNx-bB-ffE"/>
+                                            <constraint firstItem="Gwk-Sb-Pvp" firstAttribute="centerY" secondItem="9Jf-h1-d9V" secondAttribute="centerY" constant="1" id="Pvr-Kl-RIG"/>
+                                            <constraint firstItem="Gwk-Sb-Pvp" firstAttribute="leading" secondItem="9Jf-h1-d9V" secondAttribute="trailing" id="REI-JW-ulP"/>
                                             <constraint firstItem="SNN-OX-XSv" firstAttribute="bottom" secondItem="8I9-rZ-vQF" secondAttribute="bottom" id="TOp-eq-Uww"/>
                                             <constraint firstItem="YLK-vr-2pC" firstAttribute="top" secondItem="8dv-3N-fqy" secondAttribute="top" constant="44" id="Tbt-yB-ESW"/>
                                             <constraint firstAttribute="trailing" secondItem="Hxe-lp-X2I" secondAttribute="trailing" id="WCa-c0-ZdG"/>

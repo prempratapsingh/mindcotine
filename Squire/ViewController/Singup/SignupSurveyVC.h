@@ -13,5 +13,6 @@
 
 @property (nonatomic, retain) WKWebView *webView;
 @property (nonatomic, retain) WKWebViewConfiguration *webConfiguration;
+@property BOOL isSignUpInProgress;
 
 @end
