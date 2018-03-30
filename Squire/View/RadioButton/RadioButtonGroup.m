@@ -90,7 +90,7 @@
                                              forState:UIControlStateNormal];
     }
     [sender setImage:[UIImage imageNamed:@"radio-on.png"] forState:UIControlStateNormal];
-    
+    _selectedItemIndex = (int)[self.radioButtons indexOfObject:sender];
 }
 
 -(void) removeButtonAtIndex:(int)index{
@@ -105,7 +105,7 @@
     }
     [[self.radioButtons objectAtIndex:index] setImage:[UIImage
                                                        imageNamed:@"radio-on.png"] forState:UIControlStateNormal];
-    
+    _selectedItemIndex = index;
 }
 
 -(void)clearAll{

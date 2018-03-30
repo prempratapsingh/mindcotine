@@ -39,24 +39,15 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
     UIViewController *initViewController;
-   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 
-    if([[[NSUserDefaults standardUserDefaults]objectForKey:@"gender"]intValue])
-    {
-        NSString *userName = [[NSUserDefaults standardUserDefaults]valueForKey:@"userId"];
-        if( [TypeFormManager hasUserCompletedSignupSurvey:userName] == NO ) {
-            initViewController = [storyboard instantiateViewControllerWithIdentifier:@"signupSurveyViewController"];
-        } else {
-            initViewController = [storyboard instantiateViewControllerWithIdentifier:@"videoListViewController"];
-        }
-    }else
-    {
+    if([[[NSUserDefaults standardUserDefaults]objectForKey:@"gender"]intValue]) {
+        initViewController = [storyboard instantiateViewControllerWithIdentifier:@"videoListViewController"];
+    }else {
        initViewController = [storyboard instantiateViewControllerWithIdentifier:@"navigationLogin"];
     }
- 
-   [self.window setRootViewController:initViewController];
     
-    
+    [self.window setRootViewController:initViewController];
     return YES;
 }
 

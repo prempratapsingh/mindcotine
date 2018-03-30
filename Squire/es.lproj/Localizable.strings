@@ -81,7 +81,9 @@
 
 
 //SingUp
-"signupTitle" = "Registrarse | Información personal";
+"signupTitle1" = "Regístrate";
+"signupTitle2" = "";
+"signupTitle3" = "| Información personal";
 "name" = "nombre";
 "firstname" = "ombre de pila";
 "lastname" = "apellido";
@@ -90,6 +92,7 @@
 "email" = "correo";
 "password" = "contraseña";
 "re-enterpassword" = "re ingres contraseña";
+"kitCode" = "Código del kit Mindcotine";
 "birthdaydate" = "fecha de cumpleaños";
 "country" = "pais";
 "state" = "estado";
@@ -113,7 +116,7 @@
 "validationEnterPassword" = "Introducir la contraseña";
 "validationEnterPasswordError1" = "Contraseña longitud mínima 4";
 "validationEnterPasswordError2" = "Contraseña longitud mínima 8";
-"validationEnterPasswordError3" = "Por favor, compruebe la contraseña de reingreso";
+"validationEnterPasswordError3" = "La contraseña y la contraseña deben volver a ser las misma";
 "validationEnterDOBError" = "Seleccione su fecha de nacimiento";
 "validationEnterGenerError" = "Selecciona tu género";
 "validationEnterEducationError" = "Seleccione su educación";

@@ -11,6 +11,7 @@
 #import "UIViewController+UIViewController_Alert.h"
 #import "RadioButtonGroup.h"
 #import "Squire-Swift.h"
+#import "SVProgressHUD.h"
 
 @interface SignUpViewController ()<UITextFieldDelegate>
 
@@ -21,9 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleText2;
 @property (weak, nonatomic) IBOutlet UILabel *titleText3;
 
-
-
 @property BOOL isValidMail;
+@property RadioButtonGroup *radioButtonGroup;
 
 @end
 
@@ -41,35 +41,36 @@
         self.textFieldUserName.text = @"username";
         self.textFieldPassword.text = @"Test";
         self.textFieldReEnttryPassword.text = @"Test";
+        self.textFieldKitCode.text = @"123xyz";
     }
     
     [self setupTextFeild];
-  
-//    self.textFieldReEnttryPassword.nextTextField = self.textFieldLastName;
-    
     [[self view]addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(viewTapped)]];
+    
     _isValidMail = YES;
     
-    //_signupTitle.text = NSLocalizedString(@"signupTitle", @"");
+    _titleText1.text = NSLocalizedString(@"signupTitle1", @"");
+    _titleText2.text = NSLocalizedString(@"signupTitle2", @"");
+    _titleText3.text = NSLocalizedString(@"signupTitle3", @"");
     _textFieldName.placeholder = NSLocalizedString(@"firstname", @"");
     _textFieldLastName.placeholder = NSLocalizedString(@"lastname", @"");
     _textFieldMail.placeholder = NSLocalizedString(@"email", @"");
     _textFieldPassword.placeholder = NSLocalizedString(@"password", @"");
     _textFieldReEnttryPassword.placeholder = NSLocalizedString(@"re-enterpassword", @"");
     _textFieldUserName.placeholder = NSLocalizedString(@"username", @"");
+    _textFieldKitCode.placeholder = NSLocalizedString(@"kitCode", @"");
     [_nextButton setTitle:NSLocalizedString(@"next", @"") forState:UIControlStateNormal];
     
     NSArray *options = [[NSArray alloc] initWithObjects:NSLocalizedString(@"contentForMale", @""), NSLocalizedString(@"contentForFemale", @""), nil];
-    RadioButtonGroup *group = [[RadioButtonGroup alloc]
+    _radioButtonGroup = [[RadioButtonGroup alloc]
                                 initWithFrame: _genderContainerView.bounds
                                 andOptions:options andColumns:1];
-    [_genderContainerView addSubview:group];
-    [group setSelected:1];
+    [_genderContainerView addSubview: _radioButtonGroup];
+    [_radioButtonGroup setSelected: 0];
     
     [[UIDevice currentDevice] setValue:
      [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
                                 forKey:@"orientation"];
-    // Do any additional setup after loading the view.
 }
 
 
@@ -81,12 +82,13 @@
     
      return [textField textField:textField shouldChangeCharactersInRange:range replacementString:string];
 }
+
 -(BOOL)textFieldShouldEndEditing:(FloatingLabelTextField *)textField{
     return [textField textFieldShouldEndEditing:textField];
 }
+
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-    
     if (textField == _textFieldMail){
         if ([Validation email:_textFieldMail.text]) {
             _emailInvalid.hidden = true;
@@ -100,26 +102,94 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     
     [textField.nextTextField becomeFirstResponder];
-    if (textField == _textFieldReEnttryPassword){
+    if (textField == _textFieldKitCode){
         [self.view endEditing:true];
         [self showSecondViewTapped:nil];
     }
     return YES;
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    SignUpSecondViewController *controller = segue.destinationViewController;
-    controller.dictWithInfo = @{@"key": @"value"};
-}
-
 #pragma mark - Validation
 
 - (IBAction)showSecondViewTapped:(id)sender {
-    
     if ([self isValidaton]) {
-        [self performSegueWithIdentifier:@"showSecond" sender:nil];
+        [self checkKitCode];
     }
+}
+
+-(void) saveDataOnServer {
+    
+    [SVProgressHUD showWithStatus:@""];
+    
+    NSDictionary *headers = @{ @"content-type": @"application/json",
+                               @"cache-control": @"no-cache",
+                               @"postman-token": @"e5902297-2cd6-b459-02f2-b6763957dfb1" };
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setObject: @"password" forKey: @"grant_type"];
+    [params setObject: @"f3d259ddd3ed8ff3843839b" forKey: @"client_id"];
+    [params setObject: @"4c7f6f8fa93d59c45502c0ae8c4a95b" forKey: @"client_secret"];
+    
+    [params setObject: _textFieldName.text forKey: @"name"];
+    [params setObject: _textFieldLastName.text forKey: @"lastname"];
+    [params setObject: _textFieldUserName.text forKey: @"username"];
+    [params setObject: _textFieldMail.text forKey: @"email"];
+    [params setObject: _textFieldPassword.text forKey: @"password"];
+    [params setObject: (_radioButtonGroup.selectedItemIndex == 0) ? @1 : @2 forKey: @"gender"];
+    NSMutableDictionary *data = [NSMutableDictionary dictionary];
+    [params setObject: data forKey: @"data"];
+    
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:params options:0 error:nil];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/index.php/api/v1/user/create"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0];
+    [request setHTTPMethod:@"POST"];
+    [request setAllHTTPHeaderFields:headers];
+    [request setHTTPBody:postData];
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request
+                                                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                                    if (error) {
+                                                        NSLog(@"%@", error);
+                                                    } else {
+                                                        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+                                                        NSLog(@"%@", httpResponse);
+                                                        NSError *error1;
+                                                        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error1];
+                                                        if ( !error1){
+                                                            if ( [httpResponse statusCode] == 200){
+                                                                if ([[dict objectForKey:@"response"] isKindOfClass:[NSDictionary class]]){
+                                                                    [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"gender"] forKey:@"gender"];
+                                                                    [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"name"] forKey:@"username"];
+                                                                    [[NSUserDefaults standardUserDefaults]setObject:[[[dict objectForKey:@"response"] objectForKey:@"user"] objectForKey:@"username"] forKey:@"userId"];
+                                                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                                                        [SVProgressHUD dismiss];
+                                                                        [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
+                                                                    });
+                                                                    
+                                                                }else{
+                                                                    [self showAlertTitle:@"Error" message:@"incorrect data!"];
+                                                                    dispatch_async(dispatch_get_main_queue(), ^{
+                                                                        [SVProgressHUD dismiss];
+                                                                    });
+                                                                    
+                                                                }
+                                                            }else{
+                                                                [self showAlertTitle:@"Error" message:@"incorrect data!"];
+                                                                dispatch_async(dispatch_get_main_queue(), ^{
+                                                                    [SVProgressHUD dismiss];
+                                                                });
+                                                            }
+                                                        }else{
+                                                            [self showAlertTitle:@"Error" message:@"incorrect data!"];
+                                                            dispatch_async(dispatch_get_main_queue(), ^{
+                                                                [SVProgressHUD dismiss];
+                                                            });
+                                                            
+                                                        }
+                                                        
+                                                    }
+                                                }];
+    [dataTask resume];
 }
 
 -(void)checkMail{
@@ -229,6 +299,7 @@
     self.textFieldUserName.nextTextField = self.textFieldMail;
     self.textFieldMail.nextTextField = self.textFieldPassword;
     self.textFieldPassword.nextTextField = self.textFieldReEnttryPassword;
+    self.textFieldReEnttryPassword.nextTextField = self.textFieldKitCode;
     
     [self.textFieldName textDidChange:^BOOL(NSString * _Nonnull text) {
         return [Validation name:text];
@@ -241,12 +312,8 @@
     [self.textFieldUserName textDidChange:^BOOL(NSString * _Nonnull text) {
         return [Validation alphabet:text];
     }];
-//    
-//    [self.textFieldMail textDidChange:^BOOL(NSString * _Nonnull text) {
-//        return [Validation email:text];
-//    }];
-   
 }
+
 -(BOOL)isValidaton{
     
     NSString * mgs;
@@ -280,6 +347,7 @@
         mgs = NSLocalizedString(@"validationEnterEmailError2", @"");
     }
     
+    //Passoword
     else if (self.textFieldPassword.text.length ==0 ) {
         mgs = NSLocalizedString(@"validationEnterPassword", @"");
     }else if (self.textFieldReEnttryPassword.text.length ==0 ) {
@@ -290,35 +358,78 @@
         mgs = NSLocalizedString(@"validationEnterPasswordError2", @"");
     }else if (![self.textFieldReEnttryPassword.text isEqualToString:self.textFieldPassword.text] ) {
         mgs = NSLocalizedString(@"validationEnterPasswordError3", @"");
+    }else if (self.textFieldKitCode.text.length == 0 ) {
+        mgs = NSLocalizedString(@"validationEnterKitCode", @"");
     }
     if (mgs.length > 0) {
         
         [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:mgs];
-        return false;
+        return NO;
     }
     
     return YES;
 }
 
+-(void)checkKitCode {
+    NSURL *url = [NSURL URLWithString:@"http://ec2-35-167-200-140.us-west-2.compute.amazonaws.com/WebMindCotine/registerMindCotine.php?"];
+    
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url
+                                                       cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                                   timeoutInterval:60];
+    
+    [req setHTTPMethod:@"POST"];
+    [req setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    NSString *postData = [NSString stringWithFormat:@"&code_cardboard=%@&usuario=%@", _textFieldKitCode.text, _textFieldUserName.text];
+    NSString *length = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
+    [req setValue:length forHTTPHeaderField:@"Content-Length"];
+    [req setHTTPBody:[postData dataUsingEncoding:NSASCIIStringEncoding]];
+    
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    [[session dataTaskWithRequest:req
+        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            if (error) {
+                [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+            } else {
+                NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+                NSLog(@"%@", httpResponse);
+                
+                NSError *error1;
+                NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error1];
+                if ( !error1){
+                    if ( [httpResponse statusCode] == 200){
+                        NSString *errorMessage = dict[@"error_msg"];
+                        if(errorMessage.length > 0) {
+                            [self saveDataOnServer];
+                        } else {
+                            [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                        }
+                    } else {
+                        [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                    }
+                } else{
+                    [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                }
+            }
+            
+    }] resume];
+}
 
 -(void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBarHidden = NO;
-    
-    
     
     [[UIDevice currentDevice] setValue:
      [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
                                 forKey:@"orientation"];
 }
+
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations{
     
     return  UIInterfaceOrientationMaskPortrait;
 }
+
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
-    //	(iOS 6)
-    //	Force to portrait
-    return UIInterfaceOrientationPortrait;
+  return UIInterfaceOrientationPortrait;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

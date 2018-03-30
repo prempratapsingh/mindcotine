@@ -74,7 +74,9 @@
 "completeData" = "Complete Data";
 
 //SignUp1
-"signupTitle" = "Sign Up | Personal info";
+"signupTitle1" = "Sign";
+"signupTitle2" = "Up";
+"signupTitle3" = "| Personal info";
 "back" = "Back";
 "text1" = "Please complete the following questions if you are a current smoker. This does not include anyone who solely uses tobacco replacement products.";
 "text2" = "For each of the following affirmations, please indicate if you agree or disagree with them, using a number from 1 to 7. The closer to 1, stronger the disagreement. The closer to 7, stronger the agreement.";
@@ -87,6 +89,7 @@
 "email" = "Email";
 "password" = "Password";
 "re-enterpassword" = "Re-enter  password";
+"kitCode" = "Mindcotine Kit Code";
 "birthdaydate" = "date of birth";
 "country" = "country";
 "state" = "state";
@@ -110,8 +113,8 @@
 "validationEnterPassword" = "Enter Password";
 "validationEnterPasswordError1" = "Password min length 4";
 "validationEnterPasswordError2" = "Password min length 8";
-"validationEnterPasswordError3" = "please check Re-Entry Password";
-"validationEnterDOBError" = "Select your DOB";
+"validationEnterPasswordError3" = "Password and re-enter password should be the same";
+"validationEnterKitCode" = "Please enter valid kit code";
 "validationEnterGenerError" = "Select your Gender";
 "validationEnterEducationError" = "Select your Education";
 "validationEnterDataError" = "Complete Data";

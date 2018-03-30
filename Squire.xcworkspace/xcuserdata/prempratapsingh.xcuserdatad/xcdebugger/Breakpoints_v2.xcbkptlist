@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Squire/View/RadioButton/RadioButtonGroup.m"
-            timestampString = "544049704.121471"
+            filePath = "Squire/ViewController/Singup/SignUpViewController.m"
+            timestampString = "544090910.029879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-radioButtonClicked:"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-saveDataOnServer"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Squire/ViewController/Singup/SignUpViewController.m"
+            timestampString = "544090910.030026"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "-saveDataOnServer"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

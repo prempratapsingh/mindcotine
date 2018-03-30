@@ -133,11 +133,7 @@
                                                                     [[NSUserDefaults standardUserDefaults] synchronize];
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
                                                                         [SVProgressHUD dismiss];
-                                                                        if( [TypeFormManager hasUserCompletedSignupSurvey:userName] == NO ) {
-                                                                            [self performSegueWithIdentifier:@"showSignupSurvey" sender:nil];
-                                                                        } else {
-                                                                            [self performSegueWithIdentifier:@"showVideoList" sender:nil];
-                                                                        }
+                                                                        [self performSegueWithIdentifier:@"showVideoList" sender:nil];
                                                                     });
 
                                                                 }else{
