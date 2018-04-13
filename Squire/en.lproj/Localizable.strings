@@ -90,12 +90,12 @@
 "password" = "Password";
 "re-enterpassword" = "Re-enter  password";
 "kitCode" = "Mindcotine Kit Code";
-"birthdaydate" = "date of birth";
-"country" = "country";
-"state" = "state";
-"city" = "city";
-"gender" = "gender";
-"completededucation" = "completed education";
+"birthdaydate" = "Date of birth";
+"country" = "Country";
+"state" = "State";
+"city" = "City";
+"gender" = "Gender";
+"completededucation" = "Completed education";
 "contentForMale" = "Watch content as male";
 "contentForFemale" = "Watch content as female";
 

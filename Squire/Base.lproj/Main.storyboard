@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t33-aL-wqV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t33-aL-wqV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,9 +25,6 @@
         </array>
         <array key="SourceSansPro-Semibold.ttf">
             <string>SourceSansPro-Semibold</string>
-        </array>
-        <array key="VerdanaBold.ttf">
-            <string>Verdana-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -135,18 +132,14 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOv-dy-dtn">
-                                                        <rect key="frame" x="97.5" y="239" width="140" height="30"/>
+                                                        <rect key="frame" x="20" y="239" width="295" height="30"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="140" id="MzW-Kx-5HO"/>
                                                             <constraint firstAttribute="height" constant="30" id="cqJ-ib-D9Q"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                         <state key="normal" title="Password Reset">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
-                                                        <connections>
-                                                            <segue destination="VJj-2N-Ssa" kind="show" id="ciq-c9-2wh"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -156,6 +149,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="b9R-89-1ZY" secondAttribute="trailing" constant="20" id="EHk-Ft-BfH"/>
                                                     <constraint firstItem="U0v-Ih-qOW" firstAttribute="top" secondItem="u05-6c-S6n" secondAttribute="bottom" constant="40" id="Fz2-3g-TN2"/>
                                                     <constraint firstItem="b9R-89-1ZY" firstAttribute="leading" secondItem="gBz-Vv-X43" secondAttribute="leading" constant="20" id="GLb-67-PTm"/>
+                                                    <constraint firstItem="UOv-dy-dtn" firstAttribute="width" secondItem="b9R-89-1ZY" secondAttribute="width" id="OhS-kU-Dqu"/>
                                                     <constraint firstItem="u05-6c-S6n" firstAttribute="leading" secondItem="U0v-Ih-qOW" secondAttribute="leading" id="Q0y-8m-owR"/>
                                                     <constraint firstItem="u05-6c-S6n" firstAttribute="centerX" secondItem="gBz-Vv-X43" secondAttribute="centerX" id="W7j-HT-EwQ"/>
                                                     <constraint firstItem="b9R-89-1ZY" firstAttribute="centerX" secondItem="UOv-dy-dtn" secondAttribute="centerX" id="e6a-u2-MCb"/>
@@ -919,7 +913,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUk-9u-pfN">
-                                <rect key="frame" x="5" y="27" width="110" height="43"/>
+                                <rect key="frame" x="0.0" y="27" width="110" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="2E9-7t-miU"/>
                                     <constraint firstAttribute="width" constant="110" id="jq3-7X-HYf"/>
@@ -939,7 +933,7 @@
                                     <constraint firstAttribute="height" constant="27" id="FOY-iL-Yb6"/>
                                     <constraint firstAttribute="width" constant="200" id="ISD-Oh-NMA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -953,7 +947,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-kv-DpQ" userLabel="Current Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="126" width="335" height="40"/>
+                                <rect key="frame" x="20" y="126" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
@@ -979,7 +973,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-n6-6H1" userLabel="New Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="176" width="335" height="40"/>
+                                <rect key="frame" x="20" y="175" width="335" height="39.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -1005,7 +999,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-UH-pVz" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="226" width="335" height="39"/>
+                                <rect key="frame" x="20" y="224.5" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -1057,7 +1051,7 @@
                             <constraint firstItem="6x4-UH-pVz" firstAttribute="top" secondItem="aTR-n6-6H1" secondAttribute="bottom" constant="10" id="9xo-QU-U3e"/>
                             <constraint firstItem="aTR-n6-6H1" firstAttribute="top" secondItem="Cj8-kv-DpQ" secondAttribute="bottom" constant="10" id="Asg-Kf-JQO"/>
                             <constraint firstItem="Cj8-kv-DpQ" firstAttribute="leading" secondItem="rRL-Bd-Hcw" secondAttribute="leading" id="CRu-r3-lA2"/>
-                            <constraint firstItem="BUk-9u-pfN" firstAttribute="leading" secondItem="9OS-3M-zSC" secondAttribute="leading" constant="5" id="EOd-dv-OHR"/>
+                            <constraint firstItem="BUk-9u-pfN" firstAttribute="leading" secondItem="9OS-3M-zSC" secondAttribute="leading" id="EOd-dv-OHR"/>
                             <constraint firstItem="aTR-n6-6H1" firstAttribute="leading" secondItem="Cj8-kv-DpQ" secondAttribute="leading" id="SuY-Hj-sLj"/>
                             <constraint firstItem="aTR-n6-6H1" firstAttribute="trailing" secondItem="Cj8-kv-DpQ" secondAttribute="trailing" id="Tld-av-Bua"/>
                             <constraint firstItem="VJD-Ez-mYF" firstAttribute="top" secondItem="Wvj-vk-1ZR" secondAttribute="bottom" constant="15" id="VlD-AN-CdW"/>
@@ -1100,11 +1094,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8UV-M9-Bgk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FHV-IT-eDV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksm-6M-W1H">
-                                <rect key="frame" x="0.0" y="520" width="254" height="83"/>
+                                <rect key="frame" x="0.0" y="584" width="254" height="83"/>
                                 <color key="backgroundColor" red="0.13948893547058105" green="0.18298506736755371" blue="0.25358507037162781" alpha="0.41358090753424659" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="9T2-XZ-zMq"/>
@@ -1141,7 +1135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIY-Tn-euX" userLabel="close button">
-                                <rect key="frame" x="209" y="28" width="35" height="35"/>
+                                <rect key="frame" x="209" y="48" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="TOD-OQ-ER1"/>
                                     <constraint firstAttribute="height" constant="35" id="xlJ-2U-8vn"/>
@@ -1152,7 +1146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL8-oK-gSi" userLabel="settings button">
-                                <rect key="frame" x="169" y="28" width="35" height="35"/>
+                                <rect key="frame" x="169" y="48" width="35" height="35"/>
                                 <state key="normal" image="gear-icon-white"/>
                                 <connections>
                                     <action selector="settingsButtonTapped:" destination="VJj-2N-Ssa" eventType="touchUpInside" id="Llr-Z2-L4o"/>
@@ -1166,7 +1160,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzi-G4-heU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="mindCotineLogo" translatesAutoresizingMaskIntoConstraints="NO" id="w8d-jz-bwo">
@@ -1174,7 +1168,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1c-oO-dr4">
-                                        <rect key="frame" x="0.0" y="75" width="375" height="528"/>
+                                        <rect key="frame" x="0.0" y="75" width="375" height="592"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yos-P7-jd2">
@@ -1195,7 +1189,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="240" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tmu-p3-kiJ">
-                                                <rect key="frame" x="0.0" y="47" width="375" height="481"/>
+                                                <rect key="frame" x="0.0" y="47" width="375" height="545"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <prototypes>
@@ -3799,6 +3793,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bap-Jl-76b"/>
-        <segue reference="uQh-VS-d2z"/>
+        <segue reference="FRf-YP-leR"/>
     </inferredMetricsTieBreakers>
 </document>
