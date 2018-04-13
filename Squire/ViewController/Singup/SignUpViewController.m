@@ -167,26 +167,24 @@
                                                                     });
                                                                     
                                                                 }else{
-                                                                    [self showAlertTitle:@"Error" message:@"incorrect data!"];
                                                                     dispatch_async(dispatch_get_main_queue(), ^{
+                                                                        [self showAlertTitle:@"Error" message:@"incorrect data!"];
                                                                         [SVProgressHUD dismiss];
                                                                     });
                                                                     
                                                                 }
                                                             }else{
-                                                                [self showAlertTitle:@"Error" message:@"incorrect data!"];
                                                                 dispatch_async(dispatch_get_main_queue(), ^{
+                                                                    [self showAlertTitle:@"Error" message:@"incorrect data!"];
                                                                     [SVProgressHUD dismiss];
                                                                 });
                                                             }
                                                         }else{
-                                                            [self showAlertTitle:@"Error" message:@"incorrect data!"];
                                                             dispatch_async(dispatch_get_main_queue(), ^{
+                                                                [self showAlertTitle:@"Error" message:@"incorrect data!"];
                                                                 [SVProgressHUD dismiss];
                                                             });
-                                                            
                                                         }
-                                                        
                                                     }
                                                 }];
     [dataTask resume];
@@ -230,13 +228,10 @@
                                                                             _emailInvalid.hidden = YES;
                                                                         });
                                                                     }
-                                                                    
-                                                                    
                                                                 }
                                                             }
                                                         }else{
                                                         }
-                                                        
                                                     }
                                                 }];
     [dataTask resume];
@@ -393,21 +388,32 @@
                 NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
                 NSLog(@"%@", httpResponse);
                 
+                // Kit Id Check Responses
+                //For Used Kit id - {"error":false,"error_msg":"Codigo inexistente "}
+                //For Valid/New Kit id - {"error":true}
+                
                 NSError *error1;
                 NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error1];
                 if ( !error1){
                     if ( [httpResponse statusCode] == 200){
-                        NSString *errorMessage = dict[@"error_msg"];
-                        if(errorMessage.length > 0) {
+                        BOOL isError = [[dict objectForKey:@"error"] boolValue];
+                        NSString *errorMessage = [dict objectForKey:@"error_msg"];
+                        if( isError == YES ) {
                             [self saveDataOnServer];
                         } else {
-                            [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                            });
                         }
                     } else {
-                        [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                        });
                     }
                 } else{
-                    [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                    });
                 }
             }
             
