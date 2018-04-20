@@ -14,20 +14,26 @@
 
 -(void) download: (NSString *)from {
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@/%@/%@", MINDCOTINE_AWS, TAG_VIDEO, TAG_PLATFORM, TAG_EN, from]];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    
-    CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
-    NSString *uuidStr = (__bridge_transfer NSString *) CFUUIDCreateString(kCFAllocatorDefault, uuid);
-    CFRelease(uuid);
-    NSString *randomSessionIdentifier = [uuidStr lowercaseString];
-    NSURLSessionConfiguration* config = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:randomSessionIdentifier];
-    //config.isDiscretionary = YES;
-    config.sessionSendsLaunchEvents = YES;
-    config.allowsCellularAccess = YES;
-    _session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
-    NSURLSessionDownloadTask* task = [_session downloadTaskWithRequest:request];
-    [task resume];
+    NSString *targetDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    NSString *downloadFilePathStr = [targetDirectory stringByAppendingPathComponent:from];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if([fileManager fileExistsAtPath:downloadFilePathStr] == NO) {
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@/%@/%@", MINDCOTINE_AWS, TAG_VIDEO, TAG_PLATFORM, TAG_EN, from]];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+        
+        CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
+        NSString *uuidStr = (__bridge_transfer NSString *) CFUUIDCreateString(kCFAllocatorDefault, uuid);
+        CFRelease(uuid);
+        NSString *randomSessionIdentifier = [uuidStr lowercaseString];
+        NSURLSessionConfiguration* config = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:randomSessionIdentifier];
+        config.sessionSendsLaunchEvents = YES;
+        config.allowsCellularAccess = YES;
+        _session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+        NSURLSessionDownloadTask* task = [_session downloadTaskWithRequest:request];
+        [task resume];
+    } else {
+        NSLog(@"%@ was already downloaded!", from);
+    }
 }
 
 -(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite {
@@ -36,7 +42,7 @@
 
 -(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location {
     NSString *targetDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    NSString *downloadFilePathStr = [targetDirectory stringByAppendingPathComponent:location.lastPathComponent];
+    NSString *downloadFilePathStr = [targetDirectory stringByAppendingPathComponent:downloadTask.currentRequest.URL.lastPathComponent];
     NSURL *downloadFilePath = [NSURL fileURLWithPath:downloadFilePathStr];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *moveError = nil;
