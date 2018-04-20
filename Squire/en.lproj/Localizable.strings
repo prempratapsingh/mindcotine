@@ -8,7 +8,9 @@
 */
 
 //Global
+"version" = "Version";
 "next" = "Next";
+"back" = "Back";
 "submit" = "Submit";
 
 //Gender
@@ -61,6 +63,7 @@
 
 //Side menu
 "contactUsTitle" = "Need something? Contact us";
+"smokeCraving" = "I want to smoke!";
 "signOut" = "Sign Out";
 
 //Settings Screen

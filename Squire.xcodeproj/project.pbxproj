@@ -11,8 +11,11 @@
 		9785BFEF1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9785BFEE1CA4E1DF00C99427 /* libstdc++.6.0.9.tbd */; };
 		C121A7B5206D013B0061E41D /* RadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C121A7B4206D013A0061E41D /* RadioButtonGroup.m */; };
 		C12CA5222066537C002E5B44 /* TypeFormManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C12CA5212066537C002E5B44 /* TypeFormManager.m */; };
+		C13EDAAA2084A3940057447B /* SmokeCravingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C13EDAA92084A3940057447B /* SmokeCravingVC.m */; };
 		C13F1DE2205FBFB400447AEC /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C13F1DE1205FBFB400447AEC /* SettingsVC.m */; };
 		C13F1DE6205FD8B100447AEC /* GlobalModal.m in Sources */ = {isa = PBXBuildFile; fileRef = C13F1DE5205FD8B100447AEC /* GlobalModal.m */; };
+		C18325DC2088774A00CC2A53 /* URLs.m in Sources */ = {isa = PBXBuildFile; fileRef = C18325DB2088774A00CC2A53 /* URLs.m */; };
+		C18325E020887D3900CC2A53 /* MediaDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C18325DF20887D3900CC2A53 /* MediaDownloader.m */; };
 		C194DEEC205E4666000714C7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C194DEEB205E4666000714C7 /* LanguageManager.m */; };
 		C194DEEF205E6ECE000714C7 /* SignupSurveyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C194DEEE205E6ECE000714C7 /* SignupSurveyVC.m */; };
 		F5364ADC1F53E5D20048F904 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5364AA31F53E5D10048F904 /* AppDelegate.m */; };
@@ -114,10 +117,16 @@
 		C121A7B4206D013A0061E41D /* RadioButtonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButtonGroup.m; sourceTree = "<group>"; };
 		C12CA5202066536B002E5B44 /* TypeFormManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeFormManager.h; sourceTree = "<group>"; };
 		C12CA5212066537C002E5B44 /* TypeFormManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeFormManager.m; sourceTree = "<group>"; };
+		C13EDAA82084A3630057447B /* SmokeCravingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmokeCravingVC.h; sourceTree = "<group>"; };
+		C13EDAA92084A3940057447B /* SmokeCravingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmokeCravingVC.m; sourceTree = "<group>"; };
 		C13F1DE1205FBFB400447AEC /* SettingsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
 		C13F1DE3205FBFC300447AEC /* SettingsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
 		C13F1DE4205FD8A200447AEC /* GlobalModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalModal.h; sourceTree = "<group>"; };
 		C13F1DE5205FD8B100447AEC /* GlobalModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalModal.m; sourceTree = "<group>"; };
+		C18325DA2088771000CC2A53 /* URLs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLs.h; sourceTree = "<group>"; };
+		C18325DB2088774A00CC2A53 /* URLs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLs.m; sourceTree = "<group>"; };
+		C18325DE20887D2C00CC2A53 /* MediaDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaDownloader.h; sourceTree = "<group>"; };
+		C18325DF20887D3900CC2A53 /* MediaDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaDownloader.m; sourceTree = "<group>"; };
 		C194DEEA205E4656000714C7 /* LanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
 		C194DEEB205E4666000714C7 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 		C194DEED205E6EBC000714C7 /* SignupSurveyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupSurveyVC.h; sourceTree = "<group>"; };
@@ -304,6 +313,7 @@
 				F5364AA31F53E5D10048F904 /* AppDelegate.m */,
 				F5364AF51F53E5DC0048F904 /* LaunchScreen.storyboard */,
 				F5364AF71F53E5DC0048F904 /* Main.storyboard */,
+				C18325DD20887D1200CC2A53 /* Services */,
 				C194DEE9205E462C000714C7 /* Utils */,
 				F5364AA41F53E5D10048F904 /* Library */,
 				F5364AB01F53E5D10048F904 /* Model */,
@@ -343,6 +353,15 @@
 				C13F1DE1205FBFB400447AEC /* SettingsVC.m */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		C18325DD20887D1200CC2A53 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C18325DE20887D2C00CC2A53 /* MediaDownloader.h */,
+				C18325DF20887D3900CC2A53 /* MediaDownloader.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C194DEE9205E462C000714C7 /* Utils */ = {
@@ -400,6 +419,8 @@
 				F5DE8FAB1F554E6D00187ADC /* Validation.m */,
 				C13F1DE4205FD8A200447AEC /* GlobalModal.h */,
 				C13F1DE5205FD8B100447AEC /* GlobalModal.m */,
+				C18325DA2088771000CC2A53 /* URLs.h */,
+				C18325DB2088774A00CC2A53 /* URLs.m */,
 			);
 			name = Model;
 			path = Squire/Model;
@@ -434,10 +455,10 @@
 				C13F1DE0205FBF9700447AEC /* Settings */,
 				F5364AB91F53E5D20048F904 /* DetailsVideo */,
 				F5364B5D1F53EEAA0048F904 /* Login */,
-				F5364AC01F53E5D20048F904 /* MainViewController.h */,
-				F5364AC11F53E5D20048F904 /* MainViewController.m */,
 				F5364AC21F53E5D20048F904 /* Payer */,
 				F5364AC91F53E5D20048F904 /* Singup */,
+				F5364AC01F53E5D20048F904 /* MainViewController.h */,
+				F5364AC11F53E5D20048F904 /* MainViewController.m */,
 				F5364ADA1F53E5D20048F904 /* ViewController.h */,
 				F5364ADB1F53E5D20048F904 /* ViewController.m */,
 			);
@@ -465,6 +486,8 @@
 				F5364AC41F53E5D20048F904 /* PlayerViewController.m */,
 				F5364AC51F53E5D20048F904 /* SimplePlayerViewController.h */,
 				F5364AC61F53E5D20048F904 /* SimplePlayerViewController.mm */,
+				C13EDAA82084A3630057447B /* SmokeCravingVC.h */,
+				C13EDAA92084A3940057447B /* SmokeCravingVC.m */,
 			);
 			path = Payer;
 			sourceTree = "<group>";
@@ -814,11 +837,14 @@
 				F5364AE21F53E5D20048F904 /* FileDownloadInfo.m in Sources */,
 				F5364AEC1F53E5D20048F904 /* SignUpEightViewController.m in Sources */,
 				F5364AF31F53E5D20048F904 /* SingUpSixViewController.m in Sources */,
+				C18325E020887D3900CC2A53 /* MediaDownloader.m in Sources */,
+				C13EDAAA2084A3940057447B /* SmokeCravingVC.m in Sources */,
 				F5364AEB1F53E5D20048F904 /* VideoListViewController.m in Sources */,
 				F5364AED1F53E5D20048F904 /* SignUpFifthViewController.m in Sources */,
 				C194DEEC205E4666000714C7 /* LanguageManager.m in Sources */,
 				F5364ADE1F53E5D20048F904 /* SVProgressAnimatedView.m in Sources */,
 				F5DE8FA51F554A1000187ADC /* UIViewController+UIViewController_Alert.m in Sources */,
+				C18325DC2088774A00CC2A53 /* URLs.m in Sources */,
 				F5364AE11F53E5D20048F904 /* SVRadialGradientLayer.m in Sources */,
 				F5DE8FAF1F55597900187ADC /* FloatingLabelTextField.swift in Sources */,
 				F5364AF41F53E5D20048F904 /* ViewController.m in Sources */,

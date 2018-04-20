@@ -9,6 +9,10 @@
 #import "VideoListViewController.h"
 #import "VideoTableViewCell.h"
 #import "DetailVideoViewController.h"
+#import "SmokeCravingVC.h"
+#import "URLs.h"
+#import "MediaDownloader.h"
+
 @interface VideoListViewController () <TableViewVideCellDelegate, MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *mainMenuView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewTitle;
@@ -19,6 +23,7 @@
 @property (nonatomic, strong) NSArray *arrayWithVideosMale;
 @property (nonatomic, strong) NSArray *arrayWithVideosFemaleMale;
 @property (nonatomic, strong) NSMutableArray *arrayAllGenders;
+@property (weak, nonatomic) IBOutlet UILabel *versionLabel;
 
 
 @end
@@ -43,6 +48,8 @@
     _contactUsTitle.text = NSLocalizedString(@"contactUsTitle", @"");
     [_menuButton setTitle: NSLocalizedString(@"menu", @"") forState:UIControlStateNormal];
     [_signOutButton setTitle: NSLocalizedString(@"signOut", @"") forState:UIControlStateNormal];
+    [_wantToSmokeButton setTitle: NSLocalizedString(@"smokeCraving", @"") forState:UIControlStateNormal];
+    
     
     _arrayWithVideosFemaleMale =   @[
                         
@@ -102,7 +109,13 @@
     [_arrayAllGenders addObjectsFromArray:_arrayWithVideosMale];
     [_arrayAllGenders addObjectsFromArray:_arrayWithVideosFemaleMale];
     _tableView.contentInset = UIEdgeInsetsMake(0, 0, 20, 0);
-    // Do any additional setup after loading the view.
+    
+    NSString *version = NSBundle.mainBundle.infoDictionary [@"CFBundleShortVersionString"];
+    _versionLabel.text = [NSLocalizedString(@"version", @"") stringByAppendingString:version];
+    
+    NSMutableArray *audioURLs = URLs.getAudioUrls;
+    MediaDownloader *mediaDownloader = [[MediaDownloader alloc] init];
+    [mediaDownloader download: [audioURLs objectAtIndex:0]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -282,15 +295,12 @@
 
     }
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)smokeCravingButtonTapped:(UIButton *)sender {
+    SmokeCravingVC *smokeCravingVC = [self.storyboard instantiateViewControllerWithIdentifier: @"SmokeCravingVC"];
+    [self presentViewController:smokeCravingVC animated:YES completion:nil];
 }
-*/
+
 - (IBAction)signOutButtonTapped:(id)sender {
     
     NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
