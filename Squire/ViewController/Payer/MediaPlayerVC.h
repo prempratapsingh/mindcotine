@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MediaPlayerVC : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *playButton;
-- (IBAction)didClickOnPlayButton:(id)sender;
+
+@property (nonatomic) NSString *mediaFileName;
+
 @end

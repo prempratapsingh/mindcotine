@@ -13,10 +13,12 @@
 #import "SVProgressHUD.h"
 #import "UIViewController+UIViewController_Alert.h"
 #import "TypeFormManager.h"
+#import "MediaPlayerVC.h"
 
 @interface SmokeCravingVC ()
 
 @property (weak, nonatomic) IBOutlet UIView *webViewContainer;
+@property NSString *mediaFileName;
 
 @end
 
@@ -85,28 +87,36 @@
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     NSLog(@"didFinishNavigation: %@", webView.URL.absoluteString);
     
+    _mediaFileName = nil;
     NSString *webUrl = webView.URL.absoluteString;
+    BOOL shouldPlayMedia = NO;
     if( [webUrl containsString: @"pY9wJb"] ) {
-        //EN - "URL_VIDEO", STORAGE_PATH + "/en/audio_vas_1.mp3"
-        //SP - "URL_VIDEO", STORAGE_PATH + "/es/audio_vas_1.mp3"
+        _mediaFileName = @"audio_vas_1.mp3";
+        shouldPlayMedia = YES;
     } else if( [webUrl containsString: @"IMuC34"] ) {
-        //EN - "URL_VIDEO", STORAGE_PATH + "/en/audio_vas_2.mp3"
-        //SP - "URL_VIDEO", STORAGE_PATH + "/es/audio_vas_2.mp3"
+        _mediaFileName = @"audio_vas_2.mp3";
+        shouldPlayMedia = YES;
     } else if( [webUrl containsString: @"XclD1Q"] ) {
-        //EN - "URL_VIDEO", STORAGE_PATH + "/en/audio_vas_3.mp3"
-        //SP - "URL_VIDEO", STORAGE_PATH + "/es/audio_vas_3.mp3"
+        _mediaFileName = @"audio_vas_3.mp3";
+        shouldPlayMedia = YES;
     } else if( [webUrl containsString: @"gNCus5"] ) {
-        //EN - "URL_VIDEO", STORAGE_PATH + "/en/audio_vas_4.mp3"
-        //SP - "URL_VIDEO", STORAGE_PATH + "/es/audio_vas_4.mp3"
+        _mediaFileName = @"audio_vas_4.mp3";
+        shouldPlayMedia = YES;
     } else if( [webUrl containsString: @"V7k2cd"] ) {
-        //EN - "URL_VIDEO", STORAGE_PATH + "/en/audio_vas_5.mp3"
-        //SP - "URL_VIDEO", STORAGE_PATH + "/es/audio_vas_5.mp3"
+        _mediaFileName = @"audio_vas_5.mp3";
+        shouldPlayMedia = YES;
     } else if( [webUrl containsString: @"qtvNDf"] ) {
-        //EN - "URL_VIDEO", STORAGE_PATH + "/en/audio_vas_6.mp3"
-        //SP - "URL_VIDEO", STORAGE_PATH + "/es/audio_vas_6.mp3"
+        _mediaFileName = @"audio_vas_6.mp3";
+        shouldPlayMedia = YES;
     } else if( [webUrl containsString: @"saY8Ql"] ) {
-        //EN - "URL_VIDEO", STORAGE_PATH + "/en/audio_vas_7.mp3"
-        //SP - "URL_VIDEO", STORAGE_PATH + "/es/audio_vas_7.mp3"
+        _mediaFileName = @"audio_vas_7.mp3";
+        shouldPlayMedia = YES;
+    }
+    
+    if( shouldPlayMedia == YES ) {
+        MediaPlayerVC *mediaPlayer = [self.storyboard instantiateViewControllerWithIdentifier: @"MediaPlayerVC"];
+        mediaPlayer.mediaFileName = _mediaFileName;
+        [self presentViewController:mediaPlayer animated:YES completion:nil];
     }
 }
 
@@ -154,6 +164,13 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"showMediaPlayer"]){
+        MediaPlayerVC *mediaPlayer = [segue destinationViewController];
+        mediaPlayer.mediaFileName = _mediaFileName;
+    }
 }
 
 @end

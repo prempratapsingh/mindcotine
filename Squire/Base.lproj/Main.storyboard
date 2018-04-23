@@ -947,7 +947,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-kv-DpQ" userLabel="Current Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="126" width="335" height="40"/>
+                                <rect key="frame" x="20" y="126" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
@@ -973,7 +973,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-n6-6H1" userLabel="New Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="176" width="335" height="40"/>
+                                <rect key="frame" x="20" y="175" width="335" height="39.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -999,7 +999,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-UH-pVz" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="226" width="335" height="39"/>
+                                <rect key="frame" x="20" y="224.5" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -1492,10 +1492,10 @@
             </objects>
             <point key="canvasLocation" x="2912.8000000000002" y="-151.57421289355324"/>
         </scene>
-        <!--Media Player-->
+        <!--Media PlayerVC-->
         <scene sceneID="6Js-hx-qJY">
             <objects>
-                <viewController storyboardIdentifier="MediaPlayerVC" id="wVU-du-9sK" customClass="MediaPlayer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaPlayerVC" id="wVU-du-9sK" customClass="MediaPlayerVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4kd-ja-1Hn"/>
                         <viewControllerLayoutGuide type="bottom" id="rIy-sy-lUf"/>
@@ -1517,7 +1517,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="closeView:" destination="bUN-BD-a3M" eventType="touchUpInside" id="WAF-Xf-Phl"/>
+                                    <action selector="didClickOnBackButton:" destination="wVU-du-9sK" eventType="touchUpInside" id="9xc-Ct-0YO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voR-cM-pSe" userLabel="PlayButton">
@@ -1528,7 +1528,7 @@
                                 </constraints>
                                 <state key="normal" image="playButtonWhite"/>
                                 <connections>
-                                    <action selector="didClickOnPlayButton:" destination="wVU-du-9sK" eventType="touchUpInside" id="STJ-6U-nFu"/>
+                                    <action selector="didClickOnPlayButton:" destination="wVU-du-9sK" eventType="touchUpInside" id="Qks-YA-spH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1540,9 +1540,6 @@
                             <constraint firstItem="voR-cM-pSe" firstAttribute="centerX" secondItem="c5b-gm-stR" secondAttribute="centerX" id="pJl-oI-rZX"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="playButton" destination="voR-cM-pSe" id="JJY-I7-4jl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDU-vL-sre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

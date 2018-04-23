@@ -297,6 +297,7 @@
 }
 
 - (IBAction)smokeCravingButtonTapped:(UIButton *)sender {
+    [self closeMainMenu];
     SmokeCravingVC *smokeCravingVC = [self.storyboard instantiateViewControllerWithIdentifier: @"SmokeCravingVC"];
     [self presentViewController:smokeCravingVC animated:YES completion:nil];
 }
