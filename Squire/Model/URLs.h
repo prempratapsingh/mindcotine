@@ -20,5 +20,6 @@ extern NSString *MINDCOTINE_DIRECTORY;
 
 +(NSMutableArray*)getAudioUrls;
 +(NSMutableArray*)getVideoUrls;
++(NSString*) getDownloadURL:(NSString *)forMedia;
 
 @end

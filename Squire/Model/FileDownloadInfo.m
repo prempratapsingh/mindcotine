@@ -10,7 +10,7 @@
 
 @implementation FileDownloadInfo
 
--(id)initWithFileTitle:(NSString *)title andDownloadSource:(NSString *)source{
+-(id)initWithFileTitle:(NSString *)title andDownloadSource:(NSString *)source {
     if (self == [super init]) {
         self.fileTitle = title;
         self.downloadSource = source;

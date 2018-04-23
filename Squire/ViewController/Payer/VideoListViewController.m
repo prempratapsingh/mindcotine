@@ -115,7 +115,7 @@
     
     NSMutableArray *audioURLs = URLs.getAudioUrls;
     MediaDownloader *mediaDownloader = [[MediaDownloader alloc] init];
-    [mediaDownloader download: [audioURLs objectAtIndex:0]];
+    [mediaDownloader download: [audioURLs objectAtIndex:3]];
 }
 
 - (void)didReceiveMemoryWarning {

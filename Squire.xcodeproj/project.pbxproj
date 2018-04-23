@@ -14,6 +14,7 @@
 		C13EDAAA2084A3940057447B /* SmokeCravingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C13EDAA92084A3940057447B /* SmokeCravingVC.m */; };
 		C13F1DE2205FBFB400447AEC /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C13F1DE1205FBFB400447AEC /* SettingsVC.m */; };
 		C13F1DE6205FD8B100447AEC /* GlobalModal.m in Sources */ = {isa = PBXBuildFile; fileRef = C13F1DE5205FD8B100447AEC /* GlobalModal.m */; };
+		C166435E208A87B200BDC465 /* MediaPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C166435D208A87B200BDC465 /* MediaPlayerVC.m */; };
 		C18325DC2088774A00CC2A53 /* URLs.m in Sources */ = {isa = PBXBuildFile; fileRef = C18325DB2088774A00CC2A53 /* URLs.m */; };
 		C18325E020887D3900CC2A53 /* MediaDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C18325DF20887D3900CC2A53 /* MediaDownloader.m */; };
 		C194DEEC205E4666000714C7 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C194DEEB205E4666000714C7 /* LanguageManager.m */; };
@@ -123,6 +124,8 @@
 		C13F1DE3205FBFC300447AEC /* SettingsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
 		C13F1DE4205FD8A200447AEC /* GlobalModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalModal.h; sourceTree = "<group>"; };
 		C13F1DE5205FD8B100447AEC /* GlobalModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalModal.m; sourceTree = "<group>"; };
+		C166435C208A878000BDC465 /* MediaPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaPlayerVC.h; sourceTree = "<group>"; };
+		C166435D208A87B200BDC465 /* MediaPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaPlayerVC.m; sourceTree = "<group>"; };
 		C18325DA2088771000CC2A53 /* URLs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLs.h; sourceTree = "<group>"; };
 		C18325DB2088774A00CC2A53 /* URLs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLs.m; sourceTree = "<group>"; };
 		C18325DE20887D2C00CC2A53 /* MediaDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaDownloader.h; sourceTree = "<group>"; };
@@ -488,6 +491,8 @@
 				F5364AC61F53E5D20048F904 /* SimplePlayerViewController.mm */,
 				C13EDAA82084A3630057447B /* SmokeCravingVC.h */,
 				C13EDAA92084A3940057447B /* SmokeCravingVC.m */,
+				C166435C208A878000BDC465 /* MediaPlayerVC.h */,
+				C166435D208A87B200BDC465 /* MediaPlayerVC.m */,
 			);
 			path = Payer;
 			sourceTree = "<group>";
@@ -828,6 +833,7 @@
 				F5364AF21F53E5D20048F904 /* SingnUpSevenViewController.m in Sources */,
 				F5364AE91F53E5D20048F904 /* PlayerViewController.m in Sources */,
 				F5364B601F53EEAA0048F904 /* LogInViewController.m in Sources */,
+				C166435E208A87B200BDC465 /* MediaPlayerVC.m in Sources */,
 				F5364AE01F53E5D20048F904 /* SVProgressHUD.m in Sources */,
 				F5DE8FAC1F554E6D00187ADC /* Validation.m in Sources */,
 				C13F1DE2205FBFB400447AEC /* SettingsVC.m in Sources */,

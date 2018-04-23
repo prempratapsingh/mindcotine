@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GlobalModal.h"
 #import "URLs.h"
 
 @implementation URLs
@@ -19,7 +20,7 @@ NSString *TAG_ES = @"es";
 NSString *TAG_MALE = @"male";
 NSString *TAG_FEMALE = @"female";
 NSString *TAG_PLATFORM = @"android";
-NSString *MINDCOTINE_DIRECTORY = @"mindcotine";
+NSString *MINDCOTINE_DIRECTORY = @"Documents";
 
 +(NSMutableArray*)getAudioUrls {
     
@@ -38,6 +39,17 @@ NSString *MINDCOTINE_DIRECTORY = @"mindcotine";
 +(NSArray*)getVideoUrls {
     NSMutableArray *videoUrls = [[NSMutableArray alloc] init];
     return videoUrls;
+}
+
++(NSString*)getDownloadURL:(NSString *)forMedia {
+    NSString *url = nil;
+    if( [GlobalModal.deviceLanguage isEqualToString:@"en"] ) {
+        url = [NSString stringWithFormat:@"%@/%@/%@/%@/%@", MINDCOTINE_AWS, TAG_VIDEO, TAG_PLATFORM, TAG_EN, forMedia];
+    } else {
+       url = [NSString stringWithFormat:@"%@/%@/%@/%@/%@", MINDCOTINE_AWS, TAG_VIDEO, TAG_PLATFORM, TAG_ES, forMedia];
+    }
+    
+    return url;
 }
 
 @end

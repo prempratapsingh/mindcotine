@@ -1492,6 +1492,62 @@
             </objects>
             <point key="canvasLocation" x="2912.8000000000002" y="-151.57421289355324"/>
         </scene>
+        <!--Media Player-->
+        <scene sceneID="6Js-hx-qJY">
+            <objects>
+                <viewController storyboardIdentifier="MediaPlayerVC" id="wVU-du-9sK" customClass="MediaPlayer" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4kd-ja-1Hn"/>
+                        <viewControllerLayoutGuide type="bottom" id="rIy-sy-lUf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c5b-gm-stR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isP-2w-NiN">
+                                <rect key="frame" x="16" y="27" width="87" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="AKP-4O-TwM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="87" id="MUC-1N-2OH"/>
+                                    <constraint firstAttribute="width" constant="87" id="ldB-V8-L0e"/>
+                                    <constraint firstAttribute="height" constant="43" id="uQf-Du-3ls"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back" image="back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeView:" destination="bUN-BD-a3M" eventType="touchUpInside" id="WAF-Xf-Phl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voR-cM-pSe" userLabel="PlayButton">
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LvV-lO-ead"/>
+                                    <constraint firstAttribute="width" constant="50" id="qnV-oQ-AA4"/>
+                                </constraints>
+                                <state key="normal" image="playButtonWhite"/>
+                                <connections>
+                                    <action selector="didClickOnPlayButton:" destination="wVU-du-9sK" eventType="touchUpInside" id="STJ-6U-nFu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="voR-cM-pSe" firstAttribute="centerY" secondItem="c5b-gm-stR" secondAttribute="centerY" id="6fe-QN-1Sy"/>
+                            <constraint firstItem="isP-2w-NiN" firstAttribute="top" secondItem="4kd-ja-1Hn" secondAttribute="bottom" constant="7" id="7Pc-Rb-iDo"/>
+                            <constraint firstItem="isP-2w-NiN" firstAttribute="leading" secondItem="c5b-gm-stR" secondAttribute="leadingMargin" id="I2A-gJ-Hpa"/>
+                            <constraint firstItem="voR-cM-pSe" firstAttribute="centerX" secondItem="c5b-gm-stR" secondAttribute="centerX" id="pJl-oI-rZX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="voR-cM-pSe" id="JJY-I7-4jl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDU-vL-sre" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3647" y="-154"/>
+        </scene>
         <!--Simple Player View Controller-->
         <scene sceneID="uLr-mq-YOe">
             <objects>
@@ -3860,6 +3916,7 @@
         <image name="nextButton" width="361" height="117"/>
         <image name="normal" width="32" height="32"/>
         <image name="playButton2" width="59" height="59"/>
+        <image name="playButtonWhite" width="48" height="48"/>
         <image name="playbutton" width="160" height="160"/>
         <image name="share" width="32" height="32"/>
         <image name="yellowline" width="6" height="67"/>

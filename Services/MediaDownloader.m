@@ -12,13 +12,13 @@
 
 @implementation MediaDownloader
 
--(void) download: (NSString *)from {
+-(void) download: (NSString *)mediaFileName {
     
-    NSString *targetDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    NSString *downloadFilePathStr = [targetDirectory stringByAppendingPathComponent:from];
+    NSString *targetDirectory = [NSHomeDirectory() stringByAppendingPathComponent: MINDCOTINE_DIRECTORY];
+    NSString *downloadFilePathStr = [targetDirectory stringByAppendingPathComponent:mediaFileName];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if([fileManager fileExistsAtPath:downloadFilePathStr] == NO) {
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@/%@/%@", MINDCOTINE_AWS, TAG_VIDEO, TAG_PLATFORM, TAG_EN, from]];
+        NSURL *url = [NSURL URLWithString:[URLs getDownloadURL:mediaFileName]];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
         
         CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
@@ -32,7 +32,7 @@
         NSURLSessionDownloadTask* task = [_session downloadTaskWithRequest:request];
         [task resume];
     } else {
-        NSLog(@"%@ was already downloaded!", from);
+        NSLog(@"%@ was already downloaded!", mediaFileName);
     }
 }
 
@@ -41,7 +41,7 @@
 }
 
 -(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location {
-    NSString *targetDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    NSString *targetDirectory = [NSHomeDirectory() stringByAppendingPathComponent: MINDCOTINE_DIRECTORY];
     NSString *downloadFilePathStr = [targetDirectory stringByAppendingPathComponent:downloadTask.currentRequest.URL.lastPathComponent];
     NSURL *downloadFilePath = [NSURL fileURLWithPath:downloadFilePathStr];
     NSFileManager *fileManager = [NSFileManager defaultManager];
