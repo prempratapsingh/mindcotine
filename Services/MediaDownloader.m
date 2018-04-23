@@ -59,4 +59,11 @@
     NSLog(@"Download FAILED! Error:  %@", error.localizedDescription);
 }
 
+-(void)downloadSmokeCravingAudios {
+    NSMutableArray *audioFiles = URLs.getAudioFiles;
+    for(NSString *audio in audioFiles) {
+        [self download: audio];
+    }
+}
+
 @end

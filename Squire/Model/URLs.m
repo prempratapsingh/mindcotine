@@ -22,7 +22,7 @@ NSString *TAG_FEMALE = @"female";
 NSString *TAG_PLATFORM = @"android";
 NSString *MINDCOTINE_DIRECTORY = @"Documents";
 
-+(NSMutableArray*)getAudioUrls {
++(NSMutableArray*)getAudioFiles {
     
     NSMutableArray *audioUrls = [[NSMutableArray alloc] init];
     [audioUrls addObject:@"audio_vas_1.mp3"];
@@ -36,7 +36,7 @@ NSString *MINDCOTINE_DIRECTORY = @"Documents";
     return audioUrls;
 }
 
-+(NSArray*)getVideoUrls {
++(NSArray*)getVideoFiles {
     NSMutableArray *videoUrls = [[NSMutableArray alloc] init];
     return videoUrls;
 }

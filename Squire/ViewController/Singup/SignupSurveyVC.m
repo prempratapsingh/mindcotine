@@ -14,6 +14,7 @@
 #import "SVProgressHUD.h"
 #import "UIViewController+UIViewController_Alert.h"
 #import "TypeFormManager.h"
+#import "MediaDownloader.h"
 
 @interface SignupSurveyVC ()
 
@@ -29,6 +30,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self showSignupTypeForm];
+    
+    MediaDownloader *mediaDownloader = [[MediaDownloader alloc] init];
+    [mediaDownloader downloadSmokeCravingAudios];
 }
 
 -(void)showSignupTypeForm {

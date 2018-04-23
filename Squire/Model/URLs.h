@@ -18,8 +18,8 @@ extern NSString *TAG_FEMALE;
 extern NSString *TAG_PLATFORM;
 extern NSString *MINDCOTINE_DIRECTORY;
 
-+(NSMutableArray*)getAudioUrls;
-+(NSMutableArray*)getVideoUrls;
++(NSMutableArray*)getAudioFiles;
++(NSMutableArray*)getVideoFiles;
 +(NSString*) getDownloadURL:(NSString *)forMedia;
 
 @end

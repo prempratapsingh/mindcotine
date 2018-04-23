@@ -112,10 +112,6 @@
     
     NSString *version = NSBundle.mainBundle.infoDictionary [@"CFBundleShortVersionString"];
     _versionLabel.text = [NSLocalizedString(@"version", @"") stringByAppendingString:version];
-    
-    NSMutableArray *audioURLs = URLs.getAudioUrls;
-    MediaDownloader *mediaDownloader = [[MediaDownloader alloc] init];
-    [mediaDownloader download: [audioURLs objectAtIndex:3]];
 }
 
 - (void)didReceiveMemoryWarning {

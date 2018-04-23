@@ -12,9 +12,10 @@
 #import "GlobalModal.h"
 #import "URLs.h"
 #import "VideoListViewController.h"
-#import <AVFoundation/AVAudioPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface MediaPlayerVC ()
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @end
 
@@ -22,24 +23,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //_playButton.imageView =
+    [self playMedia];
+}
+
+-(void)playMedia {
     NSString *targetDirectory = [NSHomeDirectory() stringByAppendingPathComponent: MINDCOTINE_DIRECTORY];
     NSString *downloadFilePathStr = [targetDirectory stringByAppendingPathComponent:_mediaFileName];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if([fileManager fileExistsAtPath:downloadFilePathStr] == YES) {
         NSLog(@"Initializing playback for %@", _mediaFileName);
-        NSURL *url = [NSURL URLWithString:downloadFilePathStr];
-        NSData *data = [NSData dataWithContentsOfURL:url];
-        _audioPlayer = [[AVAudioPlayer alloc] initWithData:data error:nil];
+        NSURL *soundUrl = [NSURL fileURLWithPath:downloadFilePathStr];
+        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
         [_audioPlayer play];
     } else {
-        NSLog(@"Couldn't file media for %@", _mediaFileName);
+        NSLog(@"Couldn't find file media for %@", _mediaFileName);
     }
+    
+    [self setPlayButtonState];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+}
+
+-(void)setPlayButtonState {
+    if(_audioPlayer == nil) {
+        [_playButton setImage:[UIImage imageNamed:@"playButtonWhite"] forState : UIControlStateNormal];
+    } else {
+        if(_audioPlayer.isPlaying == YES) {
+            [_playButton setImage:[UIImage imageNamed:@"pauseButtonWhite"] forState : UIControlStateNormal];
+        } else {
+            [_playButton setImage:[UIImage imageNamed:@"playButtonWhite"] forState : UIControlStateNormal];
+        }
+    }
 }
 
 - (IBAction)didClickOnBackButton:(id)sender {
@@ -52,5 +68,15 @@
 }
 
 - (IBAction)didClickOnPlayButton:(id)sender {
+    if(_audioPlayer == nil) {
+        [self playMedia];
+    } else {
+        if(_audioPlayer.isPlaying == YES) {
+            [_audioPlayer pause];
+        } else {
+            [_audioPlayer play];
+        }
+        [self setPlayButtonState];
+    }
 }
 @end

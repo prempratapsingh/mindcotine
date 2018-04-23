@@ -1540,6 +1540,9 @@
                             <constraint firstItem="voR-cM-pSe" firstAttribute="centerX" secondItem="c5b-gm-stR" secondAttribute="centerX" id="pJl-oI-rZX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="voR-cM-pSe" id="Gf6-0K-dai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDU-vL-sre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
