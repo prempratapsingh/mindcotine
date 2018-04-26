@@ -1533,22 +1533,51 @@
                                     <action selector="didClickOnPlayButton:" destination="wVU-du-9sK" eventType="touchUpInside" id="Qks-YA-spH"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fRf-sV-vCE" userLabel="Seek Bar">
+                                <rect key="frame" x="20" y="563" width="335" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv0-eg-c4C" userLabel="Elapsed Time">
+                                        <rect key="frame" x="0.0" y="2" width="35.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jrn-vg-SgY">
+                                        <rect key="frame" x="40.5" y="9" width="254" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9A4-b7-blz" userLabel="Total Time">
+                                        <rect key="frame" x="299.5" y="2" width="35.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rYA-KQ-2bz"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="voR-cM-pSe" firstAttribute="centerY" secondItem="c5b-gm-stR" secondAttribute="centerY" id="6fe-QN-1Sy"/>
+                            <constraint firstItem="rIy-sy-lUf" firstAttribute="top" secondItem="fRf-sV-vCE" secondAttribute="bottom" constant="20" id="7ID-bb-cCE"/>
                             <constraint firstItem="isP-2w-NiN" firstAttribute="top" secondItem="4kd-ja-1Hn" secondAttribute="bottom" constant="7" id="7Pc-Rb-iDo"/>
                             <constraint firstItem="isP-2w-NiN" firstAttribute="leading" secondItem="c5b-gm-stR" secondAttribute="leadingMargin" id="I2A-gJ-Hpa"/>
+                            <constraint firstAttribute="trailing" secondItem="fRf-sV-vCE" secondAttribute="trailing" constant="20" id="KGp-LU-d9l"/>
                             <constraint firstItem="voR-cM-pSe" firstAttribute="centerX" secondItem="c5b-gm-stR" secondAttribute="centerX" id="pJl-oI-rZX"/>
+                            <constraint firstItem="fRf-sV-vCE" firstAttribute="leading" secondItem="c5b-gm-stR" secondAttribute="leading" constant="20" id="pP1-V7-aKA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="elapsedTimeLabel" destination="Sv0-eg-c4C" id="M4z-bb-yhw"/>
                         <outlet property="playButton" destination="voR-cM-pSe" id="Gf6-0K-dai"/>
+                        <outlet property="progressBar" destination="Jrn-vg-SgY" id="STy-Tw-1yu"/>
+                        <outlet property="totalTimeLabel" destination="9A4-b7-blz" id="d01-I1-kNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dDU-vL-sre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3647" y="-154"/>
+            <point key="canvasLocation" x="3645.5999999999999" y="-154.27286356821591"/>
         </scene>
         <!--Simple Player View Controller-->
         <scene sceneID="uLr-mq-YOe">

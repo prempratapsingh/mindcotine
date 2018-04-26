@@ -132,7 +132,6 @@
     }
     
     if( shouldPlayMedia == YES ) {
-        
         [self performSegueWithIdentifier:@"showMediaPlayerVC" sender:nil];
     }
 }

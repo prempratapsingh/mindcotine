@@ -16,13 +16,23 @@
 
 @interface MediaPlayerVC ()
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UILabel *elapsedTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalTimeLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
+
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+@property (nonatomic, strong) NSTimer *timer;
 @end
 
 @implementation MediaPlayerVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _progressBar.progress = 0;
+    _elapsedTimeLabel.text = @"00:00";
+    _totalTimeLabel.text = @"00:00";
+    
     [self playMedia];
 }
 
@@ -35,6 +45,7 @@
         NSURL *soundUrl = [NSURL fileURLWithPath:downloadFilePathStr];
         _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
         [_audioPlayer play];
+        [self startTimer];
     } else {
         NSLog(@"Couldn't find file media for %@", _mediaFileName);
     }
@@ -57,6 +68,7 @@
 - (IBAction)didClickOnBackButton:(id)sender {
     if(_audioPlayer.isPlaying) {
         [_audioPlayer stop];
+        [_timer invalidate];
     }
     
     [self dismissViewControllerAnimated:NO completion:nil];
@@ -65,13 +77,49 @@
 - (IBAction)didClickOnPlayButton:(id)sender {
     if(_audioPlayer == nil) {
         [self playMedia];
+        [self startTimer];
     } else {
         if(_audioPlayer.isPlaying == YES) {
             [_audioPlayer pause];
+            [_timer invalidate];
         } else {
             [_audioPlayer play];
+             [self startTimer];
         }
         [self setPlayButtonState];
     }
 }
+    
+-(void) startTimer {
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                              target:self
+                                            selector:@selector(updateViewsWithTimer:)
+                                            userInfo:nil
+                                             repeats:YES];
+}
+
+-(void)updateViewsWithTimer:(NSTimer *)timer {
+    [self updateViews];
+}
+
+-(void)updateViews {
+    
+    NSInteger elapsedTime = (NSInteger)_audioPlayer.currentTime;;
+    NSInteger elapsedSeconds = elapsedTime % 60;
+    NSInteger elapsedMinutes = (elapsedTime / 60) % 60;
+    _elapsedTimeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld", (long)elapsedMinutes, (long)elapsedSeconds];
+    
+    NSInteger totalTime = (NSInteger)_audioPlayer.duration;;
+    NSInteger totalSeconds = totalTime % 60;
+    NSInteger totalMinutes = (totalTime / 60) % 60;
+    _totalTimeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld", (long)totalMinutes, (long)totalSeconds];
+    
+    if(elapsedTime >= totalTime) {
+        [_timer invalidate];
+    } else {
+        float progress = (float)elapsedTime/totalTime;
+        _progressBar.progress = progress;
+    }
+}
+
 @end
