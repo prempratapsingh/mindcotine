@@ -42,10 +42,6 @@
     [self setPlayButtonState];
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-}
-
 -(void)setPlayButtonState {
     if(_audioPlayer == nil) {
         [_playButton setImage:[UIImage imageNamed:@"playButtonWhite"] forState : UIControlStateNormal];
@@ -63,8 +59,7 @@
         [_audioPlayer stop];
     }
     
-    VideoListViewController *videoListViewController = [self.storyboard instantiateViewControllerWithIdentifier: @"videoListViewController"];
-    [self presentViewController:videoListViewController animated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (IBAction)didClickOnPlayButton:(id)sender {

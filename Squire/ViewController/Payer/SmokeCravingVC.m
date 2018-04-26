@@ -19,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *webViewContainer;
 @property NSString *mediaFileName;
+@property BOOL shouldDisplayView;
 
 @end
 
@@ -29,16 +30,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _shouldDisplayView = YES;
     [self showSmokeCravingTypeForm];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    self.navigationController.navigationBarHidden = NO;
-    [[UIDevice currentDevice] setValue:
-     [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
-                                forKey:@"orientation"];
+    if(_shouldDisplayView == YES) {
+        self.navigationController.navigationBarHidden = NO;
+        [[UIDevice currentDevice] setValue:
+         [NSNumber numberWithInteger: UIInterfaceOrientationPortrait]
+                                    forKey:@"orientation"];
+        
+        [SVProgressHUD showWithStatus:@""];
+    } else {
+        [self dismissViewControllerAnimated:NO completion:nil];
+    }
     
-    [SVProgressHUD showWithStatus:@""];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    _shouldDisplayView = NO;
 }
 
 -(void)showSmokeCravingTypeForm {
@@ -86,6 +98,9 @@
 
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     NSLog(@"didFinishNavigation: %@", webView.URL.absoluteString);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [SVProgressHUD dismiss];
+    });
     
     _mediaFileName = nil;
     NSString *webUrl = webView.URL.absoluteString;
@@ -111,12 +126,14 @@
     } else if( [webUrl containsString: @"saY8Ql"] ) {
         _mediaFileName = @"audio_vas_7.mp3";
         shouldPlayMedia = YES;
+    } else if([webUrl containsString: @"EKNY3c"]) {
+        _mediaFileName = @"audio_vas_1.mp3";
+        shouldPlayMedia = YES;
     }
     
     if( shouldPlayMedia == YES ) {
-        MediaPlayerVC *mediaPlayer = [self.storyboard instantiateViewControllerWithIdentifier: @"MediaPlayerVC"];
-        mediaPlayer.mediaFileName = _mediaFileName;
-        [self presentViewController:mediaPlayer animated:YES completion:nil];
+        
+        [self performSegueWithIdentifier:@"showMediaPlayerVC" sender:nil];
     }
 }
 
@@ -167,7 +184,7 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"showMediaPlayer"]){
+    if ([segue.identifier isEqualToString:@"showMediaPlayerVC"]){
         MediaPlayerVC *mediaPlayer = [segue destinationViewController];
         mediaPlayer.mediaFileName = _mediaFileName;
     }

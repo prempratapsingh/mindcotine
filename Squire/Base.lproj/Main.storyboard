@@ -947,7 +947,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-kv-DpQ" userLabel="Current Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="126" width="335" height="39"/>
+                                <rect key="frame" x="20" y="126" width="335" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
@@ -973,7 +973,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-n6-6H1" userLabel="New Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="175" width="335" height="39.5"/>
+                                <rect key="frame" x="20" y="176" width="335" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -999,7 +999,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-UH-pVz" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="224.5" width="335" height="39"/>
+                                <rect key="frame" x="20" y="226" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -1352,6 +1352,7 @@
                         <outlet property="wantToSmokeButton" destination="exC-cg-hes" id="SaP-2L-KeT"/>
                         <segue destination="bUN-BD-a3M" kind="presentation" identifier="showDetail" id="5ul-LD-lIa"/>
                         <segue destination="7pi-UL-eC9" kind="presentation" identifier="showSettingsView" id="fiU-Wi-9Cu"/>
+                        <segue destination="5UI-E3-Rn1" kind="show" identifier="showSmokeCravingVC" id="2BY-b5-sBI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t4i-Vg-uzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1468,11 +1469,11 @@
                         <viewControllerLayoutGuide type="bottom" id="D5y-Xb-JMi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rRi-52-JfJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iff-IB-J44">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.17254901960784313" green="0.99215686274509807" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -1486,6 +1487,7 @@
                     </view>
                     <connections>
                         <outlet property="webViewContainer" destination="Iff-IB-J44" id="xVL-kS-8bv"/>
+                        <segue destination="wVU-du-9sK" kind="show" identifier="showMediaPlayerVC" id="SzH-lB-3Qh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFO-We-MIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1501,11 +1503,11 @@
                         <viewControllerLayoutGuide type="bottom" id="rIy-sy-lUf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c5b-gm-stR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isP-2w-NiN">
-                                <rect key="frame" x="16" y="27" width="87" height="43"/>
+                                <rect key="frame" x="16" y="7" width="87" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="AKP-4O-TwM"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="87" id="MUC-1N-2OH"/>
@@ -1521,7 +1523,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voR-cM-pSe" userLabel="PlayButton">
-                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <rect key="frame" x="162.5" y="276.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LvV-lO-ead"/>
                                     <constraint firstAttribute="width" constant="50" id="qnV-oQ-AA4"/>

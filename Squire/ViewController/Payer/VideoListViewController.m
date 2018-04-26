@@ -283,19 +283,14 @@
                 
             }else{
                 detail.dictWithInfo = _arrayAllGenders[((NSIndexPath *)sender).row];
-                
             }
-            
-            
         }
-
     }
 }
 
 - (IBAction)smokeCravingButtonTapped:(UIButton *)sender {
     [self closeMainMenu];
-    SmokeCravingVC *smokeCravingVC = [self.storyboard instantiateViewControllerWithIdentifier: @"SmokeCravingVC"];
-    [self presentViewController:smokeCravingVC animated:YES completion:nil];
+    [self performSegueWithIdentifier:@"showSmokeCravingVC" sender:nil];
 }
 
 - (IBAction)signOutButtonTapped:(id)sender {
