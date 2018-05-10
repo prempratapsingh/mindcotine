@@ -18,7 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UILabel *elapsedTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalTimeLabel;
-@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
+@property (weak, nonatomic) IBOutlet UISlider *progressBarSlider;
+
 
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @property (nonatomic, strong) NSTimer *timer;
@@ -28,8 +29,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES];
     
-    _progressBar.progress = 0;
+    _progressBarSlider.minimumValue = 0;
+    _progressBarSlider.value = 0;
+    UIImage *sliderThumb = [UIImage imageNamed:@"slider-thumb-small"];
+    [_progressBarSlider setThumbImage:sliderThumb forState:UIControlStateNormal];
+    [_progressBarSlider setThumbImage:sliderThumb forState:UIControlStateHighlighted];
     _elapsedTimeLabel.text = @"00:00";
     _totalTimeLabel.text = @"00:00";
     
@@ -44,6 +50,8 @@
         NSLog(@"Initializing playback for %@", _mediaFileName);
         NSURL *soundUrl = [NSURL fileURLWithPath:downloadFilePathStr];
         _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+        _progressBarSlider.maximumValue = _audioPlayer.duration;
+        [_audioPlayer setCurrentTime: 0];
         [_audioPlayer play];
         [self startTimer];
     } else {
@@ -89,7 +97,20 @@
         [self setPlayButtonState];
     }
 }
-    
+
+- (IBAction)didClickOnSeekButton:(id)sender {
+    if(_audioPlayer.isPlaying == YES) {
+        NSTimeInterval playerDuration = _audioPlayer.currentTime;
+        [_audioPlayer setCurrentTime: playerDuration + 10];
+    }
+}
+
+- (IBAction)didChangeProgressSlider:(id)sender {
+    [_audioPlayer setCurrentTime: _progressBarSlider.value];
+}
+
+
+
 -(void) startTimer {
     _timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                               target:self
@@ -104,7 +125,7 @@
 
 -(void)updateViews {
     
-    NSInteger elapsedTime = (NSInteger)_audioPlayer.currentTime;;
+    NSInteger elapsedTime = (NSInteger)_audioPlayer.currentTime;
     NSInteger elapsedSeconds = elapsedTime % 60;
     NSInteger elapsedMinutes = (elapsedTime / 60) % 60;
     _elapsedTimeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld", (long)elapsedMinutes, (long)elapsedSeconds];
@@ -114,11 +135,15 @@
     NSInteger totalMinutes = (totalTime / 60) % 60;
     _totalTimeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld", (long)totalMinutes, (long)totalSeconds];
     
-    if(elapsedTime >= totalTime) {
+    if(elapsedTime == totalTime - 1) {
+        [_audioPlayer stop];
+        [_audioPlayer setCurrentTime: 0];
+         _progressBarSlider.value = 0;
+        _elapsedTimeLabel.text = @"00:00";
         [_timer invalidate];
+        [self setPlayButtonState];
     } else {
-        float progress = (float)elapsedTime/totalTime;
-        _progressBar.progress = progress;
+        _progressBarSlider.value = (float)_audioPlayer.currentTime;
     }
 }
 

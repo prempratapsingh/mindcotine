@@ -401,10 +401,9 @@
                         if( isError == YES ) {
                             [self saveDataOnServer];
                         } else {
-                            [self saveDataOnServer];
-//                            dispatch_async(dispatch_get_main_queue(), ^{
-//                                [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
-//                            });
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [self showAlertTitle:NSLocalizedString(@"validationError", @"") message:NSLocalizedString(@"validationEnterKitCode", @"")];
+                            });
                         }
                     } else {
                         dispatch_async(dispatch_get_main_queue(), ^{

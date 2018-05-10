@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Services/MediaDownloader.m"
-            timestampString = "546244932.105478"
+            filePath = "Squire/ViewController/Payer/MediaPlayerVC.m"
+            timestampString = "547536862.144206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "-download:"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-didClickOnPlayButton:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Services/MediaDownloader.m"
-            timestampString = "546244932.106668"
+            filePath = "Squire/ViewController/Payer/MediaPlayerVC.m"
+            timestampString = "547536862.14487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-downloadSmokeCravingAudios"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-didClickOnPlayButton:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Squire/ViewController/Singup/SignupSurveyVC.m"
-            timestampString = "546179103.549598"
+            filePath = "Squire/ViewController/Payer/MediaPlayerVC.m"
+            timestampString = "547536862.145359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-didClickOnPlayButton:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Services/MediaDownloader.m"
-            timestampString = "546244932.106946"
+            filePath = "Squire/ViewController/Payer/MediaPlayerVC.m"
+            timestampString = "547536862.1458"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-downloadSmokeCravingAudios"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-setPlayButtonState"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Squire/ViewController/Payer/MediaPlayerVC.m"
+            timestampString = "547536862.1461999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "-setPlayButtonState"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Squire/ViewController/Payer/MediaPlayerVC.m"
+            timestampString = "547536862.146615"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-setPlayButtonState"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

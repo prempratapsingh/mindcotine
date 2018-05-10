@@ -947,7 +947,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Current Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-kv-DpQ" userLabel="Current Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="126" width="335" height="40"/>
+                                <rect key="frame" x="20" y="126" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
@@ -973,7 +973,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aTR-n6-6H1" userLabel="New Password" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="176" width="335" height="40"/>
+                                <rect key="frame" x="20" y="175" width="335" height="39.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -999,7 +999,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6x4-UH-pVz" customClass="FloatingLabelTextField" customModule="Squire" customModuleProvider="target">
-                                <rect key="frame" x="20" y="226" width="335" height="39"/>
+                                <rect key="frame" x="20" y="224.5" width="335" height="39"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES"/>
@@ -1542,9 +1542,12 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jrn-vg-SgY">
-                                        <rect key="frame" x="40.5" y="9" width="254" height="2"/>
-                                    </progressView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hze-h7-YX4" userLabel="Progress Bar">
+                                        <rect key="frame" x="38.5" y="0.0" width="258" height="21"/>
+                                        <connections>
+                                            <action selector="didChangeProgressSlider:" destination="wVU-du-9sK" eventType="valueChanged" id="Ga6-5I-cdK"/>
+                                        </connections>
+                                    </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9A4-b7-blz" userLabel="Total Time">
                                         <rect key="frame" x="299.5" y="2" width="35.5" height="16.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -1571,7 +1574,7 @@
                     <connections>
                         <outlet property="elapsedTimeLabel" destination="Sv0-eg-c4C" id="M4z-bb-yhw"/>
                         <outlet property="playButton" destination="voR-cM-pSe" id="Gf6-0K-dai"/>
-                        <outlet property="progressBar" destination="Jrn-vg-SgY" id="STy-Tw-1yu"/>
+                        <outlet property="progressBarSlider" destination="hze-h7-YX4" id="J0q-QG-sbO"/>
                         <outlet property="totalTimeLabel" destination="9A4-b7-blz" id="d01-I1-kNf"/>
                     </connections>
                 </viewController>
